@@ -2,112 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* navbar start */
-.navbar {
-  height: 66px;
-  width: 100%;
-  background-color: orange;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5rem;
-}
-
-.navbar > .logo > h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  /* font-family: sans-serif; */
-}
-.navbar > .items > ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-ul > li {
-  cursor: pointer;
-}
-
-/* body start */
-.body {
-  width: 100%;
-  margin-top: 3rem;
-  padding: 0 5rem;
-}
-
-.res {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  gap: 1rem;
-}
-.res-card {
-  /* background-color: pink; */
-  width: 15rem;
-  height: 25rem;
-  text-align: left;
-  border: 1px solid black;
-  padding: 1rem;
-  overflow-wrap: normal;
-}
-.res-card > img {
-  height: 50%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.res-card h2:nth-child(2) {
-  font-weight: 700;
-  text-align: left;
-  font-size: 1.4rem;
-  /* letter-spacing: 2px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
-.res-card h2:nth-child(3) span {
-  font-weight: 500;
-}
-.res-card h2:nth-child(4) {
-  font-weight: 300;
-}
-
-/* search */
-.search {
-  padding: 0 1rem;
-  margin: 1rem 0;
-  /* background: orange; */
-}
-
-.search-inp {
-  padding: 0.5rem 1rem;
-  font-size: 1.4rem;
-  border: 1px solid orange;
-  border-radius: 10px 0 0 10px;
-  /* color: orange; */
-  outline: none;
-  width: 60%;
-}
-.search-btn {
-  border-radius: 0px 10px 10px 0px;
-  font-size: 1.4rem;
-  background-color: orange;
-  border: 1px solid orange;
-  padding: 0.5rem 1rem;
-}
-
 .shimmer-img {
-  background: linear-gradient(0deg, #c6c6c6, #e5e5e5);
+  background: linear-gradient(0deg, #dedbd2, #b0c4b1);
   background-size: 400% 400%;
 
   -webkit-animation: loading 1s ease-in-out infinite;
@@ -156,4 +52,8 @@ ul > li {
   50% {
     background-position: 50% 100%;
   }
+}
+
+.contact-us-form > form > input {
+  outline: none;
 }

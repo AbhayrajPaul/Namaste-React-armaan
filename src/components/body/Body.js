@@ -1,28 +1,17 @@
 import { useState, useEffect } from "react";
-import RestrauntCard from "../body/ResCard";
-import { resData } from "../config";
+import RestrauntCard, { WithPromotedLabel } from "../body/ResCard";
 import Shimmer from "./Shimmer";
 import NotFound from "./NotFound";
-
-function filterData(searchText, restaurants) {
-  const filteredData = restaurants.filter((restaurant) => {
-    return restaurant?.info?.name
-      ?.toLowerCase()
-      ?.includes(searchText.toLowerCase());
-
-    // restraunts ke upar filter lagaya
-    //it will search in each restraunt(card) jokin yaha pr restraunt se represented hai
-    //we are returning only that restraunt card jiske info ke andar name ke andar include  ho searchText
-    // where searchText is the input provided by the user
-  });
-  return filteredData;
-}
+import { filterData } from "../../utils/helper";
+import useOnlineStatus from "../../utils/useOnlineStatus";
 
 const Body = () => {
   const [searchInput, setSearchInput] = useState("");
   const [filteredRestraunts, setFilteredRestraunts] = useState([]); //default value is --> (all the restraunts)
   const [allRestraunts, setAllRestraunts] = useState([]);
-
+console.log( "all : " +allRestraunts);
+console.log( "fil : " +filteredRestraunts);
+  const WithPromotedLabell = WithPromotedLabel(RestrauntCard);
   useEffect(() => {
     getRestraunt();
   }, []);
@@ -41,18 +30,30 @@ const Body = () => {
       dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
+    console.log(
+      dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
   }
 
-  //early rendering //
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus == false) {
+    return (
+      <>
+        <h1>Looks like you're offline...net check karo beyyy</h1>
+      </>
+    );
+  }
 
   return allRestraunts?.length === 0 ? (
     <Shimmer />
   ) : (
     <>
-      <div className="body">
-        <div className="search">
+      <div className="body flex  flex-col w-[full] pt-[1rem] bg-[#dedbd2] ">
+        <div className="search px-[5rem] text-white">
           <input
-            className="search-inp"
+            className="search-inp px-[1rem] py-[.5rem] text-[1.5rem] w-[90%] text-black outline-none rounded-xl"
             type="text"
             placeholder="What're you craving for ???"
             value={searchInput}
@@ -64,9 +65,12 @@ const Body = () => {
           />
 
           <button
-            className="search-btn "
+            className="search-btn h-full text-[1.5rem] font-[900] w-[10%] text-[#4a5759] bg-[#edafb8] px-[1rem] py-[.5rem] rounded-xl capitalize"
             onClick={() => {
               // filter the data
+              {
+                console.log("click hua");
+              }
               const data = filterData(searchInput, allRestraunts); //store the data returned by filterData //
               setFilteredRestraunts(data); //sets the new data
             }}
@@ -74,7 +78,7 @@ const Body = () => {
             search
           </button>
         </div>
-        <div className="res">
+        <div className="res px-[5rem] grid grid-cols-4 gap-y-[1rem] py-[2rem] ">
           {filteredRestraunts.length === 0 ? (
             <>
               <NotFound />
@@ -83,16 +87,33 @@ const Body = () => {
             filteredRestraunts.map((card) => {
               return (
                 <>
-                  <RestrauntCard
-                    key={card.info.id}
-                    id={card.info.id}
-                    cloudinaryImageId={card.info.cloudinaryImageId}
-                    name={card.info.name}
-                    avgRating={card.info.avgRating}
-                    slaString={card.info.sla.slaString}
-                    cuisines={card.info.cuisines.splice(0, 3).join(", ")}
-                    location={card.info.locality}
-                  />
+                  {card.info.id % 2 == 0 ? (
+                    <WithPromotedLabell
+                      key={card.info.id}
+                      id={card.info.id}
+                      cloudinaryImageId={card.info.cloudinaryImageId}
+                      name={card.info.name}
+                      avgRating={card.info.avgRating}
+                      slaString={card.info.sla.slaString}
+                      cuisines={card.info.cuisines.splice(0, 3).join(", ")}
+                      location={card.info.locality}
+                      areaName={card.info.areaName}
+                      avaliable={card.info.isOpen}
+                    />
+                  ) : (
+                    <RestrauntCard
+                      key={card.info.id}
+                      id={card.info.id}
+                      cloudinaryImageId={card.info.cloudinaryImageId}
+                      name={card.info.name}
+                      avgRating={card.info.avgRating}
+                      slaString={card.info.sla.slaString}
+                      cuisines={card.info.cuisines.splice(0, 3).join(", ")}
+                      location={card.info.locality}
+                      areaName={card.info.areaName}
+                      avaliable={card.info.isOpen}
+                    />
+                  )}
                 </>
               );
             })

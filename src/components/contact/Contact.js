@@ -1,9 +1,9 @@
+import ContactUs from "../Forms/ContactUsForm";
 const Contact = () => {
   return (
     <>
-      <div className="px-[5rem]  bg-gray-600 flex flex-col gap-11 py-[5rem] text-center ">
-        <h1 className="text-9xl ">Contact Us Page</h1>
-        <p className="text-4xl">Contact Karoge hume ? </p>
+      <div className="px-[5rem]  bg-[#f7e1d7] h-[90vh]  flex  items-center overflow-hidden  ">
+        <ContactUs />
       </div>
     </>
   );

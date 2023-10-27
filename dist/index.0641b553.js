@@ -2963,39 +2963,45 @@ var _contact = require("./components/contact/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _restrauntMenu = require("./components/restraunt menu/RestrauntMenu");
 var _restrauntMenuDefault = parcelHelpers.interopDefault(_restrauntMenu);
+var _login = require("./components/Forms/Login");
+var _loginDefault = parcelHelpers.interopDefault(_login);
+// import Profile from "./components/about/Profile";
+// import ClothesVilla from "./VillaClothes/ClothesVilla";
+const ClothesVilla = /*#__PURE__*/ (0, _react.lazy)(()=>require("3e1b5c88b546a54b"));
+_c = ClothesVilla;
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 16,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 17,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_c = AppLayout;
+_c1 = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 24,
+            lineNumber: 29,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 25,
+            lineNumber: 30,
             columnNumber: 19
         }, undefined),
         children: [
@@ -3003,7 +3009,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 29,
+                    lineNumber: 34,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3011,7 +3017,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 33,
+                    lineNumber: 38,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3019,7 +3025,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 37,
+                    lineNumber: 48,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3027,11 +3033,39 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restraunt/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrauntMenuDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 41,
+                    lineNumber: 52,
                     columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "/clothesvilla",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Loadingggg......."
+                    }, void 0, false, void 0, void 0),
+                    children: [
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ClothesVilla, {}, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 59,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/app.js",
+                    lineNumber: 57,
+                    columnNumber: 11
                 }, undefined)
             }
         ]
+    },
+    {
+        path: "/login",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
+            fileName: "src/app.js",
+            lineNumber: 67,
+            columnNumber: 14
+        }, undefined)
     }
 ]);
 const root = (0, _clientDefault.default).createRoot(document.querySelector("#root"));
@@ -3039,18 +3073,19 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 48,
+    lineNumber: 72,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "AppLayout");
+var _c, _c1;
+$RefreshReg$(_c, "ClothesVilla");
+$RefreshReg$(_c1, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f79a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/header/Header":"3oj0W","./components/footer/Footer":"b54nx","./components/body/Body":"6PolU","./components/about/About":"jbBPJ","./components/error/error":"fRDDA","./components/contact/Contact":"a2AFh","./components/restraunt menu/RestrauntMenu":"7Vdsp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/header/Header":"3oj0W","./components/footer/Footer":"b54nx","./components/body/Body":"6PolU","./components/about/About":"jbBPJ","./components/error/error":"fRDDA","./components/contact/Contact":"a2AFh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Forms/Login":"fya3t","./components/restraunt menu/RestrauntMenu":"7Vdsp","3e1b5c88b546a54b":"1tGdI"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -33463,13 +33498,14 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _unnamedPng = require("../assets/img/unnamed.png");
-var _unnamedPngDefault = parcelHelpers.interopDefault(_unnamedPng);
+// import Logo from "../assets/img/unnamed.png";
 var _reactRouterDom = require("react-router-dom");
+var _useOnlineStatus = require("../../utils/useOnlineStatus");
+var _useOnlineStatusDefault = parcelHelpers.interopDefault(_useOnlineStatus);
 var _s = $RefreshSig$();
 function isLoggedIn() {
     // api call for authennticatin
-    return true;
+    return false;
 }
 const Header = ()=>{
     _s();
@@ -33477,28 +33513,55 @@ const Header = ()=>{
     function changeStatus() {
         setLoginStatus(!loginStatus);
     }
+    const onlineStatus = (0, _useOnlineStatusDefault.default)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "navbar",
+            className: "navbar  w-[100%] flex justify-between px-[5rem] py-[1rem] bg-[#4a5759]",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "logo",
+                    className: "logo text-white",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-3xl font-[700] ",
                         children: " Foodvilla"
                     }, void 0, false, {
                         fileName: "src/components/header/Header.js",
-                        lineNumber: 19,
+                        lineNumber: 21,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/header/Header.js",
-                    lineNumber: 18,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "items",
+                    className: "items ",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        className: "flex gap-[2rem] text-xl text-white",
                         children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/clothesvilla",
+                                    children: " ClothesVilla"
+                                }, void 0, false, {
+                                    fileName: "src/components/header/Header.js",
+                                    lineNumber: 27,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/header/Header.js",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: [
+                                    "Online Status : ",
+                                    onlineStatus ? "\uD83D\uDFE2" : "\uD83D\uDD34"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/header/Header.js",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: [
                                     " ",
@@ -33507,13 +33570,13 @@ const Header = ()=>{
                                         children: "Home"
                                     }, void 0, false, {
                                         fileName: "src/components/header/Header.js",
-                                        lineNumber: 26,
+                                        lineNumber: 32,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/header/Header.js",
-                                lineNumber: 24,
+                                lineNumber: 30,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -33522,12 +33585,12 @@ const Header = ()=>{
                                     children: "About"
                                 }, void 0, false, {
                                     fileName: "src/components/header/Header.js",
-                                    lineNumber: 29,
+                                    lineNumber: 35,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/header/Header.js",
-                                lineNumber: 28,
+                                lineNumber: 34,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -33536,60 +33599,77 @@ const Header = ()=>{
                                     children: "Contact"
                                 }, void 0, false, {
                                     fileName: "src/components/header/Header.js",
-                                    lineNumber: 32,
+                                    lineNumber: 38,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/header/Header.js",
-                                lineNumber: 31,
+                                lineNumber: 37,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: "Cart"
                             }, void 0, false, {
                                 fileName: "src/components/header/Header.js",
-                                lineNumber: 34,
+                                lineNumber: 40,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: loginStatus ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>{
+                                        changeStatus();
+                                    },
+                                    children: "Log Out"
+                                }, void 0, false, {
+                                    fileName: "src/components/header/Header.js",
+                                    lineNumber: 43,
+                                    columnNumber: 17
+                                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/login",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        onClick: ()=>{
+                                            changeStatus();
+                                        },
+                                        children: "Log In"
+                                    }, void 0, false, {
+                                        fileName: "src/components/header/Header.js",
+                                        lineNumber: 52,
+                                        columnNumber: 19
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/header/Header.js",
+                                    lineNumber: 51,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/header/Header.js",
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/header/Header.js",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/header/Header.js",
-                    lineNumber: 22,
+                    lineNumber: 24,
                     columnNumber: 9
-                }, undefined),
-                loginStatus ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        changeStatus();
-                    },
-                    children: "Log Out"
-                }, void 0, false, {
-                    fileName: "src/components/header/Header.js",
-                    lineNumber: 39,
-                    columnNumber: 11
-                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        changeStatus();
-                    },
-                    children: "Log In"
-                }, void 0, false, {
-                    fileName: "src/components/header/Header.js",
-                    lineNumber: 47,
-                    columnNumber: 11
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/header/Header.js",
-            lineNumber: 17,
+            lineNumber: 19,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
-_s(Header, "lcah9ZSkng2SRUN0cUn6K+iY4ik=");
+_s(Header, "c95JoDhJwl5dXw9BcA/OZYT0ahI=", false, function() {
+    return [
+        (0, _useOnlineStatusDefault.default)
+    ];
+});
 _c = Header;
 exports.default = Header;
 var _c;
@@ -33600,45 +33680,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/img/unnamed.png":"7RtUt","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7RtUt":[function(require,module,exports) {
-module.exports = require("5ea2e647473bae47").getBundleURL("lPpKD") + "unnamed.825464a8.png" + "?" + Date.now();
-
-},{"5ea2e647473bae47":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../utils/useOnlineStatus":"181Ji"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -33776,7 +33818,35 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"b54nx":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"181Ji":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a38f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a38f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useOnlineStatus = ()=>{
+    _s();
+    const [onlineStatus, setOnlineStatus] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        window.addEventListener("offline", ()=>setOnlineStatus(false));
+        window.addEventListener("online", ()=>setOnlineStatus(true));
+    }, []);
+    return onlineStatus;
+};
+_s(useOnlineStatus, "qDLN4CKTUyO1Uktrrx41NP8Q2H4=");
+exports.default = useOnlineStatus;
+
+  $parcel$ReactRefreshHelpers$a38f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b54nx":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$81c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33790,9 +33860,159 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Footer"
-        }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-full bg-[#4a5759] text-white capitalize flex flex-row px-[5rem] justify-evenly items-center",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "font-[800]",
+                            children: "FoodVilla"
+                        }, void 0, false, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 8,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "@ 2023 Bundi Technologies Pvt Ltd"
+                        }, void 0, false, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 9,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/footer/Footer.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "font-[800]",
+                            children: "Company"
+                        }, void 0, false, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "about"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 14,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "careers"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 15,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "team"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 16,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "clothesvilla"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 17,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "genie villat"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 18,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 13,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/footer/Footer.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "font-[800]",
+                            children: "Legal"
+                        }, void 0, false, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "privay policy"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 24,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Terms & Conditions"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 25,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Cookies Policy"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer/Footer.js",
+                                    lineNumber: 26,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "font-[800]",
+                            children: "Contact Us"
+                        }, void 0, false, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: "Kya karoge humse baat karke???"
+                            }, void 0, false, {
+                                fileName: "src/components/footer/Footer.js",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/footer/Footer.js",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/footer/Footer.js",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "src/components/footer/Footer.js",
             lineNumber: 6,
             columnNumber: 7
@@ -33822,27 +34042,22 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _resCard = require("../body/ResCard");
 var _resCardDefault = parcelHelpers.interopDefault(_resCard);
-var _config = require("../config");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _notFound = require("./NotFound");
 var _notFoundDefault = parcelHelpers.interopDefault(_notFound);
+var _helper = require("../../utils/helper");
+var _useOnlineStatus = require("../../utils/useOnlineStatus");
+var _useOnlineStatusDefault = parcelHelpers.interopDefault(_useOnlineStatus);
 var _s = $RefreshSig$();
-function filterData(searchText, restaurants) {
-    const filteredData = restaurants.filter((restaurant)=>{
-        return restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase());
-    // restraunts ke upar filter lagaya
-    //it will search in each restraunt(card) jokin yaha pr restraunt se represented hai
-    //we are returning only that restraunt card jiske info ke andar name ke andar include  ho searchText
-    // where searchText is the input provided by the user
-    });
-    return filteredData;
-}
 const Body = ()=>{
     _s();
     const [searchInput, setSearchInput] = (0, _react.useState)("");
     const [filteredRestraunts, setFilteredRestraunts] = (0, _react.useState)([]); //default value is --> (all the restraunts)
     const [allRestraunts, setAllRestraunts] = (0, _react.useState)([]);
+    console.log("all : " + allRestraunts);
+    console.log("fil : " + filteredRestraunts);
+    const WithPromotedLabell = (0, _resCard.WithPromotedLabel)((0, _resCardDefault.default));
     (0, _react.useEffect)(()=>{
         getRestraunt();
     }, []);
@@ -33852,21 +34067,31 @@ const Body = ()=>{
         // console.log(dataJSON);
         setAllRestraunts(dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestraunts(dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
-    //early rendering //
+    const onlineStatus = (0, _useOnlineStatusDefault.default)();
+    if (onlineStatus == false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Looks like you're offline...net check karo beyyy"
+        }, void 0, false, {
+            fileName: "src/components/body/Body.js",
+            lineNumber: 44,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false);
     return allRestraunts?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/body/Body.js",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "body",
+            className: "body flex  flex-col w-[full] pt-[1rem] bg-[#dedbd2] ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "search",
+                    className: "search px-[5rem] text-white",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            className: "search-inp",
+                            className: "search-inp px-[1rem] py-[.5rem] text-[1.5rem] w-[90%] text-black outline-none rounded-xl",
                             type: "text",
                             placeholder: "What're you craving for ???",
                             value: searchInput,
@@ -33877,67 +34102,87 @@ const Body = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "src/components/body/Body.js",
-                            lineNumber: 54,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "search-btn ",
+                            className: "search-btn h-full text-[1.5rem] font-[900] w-[10%] text-[#4a5759] bg-[#edafb8] px-[1rem] py-[.5rem] rounded-xl capitalize",
                             onClick: ()=>{
-                                // filter the data
-                                const data = filterData(searchInput, allRestraunts); //store the data returned by filterData //
+                                console.log("click hua");
+                                const data = (0, _helper.filterData)(searchInput, allRestraunts); //store the data returned by filterData //
                                 setFilteredRestraunts(data); //sets the new data
                             },
                             children: "search"
                         }, void 0, false, {
                             fileName: "src/components/body/Body.js",
-                            lineNumber: 66,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/body/Body.js",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "res",
+                    className: "res px-[5rem] grid grid-cols-4 gap-y-[1rem] py-[2rem] ",
                     children: filteredRestraunts.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notFoundDefault.default), {}, void 0, false, {
                             fileName: "src/components/body/Body.js",
-                            lineNumber: 80,
+                            lineNumber: 84,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false) : filteredRestraunts.map((card)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCardDefault.default), {
+                            children: card.info.id % 2 == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WithPromotedLabell, {
                                 id: card.info.id,
                                 cloudinaryImageId: card.info.cloudinaryImageId,
                                 name: card.info.name,
                                 avgRating: card.info.avgRating,
                                 slaString: card.info.sla.slaString,
                                 cuisines: card.info.cuisines.splice(0, 3).join(", "),
-                                location: card.info.locality
+                                location: card.info.locality,
+                                areaName: card.info.areaName,
+                                avaliable: card.info.isOpen
                             }, card.info.id, false, {
                                 fileName: "src/components/body/Body.js",
-                                lineNumber: 86,
-                                columnNumber: 19
+                                lineNumber: 91,
+                                columnNumber: 21
+                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCardDefault.default), {
+                                id: card.info.id,
+                                cloudinaryImageId: card.info.cloudinaryImageId,
+                                name: card.info.name,
+                                avgRating: card.info.avgRating,
+                                slaString: card.info.sla.slaString,
+                                cuisines: card.info.cuisines.splice(0, 3).join(", "),
+                                location: card.info.locality,
+                                areaName: card.info.areaName,
+                                avaliable: card.info.isOpen
+                            }, card.info.id, false, {
+                                fileName: "src/components/body/Body.js",
+                                lineNumber: 104,
+                                columnNumber: 21
                             }, undefined)
                         }, void 0, false);
                     })
                 }, void 0, false, {
                     fileName: "src/components/body/Body.js",
-                    lineNumber: 77,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/body/Body.js",
-            lineNumber: 52,
+            lineNumber: 53,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
-_s(Body, "9GWyqSdWhnYWw4a/ZdmUjuYhx5k=");
+_s(Body, "zLcF3ys+TtTYLL7wsXC/SMO1lhI=", false, function() {
+    return [
+        (0, _useOnlineStatusDefault.default)
+    ];
+});
 _c = Body;
 exports.default = Body;
 var _c;
@@ -33948,7 +34193,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../body/ResCard":"eV418","../config":"4T6KH","./Shimmer":"kCpUp","./NotFound":"ccZiZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eV418":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../body/ResCard":"eV418","./Shimmer":"kCpUp","./NotFound":"ccZiZ","../../utils/helper":"3GF3D","../../utils/useOnlineStatus":"181Ji","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eV418":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c87c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33957,84 +34202,164 @@ $parcel$ReactRefreshHelpers$c87c.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "WithPromotedLabel", ()=>WithPromotedLabel);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
 var _constants = require("../constants");
-const RestrauntCard = ({ cloudinaryImageId, id, name, avgRating, slaString, cuisines, location })=>{
+const RestrauntCard = ({ cloudinaryImageId, id, name, avgRating, slaString, cuisines, location, avaliable, areaName })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-card",
+        className: "res-card h-[22.5rem] w-[15rem] bg-[#b0c4b1] flex flex-col rounded-xl overflow-hidden ",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                alt: "card-img",
-                src: (0, _constants.IMG_CDN_LINK) + cloudinaryImageId
-            }, void 0, false, {
-                fileName: "src/components/body/ResCard.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: `/restraunt/${id}`,
-                className: "text-2xl font-[700] ",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: name
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-full  h-[50%] overflow-hidden ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    alt: "card-img",
+                    src: (0, _constants.IMG_CDN_LINK) + cloudinaryImageId,
+                    className: " h-full w-full rounded-xl  hover:scale-[1.2] duration-100 object-cover"
                 }, void 0, false, {
                     fileName: "src/components/body/ResCard.js",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/body/ResCard.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "px-[1rem] text-left whitespace-nowrap ",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: avgRating
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: `/restraunt/${id}`,
+                        className: "text-2xl font-[500] h-[75%] text-center",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                            children: name
+                        }, void 0, false)
                     }, void 0, false, {
                         fileName: "src/components/body/ResCard.js",
-                        lineNumber: 20,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, undefined),
-                    " star rating ",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: slaString
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "",
+                        children: [
+                            id,
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/body/ResCard.js",
+                                lineNumber: 33,
+                                columnNumber: 16
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "font-[700]",
+                                children: avgRating
+                            }, void 0, false, {
+                                fileName: "src/components/body/ResCard.js",
+                                lineNumber: 34,
+                                columnNumber: 11
+                            }, undefined),
+                            " star rating"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/body/ResCard.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: [
+                            location,
+                            " , ",
+                            areaName
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/body/ResCard.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: cuisines
                     }, void 0, false, {
                         fileName: "src/components/body/ResCard.js",
-                        lineNumber: 20,
-                        columnNumber: 46
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: [
+                            avaliable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: [
+                                    "Opened , ",
+                                    slaString
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/body/ResCard.js",
+                                lineNumber: 43,
+                                columnNumber: 13
+                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: [
+                                    "Closed, ",
+                                    slaString
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/body/ResCard.js",
+                                lineNumber: 45,
+                                columnNumber: 13
+                            }, undefined),
+                            " "
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/body/ResCard.js",
+                        lineNumber: 41,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body/ResCard.js",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: cuisines
-            }, void 0, false, {
-                fileName: "src/components/body/ResCard.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: location
-            }, void 0, false, {
-                fileName: "src/components/body/ResCard.js",
-                lineNumber: 23,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/body/ResCard.js",
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 5
     }, undefined);
 };
 _c = RestrauntCard;
+const WithPromotedLabel = (RestrauntCard)=>{
+    return (props)=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "relative",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        className: "absolute bg-gray-400 text-white z-[100]  px-5 rounded-md",
+                        children: "Even"
+                    }, void 0, false, {
+                        fileName: "src/components/body/ResCard.js",
+                        lineNumber: 59,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
+                        ...props
+                    }, void 0, false, {
+                        fileName: "src/components/body/ResCard.js",
+                        lineNumber: 62,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/body/ResCard.js",
+                lineNumber: 58,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false);
+    };
+};
+_c1 = WithPromotedLabel;
 exports.default = RestrauntCard;
-var _c;
+var _c, _c1;
 $RefreshReg$(_c, "RestrauntCard");
+$RefreshReg$(_c1, "WithPromotedLabel");
 
   $parcel$ReactRefreshHelpers$c87c.postlude(module);
 } finally {
@@ -34045,1641 +34370,11 @@ $RefreshReg$(_c, "RestrauntCard");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMG_CDN_LINK", ()=>IMG_CDN_LINK);
+parcelHelpers.export(exports, "DefaultUsername", ()=>DefaultUsername);
+parcelHelpers.export(exports, "DefaultPassword", ()=>DefaultPassword);
 const IMG_CDN_LINK = `https://media-assets.swiggy.com/swiggy/image/upload/`;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4T6KH":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "resData", ()=>resData);
-const resData = [
-    {
-        info: {
-            id: "32127",
-            name: "Burger King",
-            cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-            locality: "Karol Bagh",
-            areaName: "Karol Bagh",
-            costForTwo: "\u20B9350 for two",
-            cuisines: [
-                "Burgers",
-                "American"
-            ],
-            avgRating: 4.2,
-            feeDetails: {
-                restaurantId: "32127",
-                fees: [
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 6700
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 6700
-            },
-            parentId: "166",
-            avgRatingString: "4.2",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 26,
-                lastMileTravel: 5.5,
-                serviceability: "SERVICEABLE",
-                slaString: "26 mins",
-                lastMileTravelString: "5.5 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 03:45:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "EVERY ITEM",
-                subHeader: "@ \u20B9129"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/burger-king-karol-bagh-delhi-32127",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "38925",
-            name: "Domino's Pizza",
-            cloudinaryImageId: "mdl4tnyc8wbvysqxzhnq",
-            locality: "Netaji Subhash Marg",
-            areaName: "Daryaganj",
-            costForTwo: "\u20B9400 for two",
-            cuisines: [
-                "Pizzas",
-                "Italian",
-                "Pastas",
-                "Desserts"
-            ],
-            avgRating: 4,
-            feeDetails: {
-                restaurantId: "38925",
-                fees: [
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 4100
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 4100
-            },
-            parentId: "2456",
-            avgRatingString: "4.0",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 30,
-                serviceability: "SERVICEABLE",
-                slaString: "30 mins",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 01:55:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "20% OFF",
-                subHeader: "UPTO \u20B950"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/dominos-pizza-netaji-subhash-marg-daryaganj-delhi-38925",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "157583",
-            name: "La Pino'z Pizza",
-            cloudinaryImageId: "viw6nojxpa0urypajyoy",
-            locality: "Vijay Main Road",
-            areaName: "Laxmi Nagar",
-            costForTwo: "\u20B9350 for two",
-            cuisines: [
-                "Pizzas",
-                "Pastas",
-                "Italian",
-                "Desserts",
-                "Beverages"
-            ],
-            avgRating: 3.8,
-            feeDetails: {
-                restaurantId: "157583",
-                fees: [
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 7700
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 7700
-            },
-            parentId: "4961",
-            avgRatingString: "3.8",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 28,
-                lastMileTravel: 6.2,
-                serviceability: "SERVICEABLE",
-                slaString: "28 mins",
-                lastMileTravelString: "6.2 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 05:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO \u20B9120"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/la-pinoz-pizza-vijay-main-road-laxmi-nagar-delhi-157583",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "254131",
-            name: "McDonald's",
-            cloudinaryImageId: "6dc3ed2ca21d71acff7c2a51dfe4c720",
-            locality: "Gupta Road",
-            areaName: "Paharganj",
-            costForTwo: "\u20B9400 for two",
-            cuisines: [
-                "American"
-            ],
-            avgRating: 4.3,
-            feeDetails: {
-                restaurantId: "254131",
-                fees: [
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 4900
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 4900
-            },
-            parentId: "630",
-            avgRatingString: "4.3",
-            totalRatingsString: "5K+",
-            sla: {
-                deliveryTime: 22,
-                lastMileTravel: 3,
-                serviceability: "SERVICEABLE",
-                slaString: "22 mins",
-                lastMileTravelString: "3.0 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 00:50:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "10% OFF",
-                subHeader: "UPTO \u20B940"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/mcdonalds-gupta-road-paharganj-delhi-254131",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "435678",
-            name: "Pizza Hut",
-            cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
-            locality: "Western Extension Area",
-            areaName: "Karol Bagh",
-            costForTwo: "\u20B9350 for two",
-            cuisines: [
-                "Pizzas"
-            ],
-            avgRating: 3.8,
-            feeDetails: {
-                restaurantId: "435678",
-                fees: [
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 6700
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 6700
-            },
-            parentId: "721",
-            avgRatingString: "3.8",
-            totalRatingsString: "1K+",
-            sla: {
-                deliveryTime: 30,
-                lastMileTravel: 5.6,
-                serviceability: "SERVICEABLE",
-                slaString: "30 mins",
-                lastMileTravelString: "5.6 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 04:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/pizza-hut-western-extension-area-karol-bagh-delhi-435678",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "185160",
-            name: "KFC",
-            cloudinaryImageId: "56c9ab92bd79745fd152a30fa2525426",
-            locality: "Desh Bandhu Gupta Road",
-            areaName: "Paharganj",
-            costForTwo: "\u20B9400 for two",
-            cuisines: [
-                "Burgers",
-                "Biryani",
-                "American",
-                "Snacks",
-                "Fast Food"
-            ],
-            avgRating: 3.9,
-            feeDetails: {
-                restaurantId: "185160",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 5600
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 5600
-            },
-            parentId: "547",
-            avgRatingString: "3.9",
-            totalRatingsString: "5K+",
-            sla: {
-                deliveryTime: 21,
-                lastMileTravel: 3.5,
-                serviceability: "SERVICEABLE",
-                slaString: "21 mins",
-                lastMileTravelString: "3.5 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 05:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "40% OFF",
-                subHeader: "UPTO \u20B980"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/kfc-desh-bandhu-gupta-road-paharganj-delhi-185160",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "29315",
-            name: "Subway",
-            cloudinaryImageId: "1ace5fa65eff3e1223feb696c956b38b",
-            locality: "V3S Mall",
-            areaName: "Laxmi Nagar",
-            costForTwo: "\u20B9350 for two",
-            cuisines: [
-                "Salads",
-                "Snacks",
-                "Desserts",
-                "Beverages"
-            ],
-            avgRating: 4,
-            feeDetails: {
-                restaurantId: "29315",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 7700
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 7700
-            },
-            parentId: "2",
-            avgRatingString: "4.0",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 27,
-                lastMileTravel: 6.3,
-                serviceability: "SERVICEABLE",
-                slaString: "27 mins",
-                lastMileTravelString: "6.3 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 04:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/subway-v3s-mall-laxmi-nagar-delhi-29315",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "411287",
-            name: "The Belgian Waffle Co.",
-            cloudinaryImageId: "8cb220fa3997a3b928d2ffb6c098acaf",
-            locality: "F Block",
-            areaName: "Hudson Lane",
-            costForTwo: "\u20B9200 for two",
-            cuisines: [
-                "Waffle",
-                "Desserts",
-                "Ice Cream"
-            ],
-            avgRating: 4.2,
-            veg: true,
-            feeDetails: {
-                restaurantId: "411287",
-                fees: [
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 9700
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 9700
-            },
-            parentId: "2233",
-            avgRatingString: "4.2",
-            totalRatingsString: "1K+",
-            sla: {
-                deliveryTime: 36,
-                lastMileTravel: 9,
-                serviceability: "SERVICEABLE",
-                slaString: "36 mins",
-                lastMileTravelString: "9.0 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 03:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "20% OFF",
-                subHeader: "UPTO \u20B950"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/the-belgian-waffle-co-f-block-hudson-lane-delhi-411287",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "25823",
-            name: "Faasos - Wraps & Rolls",
-            cloudinaryImageId: "af33b81798b11deba338e94b7585d348",
-            locality: "Minto Road",
-            areaName: "Connaught Place",
-            costForTwo: "\u20B9200 for two",
-            cuisines: [
-                "Kebabs",
-                "Fast Food",
-                "Snacks",
-                "North Indian",
-                "American",
-                "Healthy Food",
-                "Desserts",
-                "Beverages"
-            ],
-            avgRating: 4.1,
-            feeDetails: {
-                restaurantId: "25823",
-                fees: [
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 4100
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 4100
-            },
-            parentId: "21809",
-            avgRatingString: "4.1",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 28,
-                lastMileTravel: 2,
-                serviceability: "SERVICEABLE",
-                slaString: "28 mins",
-                lastMileTravelString: "2.0 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 02:45:00",
-                opened: true
-            },
-            badges: {
-                textExtendedBadges: [
-                    {
-                        iconId: "guiltfree/GF_Logo_android_3x",
-                        shortDescription: "options available",
-                        fontColor: "#7E808C"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "",
-                                    fontColor: "#7E808C",
-                                    iconId: "guiltfree/GF_Logo_android_3x",
-                                    shortDescription: "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "\u20B9100 OFF",
-                subHeader: "ABOVE \u20B9249",
-                discountTag: "FLAT DEAL"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/faasos-wraps-and-rolls-minto-road-connaught-place-delhi-25823",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "8620",
-            name: "Biryani Blues",
-            cloudinaryImageId: "fyiito5fcwqiivggupdy",
-            locality: "N Block",
-            areaName: "Connaught Place",
-            costForTwo: "\u20B9400 for two",
-            cuisines: [
-                "Biryani",
-                "Hyderabadi",
-                "Lucknowi",
-                "Kebabs",
-                "Desserts",
-                "Beverages"
-            ],
-            avgRating: 4.3,
-            feeDetails: {
-                restaurantId: "8620",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 4600
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 4600
-            },
-            parentId: "13813",
-            avgRatingString: "4.3",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 27,
-                lastMileTravel: 2.9,
-                serviceability: "SERVICEABLE",
-                slaString: "27 mins",
-                lastMileTravelString: "2.9 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 02:45:00",
-                opened: true
-            },
-            badges: {
-                textExtendedBadges: [
-                    {
-                        iconId: "guiltfree/GF_Logo_android_3x",
-                        shortDescription: "options available",
-                        fontColor: "#7E808C"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "",
-                                    fontColor: "#7E808C",
-                                    iconId: "guiltfree/GF_Logo_android_3x",
-                                    shortDescription: "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "15% OFF",
-                subHeader: "ABOVE \u20B91000",
-                discountTag: "FLAT DEAL"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/biryani-blues-n-block-connaught-place-delhi-8620",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "16865",
-            name: "Pizza Hut",
-            cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
-            locality: "Near Tibetian Market",
-            areaName: "Connaught Place",
-            costForTwo: "\u20B9350 for two",
-            cuisines: [
-                "Pizzas"
-            ],
-            avgRating: 3.6,
-            feeDetails: {
-                restaurantId: "16865",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 3800
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 3800
-            },
-            parentId: "721",
-            avgRatingString: "3.6",
-            totalRatingsString: "1K+",
-            sla: {
-                deliveryTime: 28,
-                lastMileTravel: 2.7,
-                serviceability: "SERVICEABLE",
-                slaString: "28 mins",
-                lastMileTravelString: "2.7 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 23:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "50% OFF",
-                subHeader: "UPTO \u20B9100"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/pizza-hut-near-tibetian-market-connaught-place-delhi-16865",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "25823",
-            name: "Faasos - Wraps & Rolls",
-            cloudinaryImageId: "af33b81798b11deba338e94b7585d348",
-            locality: "Minto Road",
-            areaName: "Connaught Place",
-            costForTwo: "\u20B9200 for two",
-            cuisines: [
-                "Kebabs",
-                "Fast Food",
-                "Snacks",
-                "North Indian",
-                "American",
-                "Healthy Food",
-                "Desserts",
-                "Beverages"
-            ],
-            avgRating: 4.1,
-            feeDetails: {
-                restaurantId: "25823",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 3800
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 3800
-            },
-            parentId: "21809",
-            avgRatingString: "4.1",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 27,
-                lastMileTravel: 2,
-                serviceability: "SERVICEABLE",
-                slaString: "27 mins",
-                lastMileTravelString: "2.0 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 23:59:00",
-                opened: true
-            },
-            badges: {
-                textExtendedBadges: [
-                    {
-                        iconId: "guiltfree/GF_Logo_android_3x",
-                        shortDescription: "options available",
-                        fontColor: "#7E808C"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "",
-                                    fontColor: "#7E808C",
-                                    iconId: "guiltfree/GF_Logo_android_3x",
-                                    shortDescription: "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "\u20B9100 OFF",
-                subHeader: "ABOVE \u20B9249",
-                discountTag: "FLAT DEAL"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/faasos-wraps-and-rolls-minto-road-connaught-place-delhi-25823",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "443497",
-            name: "EatFit",
-            cloudinaryImageId: "6126c9b45de2cb222405c1af8a321e74",
-            locality: "Laxmi Narain Street",
-            areaName: "Paharganj",
-            costForTwo: "\u20B9270 for two",
-            cuisines: [
-                "Chinese",
-                "Healthy Food",
-                "Tandoor",
-                "Pizzas",
-                "North Indian",
-                "Thalis",
-                "Biryani"
-            ],
-            avgRating: 4.2,
-            feeDetails: {
-                restaurantId: "443497",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 5000
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 5000
-            },
-            parentId: "76139",
-            avgRatingString: "4.2",
-            totalRatingsString: "1K+",
-            sla: {
-                deliveryTime: 29,
-                lastMileTravel: 4,
-                serviceability: "SERVICEABLE",
-                slaString: "29 mins",
-                lastMileTravelString: "4.0 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 23:45:00",
-                opened: true
-            },
-            badges: {
-                textExtendedBadges: [
-                    {
-                        iconId: "guiltfree/GF_Logo_android_3x",
-                        shortDescription: "brand",
-                        fontColor: "#7E808C"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "",
-                                    fontColor: "#7E808C",
-                                    iconId: "guiltfree/GF_Logo_android_3x",
-                                    shortDescription: "brand"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO \u20B9120"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/eatfit-laxmi-narain-street-paharganj-delhi-443497",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "218676",
-            name: "Chai Point",
-            cloudinaryImageId: "dr5aflzisbsyi4ntu6th",
-            locality: "B Block",
-            areaName: "Connaught Place",
-            costForTwo: "\u20B9150 for two",
-            cuisines: [
-                "Bakery",
-                "Beverages",
-                "Maharashtrian",
-                "Snacks",
-                "Street Food",
-                "South Indian",
-                "Punjabi",
-                "Chaat",
-                "Indian",
-                "American",
-                "North Indian",
-                "Fast Food",
-                "Desserts",
-                "Cafe",
-                "Healthy Food",
-                "Home Food"
-            ],
-            avgRating: 4.2,
-            feeDetails: {
-                restaurantId: "218676",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 4400
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 4400
-            },
-            parentId: "1607",
-            avgRatingString: "4.2",
-            totalRatingsString: "5K+",
-            sla: {
-                deliveryTime: 28,
-                lastMileTravel: 3,
-                serviceability: "SERVICEABLE",
-                slaString: "28 mins",
-                lastMileTravelString: "3.0 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-21 02:45:00",
-                opened: true
-            },
-            badges: {
-                textExtendedBadges: [
-                    {
-                        iconId: "guiltfree/GF_Logo_android_3x",
-                        shortDescription: "options available",
-                        fontColor: "#7E808C"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "",
-                                    fontColor: "#7E808C",
-                                    iconId: "guiltfree/GF_Logo_android_3x",
-                                    shortDescription: "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "40% OFF",
-                subHeader: "UPTO \u20B980"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/chai-point-b-block-connaught-place-delhi-218676",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "69455",
-            name: "Starbucks Coffee",
-            cloudinaryImageId: "4df3497f1460dfd1ecd8125222f6d362",
-            locality: "Sector 4",
-            areaName: "Connaught Place",
-            costForTwo: "\u20B9400 for two",
-            cuisines: [
-                "Beverages",
-                "Cafe",
-                "Snacks",
-                "Desserts",
-                "Bakery",
-                "Ice Cream"
-            ],
-            avgRating: 4.3,
-            feeDetails: {
-                restaurantId: "69455",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 4500
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 4500
-            },
-            parentId: "195515",
-            avgRatingString: "4.3",
-            totalRatingsString: "1K+",
-            sla: {
-                deliveryTime: 24,
-                lastMileTravel: 2.9,
-                serviceability: "SERVICEABLE",
-                slaString: "24 mins",
-                lastMileTravelString: "2.9 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 23:59:00",
-                opened: true
-            },
-            badges: {
-                textExtendedBadges: [
-                    {
-                        iconId: "guiltfree/GF_Logo_android_3x",
-                        shortDescription: "options available",
-                        fontColor: "#7E808C"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "",
-                                    fontColor: "#7E808C",
-                                    iconId: "guiltfree/GF_Logo_android_3x",
-                                    shortDescription: "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "40% OFF",
-                subHeader: "UPTO \u20B980"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/starbucks-coffee-sector-4-connaught-place-delhi-69455",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "169835",
-            name: "NIC Ice Creams",
-            cloudinaryImageId: "c8b98c4064dc2fd6bdf350212e5f0bd5",
-            locality: "Beadon Pura",
-            areaName: "Karol Bagh",
-            costForTwo: "\u20B9120 for two",
-            cuisines: [
-                "Ice Cream",
-                "Desserts"
-            ],
-            avgRating: 4.5,
-            veg: true,
-            feeDetails: {
-                restaurantId: "169835",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 5600
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 5600
-            },
-            parentId: "6249",
-            avgRatingString: "4.5",
-            totalRatingsString: "5K+",
-            sla: {
-                deliveryTime: 30,
-                lastMileTravel: 5.5,
-                serviceability: "SERVICEABLE",
-                slaString: "30 mins",
-                lastMileTravelString: "5.5 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-21 00:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "50% OFF",
-                subHeader: "UPTO \u20B9100"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/nic-ice-creams-beadon-pura-karol-bagh-delhi-169835",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "40414",
-            name: "Bikanervala",
-            cloudinaryImageId: "k1ppyflw5ypymt3rayid",
-            locality: "Baba Kharak Singh Marg",
-            areaName: "Connaught Place",
-            costForTwo: "\u20B9300 for two",
-            cuisines: [
-                "North Indian",
-                "Snacks",
-                "Chaat",
-                "Sweets"
-            ],
-            avgRating: 4,
-            veg: true,
-            feeDetails: {
-                restaurantId: "40414",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 5100
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 5100
-            },
-            parentId: "45936",
-            avgRatingString: "4.0",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 31,
-                lastMileTravel: 3.8,
-                serviceability: "SERVICEABLE",
-                slaString: "31 mins",
-                lastMileTravelString: "3.8 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-20 22:00:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/bikanervala-baba-kharak-singh-marg-connaught-place-delhi-40414",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "19989",
-            name: "Dunkin' - Donuts & Coffee",
-            cloudinaryImageId: "bdc68784a5c92e2396ebcac46b362328",
-            locality: "K G Marg",
-            areaName: "Barakhamba Road",
-            costForTwo: "\u20B9250 for two",
-            cuisines: [
-                "Desserts",
-                "Cafe",
-                "Bakery",
-                "Beverages",
-                "Fast Food"
-            ],
-            avgRating: 4.4,
-            feeDetails: {
-                restaurantId: "19989",
-                fees: [
-                    {
-                        name: "BASE_DISTANCE",
-                        fee: 4300
-                    },
-                    {
-                        name: "BASE_TIME"
-                    },
-                    {
-                        name: "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                totalFee: 4300
-            },
-            parentId: "2276",
-            avgRatingString: "4.4",
-            totalRatingsString: "10K+",
-            sla: {
-                deliveryTime: 23,
-                lastMileTravel: 2.3,
-                serviceability: "SERVICEABLE",
-                slaString: "23 mins",
-                lastMileTravelString: "2.3 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2023-10-21 01:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "35% OFF",
-                discountTag: "FLAT DEAL"
-            },
-            loyaltyDiscoverPresentationInfo: {
-                badgeType: "BADGE_TYPE_OFFER_PACK",
-                offerSubText: "with offer pack",
-                nonSwiggyOneFreedelMessage: "FREE DELIVERY"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {}
-        },
-        analytics: {},
-        cta: {
-            link: "https://www.swiggy.com/restaurants/dunkin-donuts-and-coffee-k-g-marg-barakhamba-road-delhi-19989",
-            type: "WEBLINK"
-        }
-    }
-];
+const DefaultUsername = "raj";
+const DefaultPassword = "1";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kCpUp":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ef84 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -35698,13 +34393,13 @@ var _resCardDefault = parcelHelpers.interopDefault(_resCard);
 function Shimmer() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "body",
+            className: "body flex  flex-col w-[full] pt-[1rem] bg-[#dedbd2] ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "search",
+                    className: "search px-[5rem] text-white",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            className: "search-inp",
+                            className: "search-inp px-[1rem] py-[.5rem] text-[1.5rem] w-[90%] text-black outline-none rounded-xl",
                             type: "text",
                             placeholder: "What're you craving for ???"
                         }, void 0, false, {
@@ -35713,7 +34408,7 @@ function Shimmer() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "search-btn ",
+                            className: "search-btn h-full text-[1.5rem] font-[900] w-[10%] text-[#4a5759] bg-[#edafb8] px-[1rem] py-[.5rem] rounded-xl capitalize",
                             children: "search"
                         }, void 0, false, {
                             fileName: "src/components/body/Shimmer.js",
@@ -35727,23 +34422,23 @@ function Shimmer() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "res",
+                    className: "res px-[5rem] grid grid-cols-4 gap-y-[1rem] py-[2rem] ",
                     children: Array(8).fill("").map((e, index)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "res-card ",
+                                    className: "res-card h-[22.5rem] w-[15rem] bg-[#b0c4b1] flex flex-col rounded-xl overflow-hidden ",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                         className: "shimmer-img"
                                     }, void 0, false, {
                                         fileName: "src/components/body/Shimmer.js",
-                                        lineNumber: 25,
+                                        lineNumber: 30,
                                         columnNumber: 21
                                     }, this)
                                 }, index, false, {
                                     fileName: "src/components/body/Shimmer.js",
-                                    lineNumber: 24,
+                                    lineNumber: 26,
                                     columnNumber: 19
                                 }, this)
                             ]
@@ -35751,7 +34446,7 @@ function Shimmer() {
                     })
                 }, void 0, false, {
                     fileName: "src/components/body/Shimmer.js",
-                    lineNumber: 17,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this)
             ]
@@ -35812,7 +34507,22 @@ $RefreshReg$(_c, "NotFound");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jbBPJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3GF3D":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "filterData", ()=>filterData);
+function filterData(searchText, restaurants) {
+    const filteredData = restaurants.filter((restaurant)=>{
+        return restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase());
+    // restraunts ke upar filter lagaya
+    //it will search in each restraunt(card) jokin yaha pr restraunt se represented hai
+    //we are returning only that restraunt card jiske info ke andar name ke andar include  ho searchText
+    // where searchText is the input provided by the user
+    });
+    return filteredData;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jbBPJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8e23 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35822,46 +34532,248 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: " px-[5rem]  bg-blue-900 flex flex-col gap-11 py-[5rem] text-center",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: "text-9xl  ",
-                    children: "About Us Page"
-                }, void 0, false, {
-                    fileName: "src/components/about/About.js",
-                    lineNumber: 5,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: "text-4xl",
-                    children: "Kya Karoge hamare baare jaankar ?"
-                }, void 0, false, {
-                    fileName: "src/components/about/About.js",
-                    lineNumber: 6,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/about/About.js",
-            lineNumber: 4,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
-};
-_c = About;
-exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
+var _reactRouterDom = require("react-router-dom");
+var _profile = require("../about/Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _profileClass = require("../about/ProfileClass");
+var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// const About = () => {
+//   return (
+//     <>
+//
+//     </>
+//   );
+// };
+class About extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+    // console.log("Parent : Constructor");
+    }
+    componentDidMount() {
+    // console.log("Parent : componentDidMount");
+    }
+    render() {
+        // console.log("Parent : Render");
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: " px-[5rem]  bg-[#f7e1d7]  py-[2rem] flex flex-row h-[80vh] justify-between items-center",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex  flex-col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-4xl",
+                                children: "About Us Page"
+                            }, void 0, false, {
+                                fileName: "src/components/about/About.js",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "text-2xl",
+                                children: "Kya Karoge hamare baare jaankar ?"
+                            }, void 0, false, {
+                                fileName: "src/components/about/About.js",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/about/About.js",
+                        lineNumber: 28,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                        name: "child1"
+                    }, void 0, false, {
+                        fileName: "src/components/about/About.js",
+                        lineNumber: 33,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/about/About.js",
+                lineNumber: 27,
+                columnNumber: 9
+            }, this)
+        }, void 0, false);
+    }
+}
+exports.default = About; /**
+ * Parent Constructor
+ * Parent Render
+ *    Child Constructor
+ *    Child Render
+ *
+ *    Child ComponentDidMount
+ *        API Call
+ *        log Json
+ *        log Child COmponentDidMount
+ *
+ * Parent ComponentDidMount
+ *
+ *
+ **/ 
 
   $parcel$ReactRefreshHelpers$8e23.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fRDDA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","../about/Profile":"2elAM","../about/ProfileClass":"5wnJb","react":"21dqq"}],"2elAM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$20ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$20ca.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Profile = (props)=>{
+    _s();
+    let [count, setCount] = (0, _react.useState)(0);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-4xl font-bold",
+                children: [
+                    "Profile Functional Component ",
+                    props.name,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/about/Profile.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: [
+                    "count : ",
+                    count
+                ]
+            }, void 0, true, {
+                fileName: "src/components/about/Profile.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setCount(100),
+                children: "Update Count"
+            }, void 0, false, {
+                fileName: "src/components/about/Profile.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(Profile, "oDgYfYHkD9Wkv4hrAPCkI/ev3YU=");
+_c = Profile;
+exports.default = Profile;
+var _c;
+$RefreshReg$(_c, "Profile");
+
+  $parcel$ReactRefreshHelpers$20ca.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5wnJb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$caa7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$caa7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class ProfileClass extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            userInfo: {}
+        };
+        console.log(`${this.props.name} : constructor`);
+    }
+    async componentDidMount() {
+        const data = await fetch(`https://api.github.com/users/armaan-yadav`);
+        const json = await data.json();
+        this.setState({
+            userInfo: json
+        });
+        console.log(json);
+        console.log(`${this.props.name} : componentDidMount`);
+    }
+    componentDidUpdate() {
+        console.log("componentDidUpdate");
+    }
+    render() {
+        let { count } = this.state;
+        console.log(`${this.props.name} : render`);
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex  flex-col",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold",
+                    children: "GitHub "
+                }, void 0, false, {
+                    fileName: "src/components/about/ProfileClass.js",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: this.state.userInfo.avatar_url,
+                    className: " w-[10rem] text-center"
+                }, void 0, false, {
+                    fileName: "src/components/about/ProfileClass.js",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: this.state.userInfo.name
+                }, void 0, false, {
+                    fileName: "src/components/about/ProfileClass.js",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: this.state.userInfo.login
+                }, void 0, false, {
+                    fileName: "src/components/about/ProfileClass.js",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: this.state.userInfo.bio
+                }, void 0, false, {
+                    fileName: "src/components/about/ProfileClass.js",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/about/ProfileClass.js",
+            lineNumber: 27,
+            columnNumber: 7
+        }, this);
+    }
+}
+exports.default = ProfileClass;
+
+  $parcel$ReactRefreshHelpers$caa7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fRDDA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f42f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35932,31 +34844,20 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _contactUsForm = require("../Forms/ContactUsForm");
+var _contactUsFormDefault = parcelHelpers.interopDefault(_contactUsForm);
 const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "px-[5rem]  bg-gray-600 flex flex-col gap-11 py-[5rem] text-center ",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: "text-9xl ",
-                    children: "Contact Us Page"
-                }, void 0, false, {
-                    fileName: "src/components/contact/Contact.js",
-                    lineNumber: 5,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: "text-4xl",
-                    children: "Contact Karoge hume ? "
-                }, void 0, false, {
-                    fileName: "src/components/contact/Contact.js",
-                    lineNumber: 6,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
+            className: "px-[5rem]  bg-[#f7e1d7] h-[90vh]  flex  items-center overflow-hidden  ",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsFormDefault.default), {}, void 0, false, {
+                fileName: "src/components/contact/Contact.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/components/contact/Contact.js",
-            lineNumber: 4,
+            lineNumber: 5,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
@@ -35971,7 +34872,5396 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Vdsp":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Forms/ContactUsForm":"lNJJV"}],"lNJJV":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c818 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c818.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _formik = require("formik");
+var _react = require("react");
+var _s = $RefreshSig$();
+const ContactUsForm = ()=>{
+    _s();
+    const validate = (values)=>{
+        const errors = {};
+        if (!values.firstName) errors.firstName = "Required";
+        if (!values.message) errors.message = "Required";
+        return errors;
+    };
+    const [email, setEmail] = (0, _react.useState)("");
+    const formik = (0, _formik.useFormik)({
+        initialValues: {
+            firstName: "",
+            lastName: "",
+            message: ""
+        },
+        validate,
+        onSubmit: (values)=>{
+            alert(JSON.stringify(values, null, 2));
+        }
+    });
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "mx-auto max-w-7xl px-4 ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "mx-auto max-w-7xl  md:py-24",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                class: "flex items-center justify-center",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: "px-2 md:px-12",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            class: "text-2xl font-bold text-gray-900 md:text-4xl",
+                                            children: "Get in touch"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                            lineNumber: 36,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            class: "mt-4 text-lg text-gray-600",
+                                            children: "Our friendly team would love to hear from you."
+                                        }, void 0, false, {
+                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                            lineNumber: 39,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                            action: "",
+                                            class: "mt-8 space-y-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    class: "grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            class: "grid w-full  items-center gap-1.5",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                                    class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                                    for: "first_name",
+                                                                    children: "First Name"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                                    lineNumber: 45,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                    class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                                    type: "text",
+                                                                    id: "first_name",
+                                                                    placeholder: "First Name"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                                    lineNumber: 51,
+                                                                    columnNumber: 25
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 44,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            class: "grid w-full  items-center gap-1.5",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                                    class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                                    for: "last_name",
+                                                                    children: "Last Name"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                                    lineNumber: 59,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                    class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                                    type: "text",
+                                                                    id: "last_name",
+                                                                    placeholder: "Last Name"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                                    lineNumber: 65,
+                                                                    columnNumber: 25
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 58,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                    lineNumber: 43,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    class: "grid w-full  items-center gap-1.5",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                            class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                            for: "email",
+                                                            children: "Email"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 74,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                            class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                            type: "text",
+                                                            id: "email",
+                                                            placeholder: "Email"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 80,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                    lineNumber: 73,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    class: "grid w-full  items-center gap-1.5",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                            class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                            for: "phone_number",
+                                                            children: "Phone number"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 88,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                            class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                            type: "tel",
+                                                            id: "phone_number",
+                                                            placeholder: "Phone number"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 94,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                    lineNumber: 87,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    class: "grid w-full  items-center gap-1.5",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                            class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                            for: "message",
+                                                            children: "Message"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 102,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                                            class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                            id: "message",
+                                                            placeholder: "Leave us a message",
+                                                            cols: "3"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                                            lineNumber: 108,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                    lineNumber: 101,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    type: "button",
+                                                    class: "w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black",
+                                                    children: "Send Message"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                                    lineNumber: 115,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Forms/ContactUsForm.js",
+                                            lineNumber: 42,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Forms/ContactUsForm.js",
+                                    lineNumber: 35,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Forms/ContactUsForm.js",
+                                lineNumber: 34,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                alt: "Contact us",
+                                class: "hidden  rounded-lg object-cover lg:block",
+                                src: "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhhcHB5JTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                            }, void 0, false, {
+                                fileName: "src/components/Forms/ContactUsForm.js",
+                                lineNumber: 124,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Forms/ContactUsForm.js",
+                        lineNumber: 33,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Forms/ContactUsForm.js",
+                    lineNumber: 32,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Forms/ContactUsForm.js",
+                lineNumber: 31,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Forms/ContactUsForm.js",
+            lineNumber: 30,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_s(ContactUsForm, "KvSvtANfkyOHyYMh2cyMS03eBtM=", false, function() {
+    return [
+        (0, _formik.useFormik)
+    ];
+});
+_c = ContactUsForm;
+exports.default = ContactUsForm;
+var _c;
+$RefreshReg$(_c, "ContactUsForm");
+
+  $parcel$ReactRefreshHelpers$c818.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","formik":"aefoQ","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aefoQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ErrorMessage", ()=>ErrorMessage);
+parcelHelpers.export(exports, "FastField", ()=>FastField);
+parcelHelpers.export(exports, "Field", ()=>Field);
+parcelHelpers.export(exports, "FieldArray", ()=>FieldArray);
+parcelHelpers.export(exports, "Form", ()=>Form);
+parcelHelpers.export(exports, "Formik", ()=>Formik);
+parcelHelpers.export(exports, "FormikConsumer", ()=>FormikConsumer);
+parcelHelpers.export(exports, "FormikContext", ()=>FormikContext);
+parcelHelpers.export(exports, "FormikProvider", ()=>FormikProvider);
+parcelHelpers.export(exports, "connect", ()=>connect);
+parcelHelpers.export(exports, "getActiveElement", ()=>getActiveElement);
+parcelHelpers.export(exports, "getIn", ()=>getIn);
+parcelHelpers.export(exports, "insert", ()=>insert);
+parcelHelpers.export(exports, "isEmptyArray", ()=>isEmptyArray);
+parcelHelpers.export(exports, "isEmptyChildren", ()=>isEmptyChildren);
+parcelHelpers.export(exports, "isFunction", ()=>isFunction);
+parcelHelpers.export(exports, "isInputEvent", ()=>isInputEvent);
+parcelHelpers.export(exports, "isInteger", ()=>isInteger);
+parcelHelpers.export(exports, "isNaN", ()=>isNaN$1);
+parcelHelpers.export(exports, "isObject", ()=>isObject);
+parcelHelpers.export(exports, "isPromise", ()=>isPromise);
+parcelHelpers.export(exports, "isString", ()=>isString);
+parcelHelpers.export(exports, "move", ()=>move);
+parcelHelpers.export(exports, "prepareDataForValidation", ()=>prepareDataForValidation);
+parcelHelpers.export(exports, "replace", ()=>replace);
+parcelHelpers.export(exports, "setIn", ()=>setIn);
+parcelHelpers.export(exports, "setNestedObjectValues", ()=>setNestedObjectValues);
+parcelHelpers.export(exports, "swap", ()=>swap);
+parcelHelpers.export(exports, "useField", ()=>useField);
+parcelHelpers.export(exports, "useFormik", ()=>useFormik);
+parcelHelpers.export(exports, "useFormikContext", ()=>useFormikContext);
+parcelHelpers.export(exports, "validateYupSchema", ()=>validateYupSchema);
+parcelHelpers.export(exports, "withFormik", ()=>withFormik);
+parcelHelpers.export(exports, "yupToFormErrors", ()=>yupToFormErrors);
+var _deepmerge = require("deepmerge");
+var _deepmergeDefault = parcelHelpers.interopDefault(_deepmerge);
+var _isPlainObject = require("lodash-es/isPlainObject");
+var _isPlainObjectDefault = parcelHelpers.interopDefault(_isPlainObject);
+var _react = require("react");
+var _reactFastCompare = require("react-fast-compare");
+var _reactFastCompareDefault = parcelHelpers.interopDefault(_reactFastCompare);
+var _tinyWarning = require("tiny-warning");
+var _tinyWarningDefault = parcelHelpers.interopDefault(_tinyWarning);
+var _clone = require("lodash-es/clone");
+var _cloneDefault = parcelHelpers.interopDefault(_clone);
+var _toPath = require("lodash-es/toPath");
+var _toPathDefault = parcelHelpers.interopDefault(_toPath);
+var _hoistNonReactStatics = require("hoist-non-react-statics");
+var _hoistNonReactStaticsDefault = parcelHelpers.interopDefault(_hoistNonReactStatics);
+var _cloneDeep = require("lodash-es/cloneDeep");
+var _cloneDeepDefault = parcelHelpers.interopDefault(_cloneDeep);
+function _extends() {
+    _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function _inheritsLoose(subClass, superClass) {
+    subClass.prototype = Object.create(superClass.prototype);
+    subClass.prototype.constructor = subClass;
+    subClass.__proto__ = superClass;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+var FormikContext = /*#__PURE__*/ (0, _react.createContext)(undefined);
+FormikContext.displayName = "FormikContext";
+var FormikProvider = FormikContext.Provider;
+var FormikConsumer = FormikContext.Consumer;
+function useFormikContext() {
+    var formik = (0, _react.useContext)(FormikContext);
+    !!!formik && (0, _tinyWarningDefault.default)(false, "Formik context is undefined, please verify you are calling useFormikContext() as child of a <Formik> component.");
+    return formik;
+}
+/** @private is the value an empty array? */ var isEmptyArray = function isEmptyArray(value) {
+    return Array.isArray(value) && value.length === 0;
+};
+/** @private is the given object a Function? */ var isFunction = function isFunction(obj) {
+    return typeof obj === "function";
+};
+/** @private is the given object an Object? */ var isObject = function isObject(obj) {
+    return obj !== null && typeof obj === "object";
+};
+/** @private is the given object an integer? */ var isInteger = function isInteger(obj) {
+    return String(Math.floor(Number(obj))) === obj;
+};
+/** @private is the given object a string? */ var isString = function isString(obj) {
+    return Object.prototype.toString.call(obj) === "[object String]";
+};
+/** @private is the given object a NaN? */ // eslint-disable-next-line no-self-compare
+var isNaN$1 = function isNaN1(obj) {
+    return obj !== obj;
+};
+/** @private Does a React component have exactly 0 children? */ var isEmptyChildren = function isEmptyChildren(children) {
+    return (0, _react.Children).count(children) === 0;
+};
+/** @private is the given object/value a promise? */ var isPromise = function isPromise(value) {
+    return isObject(value) && isFunction(value.then);
+};
+/** @private is the given object/value a type of synthetic event? */ var isInputEvent = function isInputEvent(value) {
+    return value && isObject(value) && isObject(value.target);
+};
+/**
+ * Same as document.activeElement but wraps in a try-catch block. In IE it is
+ * not safe to call document.activeElement if there is nothing focused.
+ *
+ * The activeElement will be null only if the document or document body is not
+ * yet defined.
+ *
+ * @param {?Document} doc Defaults to current document.
+ * @return {Element | null}
+ * @see https://github.com/facebook/fbjs/blob/master/packages/fbjs/src/core/dom/getActiveElement.js
+ */ function getActiveElement(doc) {
+    doc = doc || (typeof document !== "undefined" ? document : undefined);
+    if (typeof doc === "undefined") return null;
+    try {
+        return doc.activeElement || doc.body;
+    } catch (e) {
+        return doc.body;
+    }
+}
+/**
+ * Deeply get a value from an object via its path.
+ */ function getIn(obj, key, def, p) {
+    if (p === void 0) p = 0;
+    var path = (0, _toPathDefault.default)(key);
+    while(obj && p < path.length)obj = obj[path[p++]];
+     // check if path is not in the end
+    if (p !== path.length && !obj) return def;
+    return obj === undefined ? def : obj;
+}
+/**
+ * Deeply set a value from in object via it's path. If the value at `path`
+ * has changed, return a shallow copy of obj with `value` set at `path`.
+ * If `value` has not changed, return the original `obj`.
+ *
+ * Existing objects / arrays along `path` are also shallow copied. Sibling
+ * objects along path retain the same internal js reference. Since new
+ * objects / arrays are only created along `path`, we can test if anything
+ * changed in a nested structure by comparing the object's reference in
+ * the old and new object, similar to how russian doll cache invalidation
+ * works.
+ *
+ * In earlier versions of this function, which used cloneDeep, there were
+ * issues whereby settings a nested value would mutate the parent
+ * instead of creating a new object. `clone` avoids that bug making a
+ * shallow copy of the objects along the update path
+ * so no object is mutated in place.
+ *
+ * Before changing this function, please read through the following
+ * discussions.
+ *
+ * @see https://github.com/developit/linkstate
+ * @see https://github.com/jaredpalmer/formik/pull/123
+ */ function setIn(obj, path, value) {
+    var res = (0, _cloneDefault.default)(obj); // this keeps inheritance when obj is a class
+    var resVal = res;
+    var i = 0;
+    var pathArray = (0, _toPathDefault.default)(path);
+    for(; i < pathArray.length - 1; i++){
+        var currentPath = pathArray[i];
+        var currentObj = getIn(obj, pathArray.slice(0, i + 1));
+        if (currentObj && (isObject(currentObj) || Array.isArray(currentObj))) resVal = resVal[currentPath] = (0, _cloneDefault.default)(currentObj);
+        else {
+            var nextPath = pathArray[i + 1];
+            resVal = resVal[currentPath] = isInteger(nextPath) && Number(nextPath) >= 0 ? [] : {};
+        }
+    } // Return original object if new value is the same as current
+    if ((i === 0 ? obj : resVal)[pathArray[i]] === value) return obj;
+    if (value === undefined) delete resVal[pathArray[i]];
+    else resVal[pathArray[i]] = value;
+     // If the path array has a single element, the loop did not run.
+    // Deleting on `resVal` had no effect in this scenario, so we delete on the result instead.
+    if (i === 0 && value === undefined) delete res[pathArray[i]];
+    return res;
+}
+/**
+ * Recursively a set the same value for all keys and arrays nested object, cloning
+ * @param object
+ * @param value
+ * @param visited
+ * @param response
+ */ function setNestedObjectValues(object, value, visited, response) {
+    if (visited === void 0) visited = new WeakMap();
+    if (response === void 0) response = {};
+    for(var _i = 0, _Object$keys = Object.keys(object); _i < _Object$keys.length; _i++){
+        var k = _Object$keys[_i];
+        var val = object[k];
+        if (isObject(val)) {
+            if (!visited.get(val)) {
+                visited.set(val, true); // In order to keep array values consistent for both dot path  and
+                // bracket syntax, we need to check if this is an array so that
+                // this will output  { friends: [true] } and not { friends: { "0": true } }
+                response[k] = Array.isArray(val) ? [] : {};
+                setNestedObjectValues(val, value, visited, response[k]);
+            }
+        } else response[k] = value;
+    }
+    return response;
+}
+function formikReducer(state, msg) {
+    switch(msg.type){
+        case "SET_VALUES":
+            return _extends({}, state, {
+                values: msg.payload
+            });
+        case "SET_TOUCHED":
+            return _extends({}, state, {
+                touched: msg.payload
+            });
+        case "SET_ERRORS":
+            if ((0, _reactFastCompareDefault.default)(state.errors, msg.payload)) return state;
+            return _extends({}, state, {
+                errors: msg.payload
+            });
+        case "SET_STATUS":
+            return _extends({}, state, {
+                status: msg.payload
+            });
+        case "SET_ISSUBMITTING":
+            return _extends({}, state, {
+                isSubmitting: msg.payload
+            });
+        case "SET_ISVALIDATING":
+            return _extends({}, state, {
+                isValidating: msg.payload
+            });
+        case "SET_FIELD_VALUE":
+            return _extends({}, state, {
+                values: setIn(state.values, msg.payload.field, msg.payload.value)
+            });
+        case "SET_FIELD_TOUCHED":
+            return _extends({}, state, {
+                touched: setIn(state.touched, msg.payload.field, msg.payload.value)
+            });
+        case "SET_FIELD_ERROR":
+            return _extends({}, state, {
+                errors: setIn(state.errors, msg.payload.field, msg.payload.value)
+            });
+        case "RESET_FORM":
+            return _extends({}, state, msg.payload);
+        case "SET_FORMIK_STATE":
+            return msg.payload(state);
+        case "SUBMIT_ATTEMPT":
+            return _extends({}, state, {
+                touched: setNestedObjectValues(state.values, true),
+                isSubmitting: true,
+                submitCount: state.submitCount + 1
+            });
+        case "SUBMIT_FAILURE":
+            return _extends({}, state, {
+                isSubmitting: false
+            });
+        case "SUBMIT_SUCCESS":
+            return _extends({}, state, {
+                isSubmitting: false
+            });
+        default:
+            return state;
+    }
+} // Initial empty states // objects
+var emptyErrors = {};
+var emptyTouched = {};
+function useFormik(_ref) {
+    var _ref$validateOnChange = _ref.validateOnChange, validateOnChange = _ref$validateOnChange === void 0 ? true : _ref$validateOnChange, _ref$validateOnBlur = _ref.validateOnBlur, validateOnBlur = _ref$validateOnBlur === void 0 ? true : _ref$validateOnBlur, _ref$validateOnMount = _ref.validateOnMount, validateOnMount = _ref$validateOnMount === void 0 ? false : _ref$validateOnMount, isInitialValid = _ref.isInitialValid, _ref$enableReinitiali = _ref.enableReinitialize, enableReinitialize = _ref$enableReinitiali === void 0 ? false : _ref$enableReinitiali, onSubmit = _ref.onSubmit, rest = _objectWithoutPropertiesLoose(_ref, [
+        "validateOnChange",
+        "validateOnBlur",
+        "validateOnMount",
+        "isInitialValid",
+        "enableReinitialize",
+        "onSubmit"
+    ]);
+    var props = _extends({
+        validateOnChange: validateOnChange,
+        validateOnBlur: validateOnBlur,
+        validateOnMount: validateOnMount,
+        onSubmit: onSubmit
+    }, rest);
+    var initialValues = (0, _react.useRef)(props.initialValues);
+    var initialErrors = (0, _react.useRef)(props.initialErrors || emptyErrors);
+    var initialTouched = (0, _react.useRef)(props.initialTouched || emptyTouched);
+    var initialStatus = (0, _react.useRef)(props.initialStatus);
+    var isMounted = (0, _react.useRef)(false);
+    var fieldRegistry = (0, _react.useRef)({});
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    (0, _react.useEffect)(function() {
+        !(typeof isInitialValid === "undefined") && (0, _tinyWarningDefault.default)(false, "isInitialValid has been deprecated and will be removed in future versions of Formik. Please use initialErrors or validateOnMount instead."); // eslint-disable-next-line
+    }, []);
+    (0, _react.useEffect)(function() {
+        isMounted.current = true;
+        return function() {
+            isMounted.current = false;
+        };
+    }, []);
+    var _React$useState = (0, _react.useState)(0), setIteration = _React$useState[1];
+    var stateRef = (0, _react.useRef)({
+        values: props.initialValues,
+        errors: props.initialErrors || emptyErrors,
+        touched: props.initialTouched || emptyTouched,
+        status: props.initialStatus,
+        isSubmitting: false,
+        isValidating: false,
+        submitCount: 0
+    });
+    var state = stateRef.current;
+    var dispatch = (0, _react.useCallback)(function(action) {
+        var prev = stateRef.current;
+        stateRef.current = formikReducer(prev, action); // force rerender
+        if (prev !== stateRef.current) setIteration(function(x) {
+            return x + 1;
+        });
+    }, []);
+    var runValidateHandler = (0, _react.useCallback)(function(values, field) {
+        return new Promise(function(resolve, reject) {
+            var maybePromisedErrors = props.validate(values, field);
+            if (maybePromisedErrors == null) // use loose null check here on purpose
+            resolve(emptyErrors);
+            else if (isPromise(maybePromisedErrors)) maybePromisedErrors.then(function(errors) {
+                resolve(errors || emptyErrors);
+            }, function(actualException) {
+                console.warn("Warning: An unhandled error was caught during validation in <Formik validate />", actualException);
+                reject(actualException);
+            });
+            else resolve(maybePromisedErrors);
+        });
+    }, [
+        props.validate
+    ]);
+    /**
+   * Run validation against a Yup schema and optionally run a function if successful
+   */ var runValidationSchema = (0, _react.useCallback)(function(values, field) {
+        var validationSchema = props.validationSchema;
+        var schema = isFunction(validationSchema) ? validationSchema(field) : validationSchema;
+        var promise = field && schema.validateAt ? schema.validateAt(field, values) : validateYupSchema(values, schema);
+        return new Promise(function(resolve, reject) {
+            promise.then(function() {
+                resolve(emptyErrors);
+            }, function(err) {
+                // Yup will throw a validation error if validation fails. We catch those and
+                // resolve them into Formik errors. We can sniff if something is a Yup error
+                // by checking error.name.
+                // @see https://github.com/jquense/yup#validationerrorerrors-string--arraystring-value-any-path-string
+                if (err.name === "ValidationError") resolve(yupToFormErrors(err));
+                else {
+                    console.warn("Warning: An unhandled error was caught during validation in <Formik validationSchema />", err);
+                    reject(err);
+                }
+            });
+        });
+    }, [
+        props.validationSchema
+    ]);
+    var runSingleFieldLevelValidation = (0, _react.useCallback)(function(field, value) {
+        return new Promise(function(resolve) {
+            return resolve(fieldRegistry.current[field].validate(value));
+        });
+    }, []);
+    var runFieldLevelValidations = (0, _react.useCallback)(function(values) {
+        var fieldKeysWithValidation = Object.keys(fieldRegistry.current).filter(function(f) {
+            return isFunction(fieldRegistry.current[f].validate);
+        }); // Construct an array with all of the field validation functions
+        var fieldValidations = fieldKeysWithValidation.length > 0 ? fieldKeysWithValidation.map(function(f) {
+            return runSingleFieldLevelValidation(f, getIn(values, f));
+        }) : [
+            Promise.resolve("DO_NOT_DELETE_YOU_WILL_BE_FIRED")
+        ]; // use special case ;)
+        return Promise.all(fieldValidations).then(function(fieldErrorsList) {
+            return fieldErrorsList.reduce(function(prev, curr, index) {
+                if (curr === "DO_NOT_DELETE_YOU_WILL_BE_FIRED") return prev;
+                if (curr) prev = setIn(prev, fieldKeysWithValidation[index], curr);
+                return prev;
+            }, {});
+        });
+    }, [
+        runSingleFieldLevelValidation
+    ]); // Run all validations and return the result
+    var runAllValidations = (0, _react.useCallback)(function(values) {
+        return Promise.all([
+            runFieldLevelValidations(values),
+            props.validationSchema ? runValidationSchema(values) : {},
+            props.validate ? runValidateHandler(values) : {}
+        ]).then(function(_ref2) {
+            var fieldErrors = _ref2[0], schemaErrors = _ref2[1], validateErrors = _ref2[2];
+            var combinedErrors = (0, _deepmergeDefault.default).all([
+                fieldErrors,
+                schemaErrors,
+                validateErrors
+            ], {
+                arrayMerge: arrayMerge
+            });
+            return combinedErrors;
+        });
+    }, [
+        props.validate,
+        props.validationSchema,
+        runFieldLevelValidations,
+        runValidateHandler,
+        runValidationSchema
+    ]); // Run all validations methods and update state accordingly
+    var validateFormWithHighPriority = useEventCallback(function(values) {
+        if (values === void 0) values = state.values;
+        dispatch({
+            type: "SET_ISVALIDATING",
+            payload: true
+        });
+        return runAllValidations(values).then(function(combinedErrors) {
+            if (!!isMounted.current) {
+                dispatch({
+                    type: "SET_ISVALIDATING",
+                    payload: false
+                });
+                dispatch({
+                    type: "SET_ERRORS",
+                    payload: combinedErrors
+                });
+            }
+            return combinedErrors;
+        });
+    });
+    (0, _react.useEffect)(function() {
+        if (validateOnMount && isMounted.current === true && (0, _reactFastCompareDefault.default)(initialValues.current, props.initialValues)) validateFormWithHighPriority(initialValues.current);
+    }, [
+        validateOnMount,
+        validateFormWithHighPriority
+    ]);
+    var resetForm = (0, _react.useCallback)(function(nextState) {
+        var values = nextState && nextState.values ? nextState.values : initialValues.current;
+        var errors = nextState && nextState.errors ? nextState.errors : initialErrors.current ? initialErrors.current : props.initialErrors || {};
+        var touched = nextState && nextState.touched ? nextState.touched : initialTouched.current ? initialTouched.current : props.initialTouched || {};
+        var status = nextState && nextState.status ? nextState.status : initialStatus.current ? initialStatus.current : props.initialStatus;
+        initialValues.current = values;
+        initialErrors.current = errors;
+        initialTouched.current = touched;
+        initialStatus.current = status;
+        var dispatchFn = function dispatchFn() {
+            dispatch({
+                type: "RESET_FORM",
+                payload: {
+                    isSubmitting: !!nextState && !!nextState.isSubmitting,
+                    errors: errors,
+                    touched: touched,
+                    status: status,
+                    values: values,
+                    isValidating: !!nextState && !!nextState.isValidating,
+                    submitCount: !!nextState && !!nextState.submitCount && typeof nextState.submitCount === "number" ? nextState.submitCount : 0
+                }
+            });
+        };
+        if (props.onReset) {
+            var maybePromisedOnReset = props.onReset(state.values, imperativeMethods);
+            if (isPromise(maybePromisedOnReset)) maybePromisedOnReset.then(dispatchFn);
+            else dispatchFn();
+        } else dispatchFn();
+    }, [
+        props.initialErrors,
+        props.initialStatus,
+        props.initialTouched,
+        props.onReset
+    ]);
+    (0, _react.useEffect)(function() {
+        if (isMounted.current === true && !(0, _reactFastCompareDefault.default)(initialValues.current, props.initialValues)) {
+            if (enableReinitialize) {
+                initialValues.current = props.initialValues;
+                resetForm();
+                if (validateOnMount) validateFormWithHighPriority(initialValues.current);
+            }
+        }
+    }, [
+        enableReinitialize,
+        props.initialValues,
+        resetForm,
+        validateOnMount,
+        validateFormWithHighPriority
+    ]);
+    (0, _react.useEffect)(function() {
+        if (enableReinitialize && isMounted.current === true && !(0, _reactFastCompareDefault.default)(initialErrors.current, props.initialErrors)) {
+            initialErrors.current = props.initialErrors || emptyErrors;
+            dispatch({
+                type: "SET_ERRORS",
+                payload: props.initialErrors || emptyErrors
+            });
+        }
+    }, [
+        enableReinitialize,
+        props.initialErrors
+    ]);
+    (0, _react.useEffect)(function() {
+        if (enableReinitialize && isMounted.current === true && !(0, _reactFastCompareDefault.default)(initialTouched.current, props.initialTouched)) {
+            initialTouched.current = props.initialTouched || emptyTouched;
+            dispatch({
+                type: "SET_TOUCHED",
+                payload: props.initialTouched || emptyTouched
+            });
+        }
+    }, [
+        enableReinitialize,
+        props.initialTouched
+    ]);
+    (0, _react.useEffect)(function() {
+        if (enableReinitialize && isMounted.current === true && !(0, _reactFastCompareDefault.default)(initialStatus.current, props.initialStatus)) {
+            initialStatus.current = props.initialStatus;
+            dispatch({
+                type: "SET_STATUS",
+                payload: props.initialStatus
+            });
+        }
+    }, [
+        enableReinitialize,
+        props.initialStatus,
+        props.initialTouched
+    ]);
+    var validateField = useEventCallback(function(name) {
+        // This will efficiently validate a single field by avoiding state
+        // changes if the validation function is synchronous. It's different from
+        // what is called when using validateForm.
+        if (fieldRegistry.current[name] && isFunction(fieldRegistry.current[name].validate)) {
+            var value = getIn(state.values, name);
+            var maybePromise = fieldRegistry.current[name].validate(value);
+            if (isPromise(maybePromise)) {
+                // Only flip isValidating if the function is async.
+                dispatch({
+                    type: "SET_ISVALIDATING",
+                    payload: true
+                });
+                return maybePromise.then(function(x) {
+                    return x;
+                }).then(function(error) {
+                    dispatch({
+                        type: "SET_FIELD_ERROR",
+                        payload: {
+                            field: name,
+                            value: error
+                        }
+                    });
+                    dispatch({
+                        type: "SET_ISVALIDATING",
+                        payload: false
+                    });
+                });
+            } else {
+                dispatch({
+                    type: "SET_FIELD_ERROR",
+                    payload: {
+                        field: name,
+                        value: maybePromise
+                    }
+                });
+                return Promise.resolve(maybePromise);
+            }
+        } else if (props.validationSchema) {
+            dispatch({
+                type: "SET_ISVALIDATING",
+                payload: true
+            });
+            return runValidationSchema(state.values, name).then(function(x) {
+                return x;
+            }).then(function(error) {
+                dispatch({
+                    type: "SET_FIELD_ERROR",
+                    payload: {
+                        field: name,
+                        value: getIn(error, name)
+                    }
+                });
+                dispatch({
+                    type: "SET_ISVALIDATING",
+                    payload: false
+                });
+            });
+        }
+        return Promise.resolve();
+    });
+    var registerField = (0, _react.useCallback)(function(name, _ref3) {
+        var validate = _ref3.validate;
+        fieldRegistry.current[name] = {
+            validate: validate
+        };
+    }, []);
+    var unregisterField = (0, _react.useCallback)(function(name) {
+        delete fieldRegistry.current[name];
+    }, []);
+    var setTouched = useEventCallback(function(touched, shouldValidate) {
+        dispatch({
+            type: "SET_TOUCHED",
+            payload: touched
+        });
+        var willValidate = shouldValidate === undefined ? validateOnBlur : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(state.values) : Promise.resolve();
+    });
+    var setErrors = (0, _react.useCallback)(function(errors) {
+        dispatch({
+            type: "SET_ERRORS",
+            payload: errors
+        });
+    }, []);
+    var setValues = useEventCallback(function(values, shouldValidate) {
+        var resolvedValues = isFunction(values) ? values(state.values) : values;
+        dispatch({
+            type: "SET_VALUES",
+            payload: resolvedValues
+        });
+        var willValidate = shouldValidate === undefined ? validateOnChange : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(resolvedValues) : Promise.resolve();
+    });
+    var setFieldError = (0, _react.useCallback)(function(field, value) {
+        dispatch({
+            type: "SET_FIELD_ERROR",
+            payload: {
+                field: field,
+                value: value
+            }
+        });
+    }, []);
+    var setFieldValue = useEventCallback(function(field, value, shouldValidate) {
+        dispatch({
+            type: "SET_FIELD_VALUE",
+            payload: {
+                field: field,
+                value: value
+            }
+        });
+        var willValidate = shouldValidate === undefined ? validateOnChange : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(setIn(state.values, field, value)) : Promise.resolve();
+    });
+    var executeChange = (0, _react.useCallback)(function(eventOrTextValue, maybePath) {
+        // By default, assume that the first argument is a string. This allows us to use
+        // handleChange with React Native and React Native Web's onChangeText prop which
+        // provides just the value of the input.
+        var field = maybePath;
+        var val = eventOrTextValue;
+        var parsed; // If the first argument is not a string though, it has to be a synthetic React Event (or a fake one),
+        // so we handle like we would a normal HTML change event.
+        if (!isString(eventOrTextValue)) {
+            // If we can, persist the event
+            // @see https://reactjs.org/docs/events.html#event-pooling
+            if (eventOrTextValue.persist) eventOrTextValue.persist();
+            var target = eventOrTextValue.target ? eventOrTextValue.target : eventOrTextValue.currentTarget;
+            var type = target.type, name = target.name, id = target.id, value = target.value, checked = target.checked, outerHTML = target.outerHTML, options = target.options, multiple = target.multiple;
+            field = maybePath ? maybePath : name ? name : id;
+            if (!field && true) warnAboutMissingIdentifier({
+                htmlContent: outerHTML,
+                documentationAnchorLink: "handlechange-e-reactchangeeventany--void",
+                handlerName: "handleChange"
+            });
+            val = /number|range/.test(type) ? (parsed = parseFloat(value), isNaN(parsed) ? "" : parsed) : /checkbox/.test(type) // checkboxes
+             ? getValueForCheckbox(getIn(state.values, field), checked, value) : options && multiple // <select multiple>
+             ? getSelectedValues(options) : value;
+        }
+        if (field) // Set form fields by name
+        setFieldValue(field, val);
+    }, [
+        setFieldValue,
+        state.values
+    ]);
+    var handleChange = useEventCallback(function(eventOrPath) {
+        if (isString(eventOrPath)) return function(event) {
+            return executeChange(event, eventOrPath);
+        };
+        else executeChange(eventOrPath);
+    });
+    var setFieldTouched = useEventCallback(function(field, touched, shouldValidate) {
+        if (touched === void 0) touched = true;
+        dispatch({
+            type: "SET_FIELD_TOUCHED",
+            payload: {
+                field: field,
+                value: touched
+            }
+        });
+        var willValidate = shouldValidate === undefined ? validateOnBlur : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(state.values) : Promise.resolve();
+    });
+    var executeBlur = (0, _react.useCallback)(function(e, path) {
+        if (e.persist) e.persist();
+        var _e$target = e.target, name = _e$target.name, id = _e$target.id, outerHTML = _e$target.outerHTML;
+        var field = path ? path : name ? name : id;
+        if (!field && true) warnAboutMissingIdentifier({
+            htmlContent: outerHTML,
+            documentationAnchorLink: "handleblur-e-any--void",
+            handlerName: "handleBlur"
+        });
+        setFieldTouched(field, true);
+    }, [
+        setFieldTouched
+    ]);
+    var handleBlur = useEventCallback(function(eventOrString) {
+        if (isString(eventOrString)) return function(event) {
+            return executeBlur(event, eventOrString);
+        };
+        else executeBlur(eventOrString);
+    });
+    var setFormikState = (0, _react.useCallback)(function(stateOrCb) {
+        if (isFunction(stateOrCb)) dispatch({
+            type: "SET_FORMIK_STATE",
+            payload: stateOrCb
+        });
+        else dispatch({
+            type: "SET_FORMIK_STATE",
+            payload: function payload() {
+                return stateOrCb;
+            }
+        });
+    }, []);
+    var setStatus = (0, _react.useCallback)(function(status) {
+        dispatch({
+            type: "SET_STATUS",
+            payload: status
+        });
+    }, []);
+    var setSubmitting = (0, _react.useCallback)(function(isSubmitting) {
+        dispatch({
+            type: "SET_ISSUBMITTING",
+            payload: isSubmitting
+        });
+    }, []);
+    var submitForm = useEventCallback(function() {
+        dispatch({
+            type: "SUBMIT_ATTEMPT"
+        });
+        return validateFormWithHighPriority().then(function(combinedErrors) {
+            // In case an error was thrown and passed to the resolved Promise,
+            // `combinedErrors` can be an instance of an Error. We need to check
+            // that and abort the submit.
+            // If we don't do that, calling `Object.keys(new Error())` yields an
+            // empty array, which causes the validation to pass and the form
+            // to be submitted.
+            var isInstanceOfError = combinedErrors instanceof Error;
+            var isActuallyValid = !isInstanceOfError && Object.keys(combinedErrors).length === 0;
+            if (isActuallyValid) {
+                // Proceed with submit...
+                //
+                // To respect sync submit fns, we can't simply wrap executeSubmit in a promise and
+                // _always_ dispatch SUBMIT_SUCCESS because isSubmitting would then always be false.
+                // This would be fine in simple cases, but make it impossible to disable submit
+                // buttons where people use callbacks or promises as side effects (which is basically
+                // all of v1 Formik code). Instead, recall that we are inside of a promise chain already,
+                //  so we can try/catch executeSubmit(), if it returns undefined, then just bail.
+                // If there are errors, throw em. Otherwise, wrap executeSubmit in a promise and handle
+                // cleanup of isSubmitting on behalf of the consumer.
+                var promiseOrUndefined;
+                try {
+                    promiseOrUndefined = executeSubmit(); // Bail if it's sync, consumer is responsible for cleaning up
+                    // via setSubmitting(false)
+                    if (promiseOrUndefined === undefined) return;
+                } catch (error) {
+                    throw error;
+                }
+                return Promise.resolve(promiseOrUndefined).then(function(result) {
+                    if (!!isMounted.current) dispatch({
+                        type: "SUBMIT_SUCCESS"
+                    });
+                    return result;
+                })["catch"](function(_errors) {
+                    if (!!isMounted.current) {
+                        dispatch({
+                            type: "SUBMIT_FAILURE"
+                        }); // This is a legit error rejected by the onSubmit fn
+                        // so we don't want to break the promise chain
+                        throw _errors;
+                    }
+                });
+            } else if (!!isMounted.current) {
+                // ^^^ Make sure Formik is still mounted before updating state
+                dispatch({
+                    type: "SUBMIT_FAILURE"
+                }); // throw combinedErrors;
+                if (isInstanceOfError) throw combinedErrors;
+            }
+            return;
+        });
+    });
+    var handleSubmit = useEventCallback(function(e) {
+        if (e && e.preventDefault && isFunction(e.preventDefault)) e.preventDefault();
+        if (e && e.stopPropagation && isFunction(e.stopPropagation)) e.stopPropagation();
+         // Warn if form submission is triggered by a <button> without a
+        // specified `type` attribute during development. This mitigates
+        // a common gotcha in forms with both reset and submit buttons,
+        // where the dev forgets to add type="button" to the reset button.
+        if (typeof document !== "undefined") {
+            // Safely get the active element (works with IE)
+            var activeElement = getActiveElement();
+            if (activeElement !== null && activeElement instanceof HTMLButtonElement) !(activeElement.attributes && activeElement.attributes.getNamedItem("type")) && (0, _tinyWarningDefault.default)(false, 'You submitted a Formik form using a button with an unspecified `type` attribute.  Most browsers default button elements to `type="submit"`. If this is not a submit button, please add `type="button"`.');
+        }
+        submitForm()["catch"](function(reason) {
+            console.warn("Warning: An unhandled error was caught from submitForm()", reason);
+        });
+    });
+    var imperativeMethods = {
+        resetForm: resetForm,
+        validateForm: validateFormWithHighPriority,
+        validateField: validateField,
+        setErrors: setErrors,
+        setFieldError: setFieldError,
+        setFieldTouched: setFieldTouched,
+        setFieldValue: setFieldValue,
+        setStatus: setStatus,
+        setSubmitting: setSubmitting,
+        setTouched: setTouched,
+        setValues: setValues,
+        setFormikState: setFormikState,
+        submitForm: submitForm
+    };
+    var executeSubmit = useEventCallback(function() {
+        return onSubmit(state.values, imperativeMethods);
+    });
+    var handleReset = useEventCallback(function(e) {
+        if (e && e.preventDefault && isFunction(e.preventDefault)) e.preventDefault();
+        if (e && e.stopPropagation && isFunction(e.stopPropagation)) e.stopPropagation();
+        resetForm();
+    });
+    var getFieldMeta = (0, _react.useCallback)(function(name) {
+        return {
+            value: getIn(state.values, name),
+            error: getIn(state.errors, name),
+            touched: !!getIn(state.touched, name),
+            initialValue: getIn(initialValues.current, name),
+            initialTouched: !!getIn(initialTouched.current, name),
+            initialError: getIn(initialErrors.current, name)
+        };
+    }, [
+        state.errors,
+        state.touched,
+        state.values
+    ]);
+    var getFieldHelpers = (0, _react.useCallback)(function(name) {
+        return {
+            setValue: function setValue(value, shouldValidate) {
+                return setFieldValue(name, value, shouldValidate);
+            },
+            setTouched: function setTouched(value, shouldValidate) {
+                return setFieldTouched(name, value, shouldValidate);
+            },
+            setError: function setError(value) {
+                return setFieldError(name, value);
+            }
+        };
+    }, [
+        setFieldValue,
+        setFieldTouched,
+        setFieldError
+    ]);
+    var getFieldProps = (0, _react.useCallback)(function(nameOrOptions) {
+        var isAnObject = isObject(nameOrOptions);
+        var name = isAnObject ? nameOrOptions.name : nameOrOptions;
+        var valueState = getIn(state.values, name);
+        var field = {
+            name: name,
+            value: valueState,
+            onChange: handleChange,
+            onBlur: handleBlur
+        };
+        if (isAnObject) {
+            var type = nameOrOptions.type, valueProp = nameOrOptions.value, is = nameOrOptions.as, multiple = nameOrOptions.multiple;
+            if (type === "checkbox") {
+                if (valueProp === undefined) field.checked = !!valueState;
+                else {
+                    field.checked = !!(Array.isArray(valueState) && ~valueState.indexOf(valueProp));
+                    field.value = valueProp;
+                }
+            } else if (type === "radio") {
+                field.checked = valueState === valueProp;
+                field.value = valueProp;
+            } else if (is === "select" && multiple) {
+                field.value = field.value || [];
+                field.multiple = true;
+            }
+        }
+        return field;
+    }, [
+        handleBlur,
+        handleChange,
+        state.values
+    ]);
+    var dirty = (0, _react.useMemo)(function() {
+        return !(0, _reactFastCompareDefault.default)(initialValues.current, state.values);
+    }, [
+        initialValues.current,
+        state.values
+    ]);
+    var isValid = (0, _react.useMemo)(function() {
+        return typeof isInitialValid !== "undefined" ? dirty ? state.errors && Object.keys(state.errors).length === 0 : isInitialValid !== false && isFunction(isInitialValid) ? isInitialValid(props) : isInitialValid : state.errors && Object.keys(state.errors).length === 0;
+    }, [
+        isInitialValid,
+        dirty,
+        state.errors,
+        props
+    ]);
+    var ctx = _extends({}, state, {
+        initialValues: initialValues.current,
+        initialErrors: initialErrors.current,
+        initialTouched: initialTouched.current,
+        initialStatus: initialStatus.current,
+        handleBlur: handleBlur,
+        handleChange: handleChange,
+        handleReset: handleReset,
+        handleSubmit: handleSubmit,
+        resetForm: resetForm,
+        setErrors: setErrors,
+        setFormikState: setFormikState,
+        setFieldTouched: setFieldTouched,
+        setFieldValue: setFieldValue,
+        setFieldError: setFieldError,
+        setStatus: setStatus,
+        setSubmitting: setSubmitting,
+        setTouched: setTouched,
+        setValues: setValues,
+        submitForm: submitForm,
+        validateForm: validateFormWithHighPriority,
+        validateField: validateField,
+        isValid: isValid,
+        dirty: dirty,
+        unregisterField: unregisterField,
+        registerField: registerField,
+        getFieldProps: getFieldProps,
+        getFieldMeta: getFieldMeta,
+        getFieldHelpers: getFieldHelpers,
+        validateOnBlur: validateOnBlur,
+        validateOnChange: validateOnChange,
+        validateOnMount: validateOnMount
+    });
+    return ctx;
+}
+function Formik(props) {
+    var formikbag = useFormik(props);
+    var component = props.component, children = props.children, render = props.render, innerRef = props.innerRef; // This allows folks to pass a ref to <Formik />
+    (0, _react.useImperativeHandle)(innerRef, function() {
+        return formikbag;
+    });
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    (0, _react.useEffect)(function() {
+        !!props.render && (0, _tinyWarningDefault.default)(false, "<Formik render> has been deprecated and will be removed in future versions of Formik. Please use a child callback function instead. To get rid of this warning, replace <Formik render={(props) => ...} /> with <Formik>{(props) => ...}</Formik>"); // eslint-disable-next-line
+    }, []);
+    return (0, _react.createElement)(FormikProvider, {
+        value: formikbag
+    }, component ? (0, _react.createElement)(component, formikbag) : render ? render(formikbag) : children // children come last, always called
+     ? isFunction(children) ? children(formikbag) : !isEmptyChildren(children) ? (0, _react.Children).only(children) : null : null);
+}
+function warnAboutMissingIdentifier(_ref4) {
+    var htmlContent = _ref4.htmlContent, documentationAnchorLink = _ref4.documentationAnchorLink, handlerName = _ref4.handlerName;
+    console.warn("Warning: Formik called `" + handlerName + "`, but you forgot to pass an `id` or `name` attribute to your input:\n    " + htmlContent + "\n    Formik cannot determine which value to update. For more info see https://formik.org/docs/api/formik#" + documentationAnchorLink + "\n  ");
+}
+/**
+ * Transform Yup ValidationError to a more usable object
+ */ function yupToFormErrors(yupError) {
+    var errors = {};
+    if (yupError.inner) {
+        if (yupError.inner.length === 0) return setIn(errors, yupError.path, yupError.message);
+        for(var _iterator = yupError.inner, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;){
+            var _ref5;
+            if (_isArray) {
+                if (_i >= _iterator.length) break;
+                _ref5 = _iterator[_i++];
+            } else {
+                _i = _iterator.next();
+                if (_i.done) break;
+                _ref5 = _i.value;
+            }
+            var err = _ref5;
+            if (!getIn(errors, err.path)) errors = setIn(errors, err.path, err.message);
+        }
+    }
+    return errors;
+}
+/**
+ * Validate a yup schema.
+ */ function validateYupSchema(values, schema, sync, context) {
+    if (sync === void 0) sync = false;
+    var normalizedValues = prepareDataForValidation(values);
+    return schema[sync ? "validateSync" : "validate"](normalizedValues, {
+        abortEarly: false,
+        context: context || normalizedValues
+    });
+}
+/**
+ * Recursively prepare values.
+ */ function prepareDataForValidation(values) {
+    var data = Array.isArray(values) ? [] : {};
+    for(var k in values)if (Object.prototype.hasOwnProperty.call(values, k)) {
+        var key = String(k);
+        if (Array.isArray(values[key]) === true) data[key] = values[key].map(function(value) {
+            if (Array.isArray(value) === true || (0, _isPlainObjectDefault.default)(value)) return prepareDataForValidation(value);
+            else return value !== "" ? value : undefined;
+        });
+        else if ((0, _isPlainObjectDefault.default)(values[key])) data[key] = prepareDataForValidation(values[key]);
+        else data[key] = values[key] !== "" ? values[key] : undefined;
+    }
+    return data;
+}
+/**
+ * deepmerge array merging algorithm
+ * https://github.com/KyleAMathews/deepmerge#combine-array
+ */ function arrayMerge(target, source, options) {
+    var destination = target.slice();
+    source.forEach(function merge(e, i) {
+        if (typeof destination[i] === "undefined") {
+            var cloneRequested = options.clone !== false;
+            var shouldClone = cloneRequested && options.isMergeableObject(e);
+            destination[i] = shouldClone ? (0, _deepmergeDefault.default)(Array.isArray(e) ? [] : {}, e, options) : e;
+        } else if (options.isMergeableObject(e)) destination[i] = (0, _deepmergeDefault.default)(target[i], e, options);
+        else if (target.indexOf(e) === -1) destination.push(e);
+    });
+    return destination;
+}
+/** Return multi select values based on an array of options */ function getSelectedValues(options) {
+    return Array.from(options).filter(function(el) {
+        return el.selected;
+    }).map(function(el) {
+        return el.value;
+    });
+}
+/** Return the next value for a checkbox */ function getValueForCheckbox(currentValue, checked, valueProp) {
+    // If the current value was a boolean, return a boolean
+    if (typeof currentValue === "boolean") return Boolean(checked);
+     // If the currentValue was not a boolean we want to return an array
+    var currentArrayOfValues = [];
+    var isValueInArray = false;
+    var index = -1;
+    if (!Array.isArray(currentValue)) {
+        // eslint-disable-next-line eqeqeq
+        if (!valueProp || valueProp == "true" || valueProp == "false") return Boolean(checked);
+    } else {
+        // If the current value is already an array, use it
+        currentArrayOfValues = currentValue;
+        index = currentValue.indexOf(valueProp);
+        isValueInArray = index >= 0;
+    } // If the checkbox was checked and the value is not already present in the aray we want to add the new value to the array of values
+    if (checked && valueProp && !isValueInArray) return currentArrayOfValues.concat(valueProp);
+     // If the checkbox was unchecked and the value is not in the array, simply return the already existing array of values
+    if (!isValueInArray) return currentArrayOfValues;
+     // If the checkbox was unchecked and the value is in the array, remove the value and return the array
+    return currentArrayOfValues.slice(0, index).concat(currentArrayOfValues.slice(index + 1));
+} // React currently throws a warning when using useLayoutEffect on the server.
+// To get around it, we can conditionally useEffect on the server (no-op) and
+// useLayoutEffect in the browser.
+// @see https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85
+var useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? (0, _react.useLayoutEffect) : (0, _react.useEffect);
+function useEventCallback(fn) {
+    var ref = (0, _react.useRef)(fn); // we copy a ref to the callback scoped to the current state/props on each render
+    useIsomorphicLayoutEffect(function() {
+        ref.current = fn;
+    });
+    return (0, _react.useCallback)(function() {
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        return ref.current.apply(void 0, args);
+    }, []);
+}
+function useField(propsOrFieldName) {
+    var formik = useFormikContext();
+    var getFieldProps = formik.getFieldProps, getFieldMeta = formik.getFieldMeta, getFieldHelpers = formik.getFieldHelpers, registerField = formik.registerField, unregisterField = formik.unregisterField;
+    var isAnObject = isObject(propsOrFieldName); // Normalize propsOrFieldName to FieldHookConfig<Val>
+    var props = isAnObject ? propsOrFieldName : {
+        name: propsOrFieldName
+    };
+    var fieldName = props.name, validateFn = props.validate;
+    (0, _react.useEffect)(function() {
+        if (fieldName) registerField(fieldName, {
+            validate: validateFn
+        });
+        return function() {
+            if (fieldName) unregisterField(fieldName);
+        };
+    }, [
+        registerField,
+        unregisterField,
+        fieldName,
+        validateFn
+    ]);
+    !formik && (0, _tinyWarningDefault.default)(false, "useField() / <Field /> must be used underneath a <Formik> component or withFormik() higher order component");
+    !fieldName && (0, _tinyWarningDefault.default)(false, "Invalid field name. Either pass `useField` a string or an object containing a `name` key.");
+    var fieldHelpers = (0, _react.useMemo)(function() {
+        return getFieldHelpers(fieldName);
+    }, [
+        getFieldHelpers,
+        fieldName
+    ]);
+    return [
+        getFieldProps(props),
+        getFieldMeta(fieldName),
+        fieldHelpers
+    ];
+}
+function Field(_ref) {
+    var validate = _ref.validate, name = _ref.name, render = _ref.render, children = _ref.children, is = _ref.as, component = _ref.component, className = _ref.className, props = _objectWithoutPropertiesLoose(_ref, [
+        "validate",
+        "name",
+        "render",
+        "children",
+        "as",
+        "component",
+        "className"
+    ]);
+    var _useFormikContext = useFormikContext(), formik = _objectWithoutPropertiesLoose(_useFormikContext, [
+        "validate",
+        "validationSchema"
+    ]);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    (0, _react.useEffect)(function() {
+        !!render && (0, _tinyWarningDefault.default)(false, '<Field render> has been deprecated and will be removed in future versions of Formik. Please use a child callback function instead. To get rid of this warning, replace <Field name="' + name + '" render={({field, form}) => ...} /> with <Field name="' + name + '">{({field, form, meta}) => ...}</Field>');
+        !!(is && children && isFunction(children)) && (0, _tinyWarningDefault.default)(false, "You should not use <Field as> and <Field children> as a function in the same <Field> component; <Field as> will be ignored.");
+        !!(component && children && isFunction(children)) && (0, _tinyWarningDefault.default)(false, "You should not use <Field component> and <Field children> as a function in the same <Field> component; <Field component> will be ignored.");
+        !!(render && children && !isEmptyChildren(children)) && (0, _tinyWarningDefault.default)(false, "You should not use <Field render> and <Field children> in the same <Field> component; <Field children> will be ignored"); // eslint-disable-next-line
+    }, []);
+    var registerField = formik.registerField, unregisterField = formik.unregisterField;
+    (0, _react.useEffect)(function() {
+        registerField(name, {
+            validate: validate
+        });
+        return function() {
+            unregisterField(name);
+        };
+    }, [
+        registerField,
+        unregisterField,
+        name,
+        validate
+    ]);
+    var field = formik.getFieldProps(_extends({
+        name: name
+    }, props));
+    var meta = formik.getFieldMeta(name);
+    var legacyBag = {
+        field: field,
+        form: formik
+    };
+    if (render) return render(_extends({}, legacyBag, {
+        meta: meta
+    }));
+    if (isFunction(children)) return children(_extends({}, legacyBag, {
+        meta: meta
+    }));
+    if (component) {
+        // This behavior is backwards compat with earlier Formik 0.9 to 1.x
+        if (typeof component === "string") {
+            var innerRef = props.innerRef, rest = _objectWithoutPropertiesLoose(props, [
+                "innerRef"
+            ]);
+            return (0, _react.createElement)(component, _extends({
+                ref: innerRef
+            }, field, rest, {
+                className: className
+            }), children);
+        } // We don't pass `meta` for backwards compat
+        return (0, _react.createElement)(component, _extends({
+            field: field,
+            form: formik
+        }, props, {
+            className: className
+        }), children);
+    } // default to input here so we can check for both `as` and `children` above
+    var asElement = is || "input";
+    if (typeof asElement === "string") {
+        var _innerRef = props.innerRef, _rest = _objectWithoutPropertiesLoose(props, [
+            "innerRef"
+        ]);
+        return (0, _react.createElement)(asElement, _extends({
+            ref: _innerRef
+        }, field, _rest, {
+            className: className
+        }), children);
+    }
+    return (0, _react.createElement)(asElement, _extends({}, field, props, {
+        className: className
+    }), children);
+}
+var Form = /*#__PURE__*/ (0, _react.forwardRef)(function(props, ref) {
+    // iOS needs an "action" attribute for nice input: https://stackoverflow.com/a/39485162/406725
+    // We default the action to "#" in case the preventDefault fails (just updates the URL hash)
+    var action = props.action, rest = _objectWithoutPropertiesLoose(props, [
+        "action"
+    ]);
+    var _action = action != null ? action : "#";
+    var _useFormikContext = useFormikContext(), handleReset = _useFormikContext.handleReset, handleSubmit = _useFormikContext.handleSubmit;
+    return (0, _react.createElement)("form", _extends({
+        onSubmit: handleSubmit,
+        ref: ref,
+        onReset: handleReset,
+        action: _action
+    }, rest));
+});
+Form.displayName = "Form";
+/**
+ * A public higher-order component to access the imperative API
+ */ function withFormik(_ref) {
+    var _ref$mapPropsToValues = _ref.mapPropsToValues, mapPropsToValues = _ref$mapPropsToValues === void 0 ? function(vanillaProps) {
+        var val = {};
+        for(var k in vanillaProps)if (vanillaProps.hasOwnProperty(k) && typeof vanillaProps[k] !== "function") // @todo TypeScript fix
+        val[k] = vanillaProps[k];
+        return val;
+    } : _ref$mapPropsToValues, config = _objectWithoutPropertiesLoose(_ref, [
+        "mapPropsToValues"
+    ]);
+    return function createFormik(Component$1) {
+        var componentDisplayName = Component$1.displayName || Component$1.name || Component$1.constructor && Component$1.constructor.name || "Component";
+        /**
+     * We need to use closures here for to provide the wrapped component's props to
+     * the respective withFormik config methods.
+     */ var C = /*#__PURE__*/ function(_React$Component) {
+            _inheritsLoose(C, _React$Component);
+            function C() {
+                var _this;
+                for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+                _this = _React$Component.call.apply(_React$Component, [
+                    this
+                ].concat(args)) || this;
+                _this.validate = function(values) {
+                    return config.validate(values, _this.props);
+                };
+                _this.validationSchema = function() {
+                    return isFunction(config.validationSchema) ? config.validationSchema(_this.props) : config.validationSchema;
+                };
+                _this.handleSubmit = function(values, actions) {
+                    return config.handleSubmit(values, _extends({}, actions, {
+                        props: _this.props
+                    }));
+                };
+                _this.renderFormComponent = function(formikProps) {
+                    return (0, _react.createElement)(Component$1, _extends({}, _this.props, formikProps));
+                };
+                return _this;
+            }
+            var _proto = C.prototype;
+            _proto.render = function render() {
+                var _this$props = this.props, props = _objectWithoutPropertiesLoose(_this$props, [
+                    "children"
+                ]);
+                return (0, _react.createElement)(Formik, _extends({}, props, config, {
+                    validate: config.validate && this.validate,
+                    validationSchema: config.validationSchema && this.validationSchema,
+                    initialValues: mapPropsToValues(this.props),
+                    initialStatus: config.mapPropsToStatus && config.mapPropsToStatus(this.props),
+                    initialErrors: config.mapPropsToErrors && config.mapPropsToErrors(this.props),
+                    initialTouched: config.mapPropsToTouched && config.mapPropsToTouched(this.props),
+                    onSubmit: this.handleSubmit,
+                    children: this.renderFormComponent
+                }));
+            };
+            return C;
+        }((0, _react.Component));
+        C.displayName = "WithFormik(" + componentDisplayName + ")";
+        return (0, _hoistNonReactStaticsDefault.default)(C, Component$1 // cast type to ComponentClass (even if SFC)
+        );
+    };
+}
+/**
+ * Connect any component to Formik context, and inject as a prop called `formik`;
+ * @param Comp React Component
+ */ function connect(Comp) {
+    var C = function C(props) {
+        return (0, _react.createElement)(FormikConsumer, null, function(formik) {
+            !!!formik && (0, _tinyWarningDefault.default)(false, "Formik context is undefined, please verify you are rendering <Form>, <Field>, <FastField>, <FieldArray>, or your custom context-using component as a child of a <Formik> component. Component name: " + Comp.name);
+            return (0, _react.createElement)(Comp, _extends({}, props, {
+                formik: formik
+            }));
+        });
+    };
+    var componentDisplayName = Comp.displayName || Comp.name || Comp.constructor && Comp.constructor.name || "Component"; // Assign Comp to C.WrappedComponent so we can access the inner component in tests
+    // For example, <Field.WrappedComponent /> gets us <FieldInner/>
+    C.WrappedComponent = Comp;
+    C.displayName = "FormikConnect(" + componentDisplayName + ")";
+    return (0, _hoistNonReactStaticsDefault.default)(C, Comp // cast type to ComponentClass (even if SFC)
+    );
+}
+/**
+ * Some array helpers!
+ */ var move = function move(array, from, to) {
+    var copy = copyArrayLike(array);
+    var value = copy[from];
+    copy.splice(from, 1);
+    copy.splice(to, 0, value);
+    return copy;
+};
+var swap = function swap(arrayLike, indexA, indexB) {
+    var copy = copyArrayLike(arrayLike);
+    var a = copy[indexA];
+    copy[indexA] = copy[indexB];
+    copy[indexB] = a;
+    return copy;
+};
+var insert = function insert(arrayLike, index, value) {
+    var copy = copyArrayLike(arrayLike);
+    copy.splice(index, 0, value);
+    return copy;
+};
+var replace = function replace(arrayLike, index, value) {
+    var copy = copyArrayLike(arrayLike);
+    copy[index] = value;
+    return copy;
+};
+var copyArrayLike = function copyArrayLike(arrayLike) {
+    if (!arrayLike) return [];
+    else if (Array.isArray(arrayLike)) return [].concat(arrayLike);
+    else {
+        var maxIndex = Object.keys(arrayLike).map(function(key) {
+            return parseInt(key);
+        }).reduce(function(max, el) {
+            return el > max ? el : max;
+        }, 0);
+        return Array.from(_extends({}, arrayLike, {
+            length: maxIndex + 1
+        }));
+    }
+};
+var createAlterationHandler = function createAlterationHandler(alteration, defaultFunction) {
+    var fn = typeof alteration === "function" ? alteration : defaultFunction;
+    return function(data) {
+        if (Array.isArray(data) || isObject(data)) {
+            var clone = copyArrayLike(data);
+            return fn(clone);
+        } // This can be assumed to be a primitive, which
+        // is a case for top level validation errors
+        return data;
+    };
+};
+var FieldArrayInner = /*#__PURE__*/ function(_React$Component) {
+    _inheritsLoose(FieldArrayInner, _React$Component);
+    function FieldArrayInner(props) {
+        var _this;
+        _this = _React$Component.call(this, props) || this; // We need TypeScript generics on these, so we'll bind them in the constructor
+        // @todo Fix TS 3.2.1
+        _this.updateArrayField = function(fn, alterTouched, alterErrors) {
+            var _this$props = _this.props, name = _this$props.name, setFormikState = _this$props.formik.setFormikState;
+            setFormikState(function(prevState) {
+                var updateErrors = createAlterationHandler(alterErrors, fn);
+                var updateTouched = createAlterationHandler(alterTouched, fn); // values fn should be executed before updateErrors and updateTouched,
+                // otherwise it causes an error with unshift.
+                var values = setIn(prevState.values, name, fn(getIn(prevState.values, name)));
+                var fieldError = alterErrors ? updateErrors(getIn(prevState.errors, name)) : undefined;
+                var fieldTouched = alterTouched ? updateTouched(getIn(prevState.touched, name)) : undefined;
+                if (isEmptyArray(fieldError)) fieldError = undefined;
+                if (isEmptyArray(fieldTouched)) fieldTouched = undefined;
+                return _extends({}, prevState, {
+                    values: values,
+                    errors: alterErrors ? setIn(prevState.errors, name, fieldError) : prevState.errors,
+                    touched: alterTouched ? setIn(prevState.touched, name, fieldTouched) : prevState.touched
+                });
+            });
+        };
+        _this.push = function(value) {
+            return _this.updateArrayField(function(arrayLike) {
+                return [].concat(copyArrayLike(arrayLike), [
+                    (0, _cloneDeepDefault.default)(value)
+                ]);
+            }, false, false);
+        };
+        _this.handlePush = function(value) {
+            return function() {
+                return _this.push(value);
+            };
+        };
+        _this.swap = function(indexA, indexB) {
+            return _this.updateArrayField(function(array) {
+                return swap(array, indexA, indexB);
+            }, true, true);
+        };
+        _this.handleSwap = function(indexA, indexB) {
+            return function() {
+                return _this.swap(indexA, indexB);
+            };
+        };
+        _this.move = function(from, to) {
+            return _this.updateArrayField(function(array) {
+                return move(array, from, to);
+            }, true, true);
+        };
+        _this.handleMove = function(from, to) {
+            return function() {
+                return _this.move(from, to);
+            };
+        };
+        _this.insert = function(index, value) {
+            return _this.updateArrayField(function(array) {
+                return insert(array, index, value);
+            }, function(array) {
+                return insert(array, index, null);
+            }, function(array) {
+                return insert(array, index, null);
+            });
+        };
+        _this.handleInsert = function(index, value) {
+            return function() {
+                return _this.insert(index, value);
+            };
+        };
+        _this.replace = function(index, value) {
+            return _this.updateArrayField(function(array) {
+                return replace(array, index, value);
+            }, false, false);
+        };
+        _this.handleReplace = function(index, value) {
+            return function() {
+                return _this.replace(index, value);
+            };
+        };
+        _this.unshift = function(value) {
+            var length = -1;
+            _this.updateArrayField(function(array) {
+                var arr = array ? [
+                    value
+                ].concat(array) : [
+                    value
+                ];
+                length = arr.length;
+                return arr;
+            }, function(array) {
+                return array ? [
+                    null
+                ].concat(array) : [
+                    null
+                ];
+            }, function(array) {
+                return array ? [
+                    null
+                ].concat(array) : [
+                    null
+                ];
+            });
+            return length;
+        };
+        _this.handleUnshift = function(value) {
+            return function() {
+                return _this.unshift(value);
+            };
+        };
+        _this.handleRemove = function(index) {
+            return function() {
+                return _this.remove(index);
+            };
+        };
+        _this.handlePop = function() {
+            return function() {
+                return _this.pop();
+            };
+        };
+        _this.remove = _this.remove.bind(_assertThisInitialized(_this));
+        _this.pop = _this.pop.bind(_assertThisInitialized(_this));
+        return _this;
+    }
+    var _proto = FieldArrayInner.prototype;
+    _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+        if (this.props.validateOnChange && this.props.formik.validateOnChange && !(0, _reactFastCompareDefault.default)(getIn(prevProps.formik.values, prevProps.name), getIn(this.props.formik.values, this.props.name))) this.props.formik.validateForm(this.props.formik.values);
+    };
+    _proto.remove = function remove(index) {
+        // We need to make sure we also remove relevant pieces of `touched` and `errors`
+        var result;
+        this.updateArrayField(function(array) {
+            var copy = array ? copyArrayLike(array) : [];
+            if (!result) result = copy[index];
+            if (isFunction(copy.splice)) copy.splice(index, 1);
+             // if the array only includes undefined values we have to return an empty array
+            return isFunction(copy.every) ? copy.every(function(v) {
+                return v === undefined;
+            }) ? [] : copy : copy;
+        }, true, true);
+        return result;
+    };
+    _proto.pop = function pop() {
+        // Remove relevant pieces of `touched` and `errors` too!
+        var result;
+        this.updateArrayField(function(array) {
+            var tmp = array.slice();
+            if (!result) result = tmp && tmp.pop && tmp.pop();
+            return tmp;
+        }, true, true);
+        return result;
+    };
+    _proto.render = function render() {
+        var arrayHelpers = {
+            push: this.push,
+            pop: this.pop,
+            swap: this.swap,
+            move: this.move,
+            insert: this.insert,
+            replace: this.replace,
+            unshift: this.unshift,
+            remove: this.remove,
+            handlePush: this.handlePush,
+            handlePop: this.handlePop,
+            handleSwap: this.handleSwap,
+            handleMove: this.handleMove,
+            handleInsert: this.handleInsert,
+            handleReplace: this.handleReplace,
+            handleUnshift: this.handleUnshift,
+            handleRemove: this.handleRemove
+        };
+        var _this$props2 = this.props, component = _this$props2.component, render = _this$props2.render, children = _this$props2.children, name = _this$props2.name, _this$props2$formik = _this$props2.formik, restOfFormik = _objectWithoutPropertiesLoose(_this$props2$formik, [
+            "validate",
+            "validationSchema"
+        ]);
+        var props = _extends({}, arrayHelpers, {
+            form: restOfFormik,
+            name: name
+        });
+        return component ? (0, _react.createElement)(component, props) : render ? render(props) : children // children come last, always called
+         ? typeof children === "function" ? children(props) : !isEmptyChildren(children) ? (0, _react.Children).only(children) : null : null;
+    };
+    return FieldArrayInner;
+}((0, _react.Component));
+FieldArrayInner.defaultProps = {
+    validateOnChange: true
+};
+var FieldArray = /*#__PURE__*/ connect(FieldArrayInner);
+var ErrorMessageImpl = /*#__PURE__*/ function(_React$Component) {
+    _inheritsLoose(ErrorMessageImpl, _React$Component);
+    function ErrorMessageImpl() {
+        return _React$Component.apply(this, arguments) || this;
+    }
+    var _proto = ErrorMessageImpl.prototype;
+    _proto.shouldComponentUpdate = function shouldComponentUpdate(props) {
+        if (getIn(this.props.formik.errors, this.props.name) !== getIn(props.formik.errors, this.props.name) || getIn(this.props.formik.touched, this.props.name) !== getIn(props.formik.touched, this.props.name) || Object.keys(this.props).length !== Object.keys(props).length) return true;
+        else return false;
+    };
+    _proto.render = function render() {
+        var _this$props = this.props, component = _this$props.component, formik = _this$props.formik, render = _this$props.render, children = _this$props.children, name = _this$props.name, rest = _objectWithoutPropertiesLoose(_this$props, [
+            "component",
+            "formik",
+            "render",
+            "children",
+            "name"
+        ]);
+        var touch = getIn(formik.touched, name);
+        var error = getIn(formik.errors, name);
+        return !!touch && !!error ? render ? isFunction(render) ? render(error) : null : children ? isFunction(children) ? children(error) : null : component ? (0, _react.createElement)(component, rest, error) : error : null;
+    };
+    return ErrorMessageImpl;
+}((0, _react.Component));
+var ErrorMessage = /*#__PURE__*/ connect(ErrorMessageImpl);
+/**
+ * Custom Field component for quickly hooking into Formik
+ * context and wiring up forms.
+ */ var FastFieldInner = /*#__PURE__*/ function(_React$Component) {
+    _inheritsLoose(FastFieldInner, _React$Component);
+    function FastFieldInner(props) {
+        var _this;
+        _this = _React$Component.call(this, props) || this;
+        var render = props.render, children = props.children, component = props.component, is = props.as, name = props.name;
+        !!render && (0, _tinyWarningDefault.default)(false, "<FastField render> has been deprecated. Please use a child callback function instead: <FastField name={" + name + "}>{props => ...}</FastField> instead.");
+        !!(component && render) && (0, _tinyWarningDefault.default)(false, "You should not use <FastField component> and <FastField render> in the same <FastField> component; <FastField component> will be ignored");
+        !!(is && children && isFunction(children)) && (0, _tinyWarningDefault.default)(false, "You should not use <FastField as> and <FastField children> as a function in the same <FastField> component; <FastField as> will be ignored.");
+        !!(component && children && isFunction(children)) && (0, _tinyWarningDefault.default)(false, "You should not use <FastField component> and <FastField children> as a function in the same <FastField> component; <FastField component> will be ignored.");
+        !!(render && children && !isEmptyChildren(children)) && (0, _tinyWarningDefault.default)(false, "You should not use <FastField render> and <FastField children> in the same <FastField> component; <FastField children> will be ignored");
+        return _this;
+    }
+    var _proto = FastFieldInner.prototype;
+    _proto.shouldComponentUpdate = function shouldComponentUpdate(props) {
+        if (this.props.shouldUpdate) return this.props.shouldUpdate(props, this.props);
+        else if (props.name !== this.props.name || getIn(props.formik.values, this.props.name) !== getIn(this.props.formik.values, this.props.name) || getIn(props.formik.errors, this.props.name) !== getIn(this.props.formik.errors, this.props.name) || getIn(props.formik.touched, this.props.name) !== getIn(this.props.formik.touched, this.props.name) || Object.keys(this.props).length !== Object.keys(props).length || props.formik.isSubmitting !== this.props.formik.isSubmitting) return true;
+        else return false;
+    };
+    _proto.componentDidMount = function componentDidMount() {
+        // Register the Field with the parent Formik. Parent will cycle through
+        // registered Field's validate fns right prior to submit
+        this.props.formik.registerField(this.props.name, {
+            validate: this.props.validate
+        });
+    };
+    _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+        if (this.props.name !== prevProps.name) {
+            this.props.formik.unregisterField(prevProps.name);
+            this.props.formik.registerField(this.props.name, {
+                validate: this.props.validate
+            });
+        }
+        if (this.props.validate !== prevProps.validate) this.props.formik.registerField(this.props.name, {
+            validate: this.props.validate
+        });
+    };
+    _proto.componentWillUnmount = function componentWillUnmount() {
+        this.props.formik.unregisterField(this.props.name);
+    };
+    _proto.render = function render() {
+        var _this$props = this.props, name = _this$props.name, render = _this$props.render, is = _this$props.as, children = _this$props.children, component = _this$props.component, formik = _this$props.formik, props = _objectWithoutPropertiesLoose(_this$props, [
+            "validate",
+            "name",
+            "render",
+            "as",
+            "children",
+            "component",
+            "shouldUpdate",
+            "formik"
+        ]);
+        var restOfFormik = _objectWithoutPropertiesLoose(formik, [
+            "validate",
+            "validationSchema"
+        ]);
+        var field = formik.getFieldProps(_extends({
+            name: name
+        }, props));
+        var meta = {
+            value: getIn(formik.values, name),
+            error: getIn(formik.errors, name),
+            touched: !!getIn(formik.touched, name),
+            initialValue: getIn(formik.initialValues, name),
+            initialTouched: !!getIn(formik.initialTouched, name),
+            initialError: getIn(formik.initialErrors, name)
+        };
+        var bag = {
+            field: field,
+            meta: meta,
+            form: restOfFormik
+        };
+        if (render) return render(bag);
+        if (isFunction(children)) return children(bag);
+        if (component) {
+            // This behavior is backwards compat with earlier Formik 0.9 to 1.x
+            if (typeof component === "string") {
+                var innerRef = props.innerRef, rest = _objectWithoutPropertiesLoose(props, [
+                    "innerRef"
+                ]);
+                return (0, _react.createElement)(component, _extends({
+                    ref: innerRef
+                }, field, rest), children);
+            } // We don't pass `meta` for backwards compat
+            return (0, _react.createElement)(component, _extends({
+                field: field,
+                form: formik
+            }, props), children);
+        } // default to input here so we can check for both `as` and `children` above
+        var asElement = is || "input";
+        if (typeof asElement === "string") {
+            var _innerRef = props.innerRef, _rest = _objectWithoutPropertiesLoose(props, [
+                "innerRef"
+            ]);
+            return (0, _react.createElement)(asElement, _extends({
+                ref: _innerRef
+            }, field, _rest), children);
+        }
+        return (0, _react.createElement)(asElement, _extends({}, field, props), children);
+    };
+    return FastFieldInner;
+}((0, _react.Component));
+var FastField = /*#__PURE__*/ connect(FastFieldInner);
+
+},{"deepmerge":"4Z2ba","lodash-es/isPlainObject":"dB5kc","react":"21dqq","react-fast-compare":"isHbY","tiny-warning":"82vrW","lodash-es/clone":"7E9hw","lodash-es/toPath":"7KT6e","hoist-non-react-statics":"1GfsB","lodash-es/cloneDeep":"dd5At","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Z2ba":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var isMergeableObject = function isMergeableObject(value) {
+    return isNonNullObject(value) && !isSpecial(value);
+};
+function isNonNullObject(value) {
+    return !!value && typeof value === "object";
+}
+function isSpecial(value) {
+    var stringValue = Object.prototype.toString.call(value);
+    return stringValue === "[object RegExp]" || stringValue === "[object Date]" || isReactElement(value);
+}
+// see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
+var canUseSymbol = typeof Symbol === "function" && Symbol.for;
+var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for("react.element") : 0xeac7;
+function isReactElement(value) {
+    return value.$$typeof === REACT_ELEMENT_TYPE;
+}
+function emptyTarget(val) {
+    return Array.isArray(val) ? [] : {};
+}
+function cloneUnlessOtherwiseSpecified(value, options) {
+    return options.clone !== false && options.isMergeableObject(value) ? deepmerge(emptyTarget(value), value, options) : value;
+}
+function defaultArrayMerge(target, source, options) {
+    return target.concat(source).map(function(element) {
+        return cloneUnlessOtherwiseSpecified(element, options);
+    });
+}
+function mergeObject(target, source, options) {
+    var destination = {};
+    if (options.isMergeableObject(target)) Object.keys(target).forEach(function(key) {
+        destination[key] = cloneUnlessOtherwiseSpecified(target[key], options);
+    });
+    Object.keys(source).forEach(function(key) {
+        if (!options.isMergeableObject(source[key]) || !target[key]) destination[key] = cloneUnlessOtherwiseSpecified(source[key], options);
+        else destination[key] = deepmerge(target[key], source[key], options);
+    });
+    return destination;
+}
+function deepmerge(target, source, options) {
+    options = options || {};
+    options.arrayMerge = options.arrayMerge || defaultArrayMerge;
+    options.isMergeableObject = options.isMergeableObject || isMergeableObject;
+    var sourceIsArray = Array.isArray(source);
+    var targetIsArray = Array.isArray(target);
+    var sourceAndTargetTypesMatch = sourceIsArray === targetIsArray;
+    if (!sourceAndTargetTypesMatch) return cloneUnlessOtherwiseSpecified(source, options);
+    else if (sourceIsArray) return options.arrayMerge(target, source, options);
+    else return mergeObject(target, source, options);
+}
+deepmerge.all = function deepmergeAll(array, options) {
+    if (!Array.isArray(array)) throw new Error("first argument should be an array");
+    return array.reduce(function(prev, next) {
+        return deepmerge(prev, next, options);
+    }, {});
+};
+var deepmerge_1 = deepmerge;
+exports.default = deepmerge_1;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dB5kc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseGetTagJs = require("./_baseGetTag.js");
+var _baseGetTagJsDefault = parcelHelpers.interopDefault(_baseGetTagJs);
+var _getPrototypeJs = require("./_getPrototype.js");
+var _getPrototypeJsDefault = parcelHelpers.interopDefault(_getPrototypeJs);
+var _isObjectLikeJs = require("./isObjectLike.js");
+var _isObjectLikeJsDefault = parcelHelpers.interopDefault(_isObjectLikeJs);
+/** `Object#toString` result references. */ var objectTag = "[object Object]";
+/** Used for built-in method references. */ var funcProto = Function.prototype, objectProto = Object.prototype;
+/** Used to resolve the decompiled source of functions. */ var funcToString = funcProto.toString;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/** Used to infer the `Object` constructor. */ var objectCtorString = funcToString.call(Object);
+/**
+ * Checks if `value` is a plain object, that is, an object created by the
+ * `Object` constructor or one with a `[[Prototype]]` of `null`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.8.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ * }
+ *
+ * _.isPlainObject(new Foo);
+ * // => false
+ *
+ * _.isPlainObject([1, 2, 3]);
+ * // => false
+ *
+ * _.isPlainObject({ 'x': 0, 'y': 0 });
+ * // => true
+ *
+ * _.isPlainObject(Object.create(null));
+ * // => true
+ */ function isPlainObject(value) {
+    if (!(0, _isObjectLikeJsDefault.default)(value) || (0, _baseGetTagJsDefault.default)(value) != objectTag) return false;
+    var proto = (0, _getPrototypeJsDefault.default)(value);
+    if (proto === null) return true;
+    var Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
+    return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
+}
+exports.default = isPlainObject;
+
+},{"./_baseGetTag.js":"gVDfP","./_getPrototype.js":"b49GB","./isObjectLike.js":"iad76","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gVDfP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _symbolJs = require("./_Symbol.js");
+var _symbolJsDefault = parcelHelpers.interopDefault(_symbolJs);
+var _getRawTagJs = require("./_getRawTag.js");
+var _getRawTagJsDefault = parcelHelpers.interopDefault(_getRawTagJs);
+var _objectToStringJs = require("./_objectToString.js");
+var _objectToStringJsDefault = parcelHelpers.interopDefault(_objectToStringJs);
+/** `Object#toString` result references. */ var nullTag = "[object Null]", undefinedTag = "[object Undefined]";
+/** Built-in value references. */ var symToStringTag = (0, _symbolJsDefault.default) ? (0, _symbolJsDefault.default).toStringTag : undefined;
+/**
+ * The base implementation of `getTag` without fallbacks for buggy environments.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */ function baseGetTag(value) {
+    if (value == null) return value === undefined ? undefinedTag : nullTag;
+    return symToStringTag && symToStringTag in Object(value) ? (0, _getRawTagJsDefault.default)(value) : (0, _objectToStringJsDefault.default)(value);
+}
+exports.default = baseGetTag;
+
+},{"./_Symbol.js":"jx216","./_getRawTag.js":"ijXom","./_objectToString.js":"fTkTn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jx216":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/** Built-in value references. */ var Symbol = (0, _rootJsDefault.default).Symbol;
+exports.default = Symbol;
+
+},{"./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yvCA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _freeGlobalJs = require("./_freeGlobal.js");
+var _freeGlobalJsDefault = parcelHelpers.interopDefault(_freeGlobalJs);
+/** Detect free variable `self`. */ var freeSelf = typeof self == "object" && self && self.Object === Object && self;
+/** Used as a reference to the global object. */ var root = (0, _freeGlobalJsDefault.default) || freeSelf || Function("return this")();
+exports.default = root;
+
+},{"./_freeGlobal.js":"98hMd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"98hMd":[function(require,module,exports) {
+/** Detect free variable `global` from Node.js. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var global = arguments[3];
+var freeGlobal = typeof global == "object" && global && global.Object === Object && global;
+exports.default = freeGlobal;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ijXom":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _symbolJs = require("./_Symbol.js");
+var _symbolJsDefault = parcelHelpers.interopDefault(_symbolJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */ var nativeObjectToString = objectProto.toString;
+/** Built-in value references. */ var symToStringTag = (0, _symbolJsDefault.default) ? (0, _symbolJsDefault.default).toStringTag : undefined;
+/**
+ * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the raw `toStringTag`.
+ */ function getRawTag(value) {
+    var isOwn = hasOwnProperty.call(value, symToStringTag), tag = value[symToStringTag];
+    try {
+        value[symToStringTag] = undefined;
+        var unmasked = true;
+    } catch (e) {}
+    var result = nativeObjectToString.call(value);
+    if (unmasked) {
+        if (isOwn) value[symToStringTag] = tag;
+        else delete value[symToStringTag];
+    }
+    return result;
+}
+exports.default = getRawTag;
+
+},{"./_Symbol.js":"jx216","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fTkTn":[function(require,module,exports) {
+/** Used for built-in method references. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var objectProto = Object.prototype;
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */ var nativeObjectToString = objectProto.toString;
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */ function objectToString(value) {
+    return nativeObjectToString.call(value);
+}
+exports.default = objectToString;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b49GB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _overArgJs = require("./_overArg.js");
+var _overArgJsDefault = parcelHelpers.interopDefault(_overArgJs);
+/** Built-in value references. */ var getPrototype = (0, _overArgJsDefault.default)(Object.getPrototypeOf, Object);
+exports.default = getPrototype;
+
+},{"./_overArg.js":"lqvyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lqvyN":[function(require,module,exports) {
+/**
+ * Creates a unary function that invokes `func` with its argument transformed.
+ *
+ * @private
+ * @param {Function} func The function to wrap.
+ * @param {Function} transform The argument transform.
+ * @returns {Function} Returns the new function.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function overArg(func, transform) {
+    return function(arg) {
+        return func(transform(arg));
+    };
+}
+exports.default = overArg;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iad76":[function(require,module,exports) {
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function isObjectLike(value) {
+    return value != null && typeof value == "object";
+}
+exports.default = isObjectLike;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isHbY":[function(require,module,exports) {
+"use strict";
+var isArray = Array.isArray;
+var keyList = Object.keys;
+var hasProp = Object.prototype.hasOwnProperty;
+var hasElementType = typeof Element !== "undefined";
+function equal(a, b) {
+    // fast-deep-equal index.js 2.0.1
+    if (a === b) return true;
+    if (a && b && typeof a == "object" && typeof b == "object") {
+        var arrA = isArray(a), arrB = isArray(b), i, length, key;
+        if (arrA && arrB) {
+            length = a.length;
+            if (length != b.length) return false;
+            for(i = length; i-- !== 0;)if (!equal(a[i], b[i])) return false;
+            return true;
+        }
+        if (arrA != arrB) return false;
+        var dateA = a instanceof Date, dateB = b instanceof Date;
+        if (dateA != dateB) return false;
+        if (dateA && dateB) return a.getTime() == b.getTime();
+        var regexpA = a instanceof RegExp, regexpB = b instanceof RegExp;
+        if (regexpA != regexpB) return false;
+        if (regexpA && regexpB) return a.toString() == b.toString();
+        var keys = keyList(a);
+        length = keys.length;
+        if (length !== keyList(b).length) return false;
+        for(i = length; i-- !== 0;)if (!hasProp.call(b, keys[i])) return false;
+        // end fast-deep-equal
+        // start react-fast-compare
+        // custom handling for DOM elements
+        if (hasElementType && a instanceof Element && b instanceof Element) return a === b;
+        // custom handling for React
+        for(i = length; i-- !== 0;){
+            key = keys[i];
+            if (key === "_owner" && a.$$typeof) continue;
+            else {
+                // all other properties should be traversed as usual
+                if (!equal(a[key], b[key])) return false;
+            }
+        }
+        // end react-fast-compare
+        // fast-deep-equal index.js 2.0.1
+        return true;
+    }
+    return a !== a && b !== b;
+}
+// end fast-deep-equal
+module.exports = function exportedEqual(a, b) {
+    try {
+        return equal(a, b);
+    } catch (error) {
+        if (error.message && error.message.match(/stack|recursion/i) || error.number === -2146828260) {
+            // warn on circular references, don't crash
+            // browsers give this different errors name and messages:
+            // chrome/safari: "RangeError", "Maximum call stack size exceeded"
+            // firefox: "InternalError", too much recursion"
+            // edge: "Error", "Out of stack space"
+            console.warn("Warning: react-fast-compare does not handle circular references.", error.name, error.message);
+            return false;
+        }
+        // some other error. we should definitely know about these
+        throw error;
+    }
+};
+
+},{}],"82vrW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var isProduction = false;
+function warning(condition, message) {
+    if (!isProduction) {
+        if (condition) return;
+        var text = "Warning: " + message;
+        if (typeof console !== "undefined") console.warn(text);
+        try {
+            throw Error(text);
+        } catch (x) {}
+    }
+}
+exports.default = warning;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7E9hw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseCloneJs = require("./_baseClone.js");
+var _baseCloneJsDefault = parcelHelpers.interopDefault(_baseCloneJs);
+/** Used to compose bitmasks for cloning. */ var CLONE_SYMBOLS_FLAG = 4;
+/**
+ * Creates a shallow clone of `value`.
+ *
+ * **Note:** This method is loosely based on the
+ * [structured clone algorithm](https://mdn.io/Structured_clone_algorithm)
+ * and supports cloning arrays, array buffers, booleans, date objects, maps,
+ * numbers, `Object` objects, regexes, sets, strings, symbols, and typed
+ * arrays. The own enumerable properties of `arguments` objects are cloned
+ * as plain objects. An empty object is returned for uncloneable values such
+ * as error objects, functions, DOM nodes, and WeakMaps.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to clone.
+ * @returns {*} Returns the cloned value.
+ * @see _.cloneDeep
+ * @example
+ *
+ * var objects = [{ 'a': 1 }, { 'b': 2 }];
+ *
+ * var shallow = _.clone(objects);
+ * console.log(shallow[0] === objects[0]);
+ * // => true
+ */ function clone(value) {
+    return (0, _baseCloneJsDefault.default)(value, CLONE_SYMBOLS_FLAG);
+}
+exports.default = clone;
+
+},{"./_baseClone.js":"dBps5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dBps5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _stackJs = require("./_Stack.js");
+var _stackJsDefault = parcelHelpers.interopDefault(_stackJs);
+var _arrayEachJs = require("./_arrayEach.js");
+var _arrayEachJsDefault = parcelHelpers.interopDefault(_arrayEachJs);
+var _assignValueJs = require("./_assignValue.js");
+var _assignValueJsDefault = parcelHelpers.interopDefault(_assignValueJs);
+var _baseAssignJs = require("./_baseAssign.js");
+var _baseAssignJsDefault = parcelHelpers.interopDefault(_baseAssignJs);
+var _baseAssignInJs = require("./_baseAssignIn.js");
+var _baseAssignInJsDefault = parcelHelpers.interopDefault(_baseAssignInJs);
+var _cloneBufferJs = require("./_cloneBuffer.js");
+var _cloneBufferJsDefault = parcelHelpers.interopDefault(_cloneBufferJs);
+var _copyArrayJs = require("./_copyArray.js");
+var _copyArrayJsDefault = parcelHelpers.interopDefault(_copyArrayJs);
+var _copySymbolsJs = require("./_copySymbols.js");
+var _copySymbolsJsDefault = parcelHelpers.interopDefault(_copySymbolsJs);
+var _copySymbolsInJs = require("./_copySymbolsIn.js");
+var _copySymbolsInJsDefault = parcelHelpers.interopDefault(_copySymbolsInJs);
+var _getAllKeysJs = require("./_getAllKeys.js");
+var _getAllKeysJsDefault = parcelHelpers.interopDefault(_getAllKeysJs);
+var _getAllKeysInJs = require("./_getAllKeysIn.js");
+var _getAllKeysInJsDefault = parcelHelpers.interopDefault(_getAllKeysInJs);
+var _getTagJs = require("./_getTag.js");
+var _getTagJsDefault = parcelHelpers.interopDefault(_getTagJs);
+var _initCloneArrayJs = require("./_initCloneArray.js");
+var _initCloneArrayJsDefault = parcelHelpers.interopDefault(_initCloneArrayJs);
+var _initCloneByTagJs = require("./_initCloneByTag.js");
+var _initCloneByTagJsDefault = parcelHelpers.interopDefault(_initCloneByTagJs);
+var _initCloneObjectJs = require("./_initCloneObject.js");
+var _initCloneObjectJsDefault = parcelHelpers.interopDefault(_initCloneObjectJs);
+var _isArrayJs = require("./isArray.js");
+var _isArrayJsDefault = parcelHelpers.interopDefault(_isArrayJs);
+var _isBufferJs = require("./isBuffer.js");
+var _isBufferJsDefault = parcelHelpers.interopDefault(_isBufferJs);
+var _isMapJs = require("./isMap.js");
+var _isMapJsDefault = parcelHelpers.interopDefault(_isMapJs);
+var _isObjectJs = require("./isObject.js");
+var _isObjectJsDefault = parcelHelpers.interopDefault(_isObjectJs);
+var _isSetJs = require("./isSet.js");
+var _isSetJsDefault = parcelHelpers.interopDefault(_isSetJs);
+var _keysJs = require("./keys.js");
+var _keysJsDefault = parcelHelpers.interopDefault(_keysJs);
+var _keysInJs = require("./keysIn.js");
+var _keysInJsDefault = parcelHelpers.interopDefault(_keysInJs);
+/** Used to compose bitmasks for cloning. */ var CLONE_DEEP_FLAG = 1, CLONE_FLAT_FLAG = 2, CLONE_SYMBOLS_FLAG = 4;
+/** `Object#toString` result references. */ var argsTag = "[object Arguments]", arrayTag = "[object Array]", boolTag = "[object Boolean]", dateTag = "[object Date]", errorTag = "[object Error]", funcTag = "[object Function]", genTag = "[object GeneratorFunction]", mapTag = "[object Map]", numberTag = "[object Number]", objectTag = "[object Object]", regexpTag = "[object RegExp]", setTag = "[object Set]", stringTag = "[object String]", symbolTag = "[object Symbol]", weakMapTag = "[object WeakMap]";
+var arrayBufferTag = "[object ArrayBuffer]", dataViewTag = "[object DataView]", float32Tag = "[object Float32Array]", float64Tag = "[object Float64Array]", int8Tag = "[object Int8Array]", int16Tag = "[object Int16Array]", int32Tag = "[object Int32Array]", uint8Tag = "[object Uint8Array]", uint8ClampedTag = "[object Uint8ClampedArray]", uint16Tag = "[object Uint16Array]", uint32Tag = "[object Uint32Array]";
+/** Used to identify `toStringTag` values supported by `_.clone`. */ var cloneableTags = {};
+cloneableTags[argsTag] = cloneableTags[arrayTag] = cloneableTags[arrayBufferTag] = cloneableTags[dataViewTag] = cloneableTags[boolTag] = cloneableTags[dateTag] = cloneableTags[float32Tag] = cloneableTags[float64Tag] = cloneableTags[int8Tag] = cloneableTags[int16Tag] = cloneableTags[int32Tag] = cloneableTags[mapTag] = cloneableTags[numberTag] = cloneableTags[objectTag] = cloneableTags[regexpTag] = cloneableTags[setTag] = cloneableTags[stringTag] = cloneableTags[symbolTag] = cloneableTags[uint8Tag] = cloneableTags[uint8ClampedTag] = cloneableTags[uint16Tag] = cloneableTags[uint32Tag] = true;
+cloneableTags[errorTag] = cloneableTags[funcTag] = cloneableTags[weakMapTag] = false;
+/**
+ * The base implementation of `_.clone` and `_.cloneDeep` which tracks
+ * traversed objects.
+ *
+ * @private
+ * @param {*} value The value to clone.
+ * @param {boolean} bitmask The bitmask flags.
+ *  1 - Deep clone
+ *  2 - Flatten inherited properties
+ *  4 - Clone symbols
+ * @param {Function} [customizer] The function to customize cloning.
+ * @param {string} [key] The key of `value`.
+ * @param {Object} [object] The parent object of `value`.
+ * @param {Object} [stack] Tracks traversed objects and their clone counterparts.
+ * @returns {*} Returns the cloned value.
+ */ function baseClone(value, bitmask, customizer, key, object, stack) {
+    var result, isDeep = bitmask & CLONE_DEEP_FLAG, isFlat = bitmask & CLONE_FLAT_FLAG, isFull = bitmask & CLONE_SYMBOLS_FLAG;
+    if (customizer) result = object ? customizer(value, key, object, stack) : customizer(value);
+    if (result !== undefined) return result;
+    if (!(0, _isObjectJsDefault.default)(value)) return value;
+    var isArr = (0, _isArrayJsDefault.default)(value);
+    if (isArr) {
+        result = (0, _initCloneArrayJsDefault.default)(value);
+        if (!isDeep) return (0, _copyArrayJsDefault.default)(value, result);
+    } else {
+        var tag = (0, _getTagJsDefault.default)(value), isFunc = tag == funcTag || tag == genTag;
+        if ((0, _isBufferJsDefault.default)(value)) return (0, _cloneBufferJsDefault.default)(value, isDeep);
+        if (tag == objectTag || tag == argsTag || isFunc && !object) {
+            result = isFlat || isFunc ? {} : (0, _initCloneObjectJsDefault.default)(value);
+            if (!isDeep) return isFlat ? (0, _copySymbolsInJsDefault.default)(value, (0, _baseAssignInJsDefault.default)(result, value)) : (0, _copySymbolsJsDefault.default)(value, (0, _baseAssignJsDefault.default)(result, value));
+        } else {
+            if (!cloneableTags[tag]) return object ? value : {};
+            result = (0, _initCloneByTagJsDefault.default)(value, tag, isDeep);
+        }
+    }
+    // Check for circular references and return its corresponding clone.
+    stack || (stack = new (0, _stackJsDefault.default));
+    var stacked = stack.get(value);
+    if (stacked) return stacked;
+    stack.set(value, result);
+    if ((0, _isSetJsDefault.default)(value)) value.forEach(function(subValue) {
+        result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
+    });
+    else if ((0, _isMapJsDefault.default)(value)) value.forEach(function(subValue, key) {
+        result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
+    });
+    var keysFunc = isFull ? isFlat ? (0, _getAllKeysInJsDefault.default) : (0, _getAllKeysJsDefault.default) : isFlat ? (0, _keysInJsDefault.default) : (0, _keysJsDefault.default);
+    var props = isArr ? undefined : keysFunc(value);
+    (0, _arrayEachJsDefault.default)(props || value, function(subValue, key) {
+        if (props) {
+            key = subValue;
+            subValue = value[key];
+        }
+        // Recursively populate clone (susceptible to call stack limits).
+        (0, _assignValueJsDefault.default)(result, key, baseClone(subValue, bitmask, customizer, key, value, stack));
+    });
+    return result;
+}
+exports.default = baseClone;
+
+},{"./_Stack.js":"dCpM5","./_arrayEach.js":"d26yI","./_assignValue.js":"lDCb2","./_baseAssign.js":"jYSyD","./_baseAssignIn.js":"6AB2c","./_cloneBuffer.js":"kMJjN","./_copyArray.js":"9islt","./_copySymbols.js":"4VEV3","./_copySymbolsIn.js":"cfnUc","./_getAllKeys.js":"68ZDs","./_getAllKeysIn.js":"6b5DG","./_getTag.js":"1kCom","./_initCloneArray.js":"eVGYA","./_initCloneByTag.js":"d9muW","./_initCloneObject.js":"aoDIY","./isArray.js":"ETPQ1","./isBuffer.js":"llpEE","./isMap.js":"66UiG","./isObject.js":"dHhyW","./isSet.js":"74uQe","./keys.js":"lbEZV","./keysIn.js":"jms5f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dCpM5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _listCacheJs = require("./_ListCache.js");
+var _listCacheJsDefault = parcelHelpers.interopDefault(_listCacheJs);
+var _stackClearJs = require("./_stackClear.js");
+var _stackClearJsDefault = parcelHelpers.interopDefault(_stackClearJs);
+var _stackDeleteJs = require("./_stackDelete.js");
+var _stackDeleteJsDefault = parcelHelpers.interopDefault(_stackDeleteJs);
+var _stackGetJs = require("./_stackGet.js");
+var _stackGetJsDefault = parcelHelpers.interopDefault(_stackGetJs);
+var _stackHasJs = require("./_stackHas.js");
+var _stackHasJsDefault = parcelHelpers.interopDefault(_stackHasJs);
+var _stackSetJs = require("./_stackSet.js");
+var _stackSetJsDefault = parcelHelpers.interopDefault(_stackSetJs);
+/**
+ * Creates a stack cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */ function Stack(entries) {
+    var data = this.__data__ = new (0, _listCacheJsDefault.default)(entries);
+    this.size = data.size;
+}
+// Add methods to `Stack`.
+Stack.prototype.clear = (0, _stackClearJsDefault.default);
+Stack.prototype["delete"] = (0, _stackDeleteJsDefault.default);
+Stack.prototype.get = (0, _stackGetJsDefault.default);
+Stack.prototype.has = (0, _stackHasJsDefault.default);
+Stack.prototype.set = (0, _stackSetJsDefault.default);
+exports.default = Stack;
+
+},{"./_ListCache.js":"cqhDQ","./_stackClear.js":"4BuA3","./_stackDelete.js":"2mGxC","./_stackGet.js":"c3cE4","./_stackHas.js":"23Sz6","./_stackSet.js":"jnSxK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cqhDQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _listCacheClearJs = require("./_listCacheClear.js");
+var _listCacheClearJsDefault = parcelHelpers.interopDefault(_listCacheClearJs);
+var _listCacheDeleteJs = require("./_listCacheDelete.js");
+var _listCacheDeleteJsDefault = parcelHelpers.interopDefault(_listCacheDeleteJs);
+var _listCacheGetJs = require("./_listCacheGet.js");
+var _listCacheGetJsDefault = parcelHelpers.interopDefault(_listCacheGetJs);
+var _listCacheHasJs = require("./_listCacheHas.js");
+var _listCacheHasJsDefault = parcelHelpers.interopDefault(_listCacheHasJs);
+var _listCacheSetJs = require("./_listCacheSet.js");
+var _listCacheSetJsDefault = parcelHelpers.interopDefault(_listCacheSetJs);
+/**
+ * Creates an list cache object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */ function ListCache(entries) {
+    var index = -1, length = entries == null ? 0 : entries.length;
+    this.clear();
+    while(++index < length){
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+    }
+}
+// Add methods to `ListCache`.
+ListCache.prototype.clear = (0, _listCacheClearJsDefault.default);
+ListCache.prototype["delete"] = (0, _listCacheDeleteJsDefault.default);
+ListCache.prototype.get = (0, _listCacheGetJsDefault.default);
+ListCache.prototype.has = (0, _listCacheHasJsDefault.default);
+ListCache.prototype.set = (0, _listCacheSetJsDefault.default);
+exports.default = ListCache;
+
+},{"./_listCacheClear.js":"bSUq2","./_listCacheDelete.js":"3kM5j","./_listCacheGet.js":"9nv7v","./_listCacheHas.js":"4N5RL","./_listCacheSet.js":"bA8oX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bSUq2":[function(require,module,exports) {
+/**
+ * Removes all key-value entries from the list cache.
+ *
+ * @private
+ * @name clear
+ * @memberOf ListCache
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function listCacheClear() {
+    this.__data__ = [];
+    this.size = 0;
+}
+exports.default = listCacheClear;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3kM5j":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _assocIndexOfJs = require("./_assocIndexOf.js");
+var _assocIndexOfJsDefault = parcelHelpers.interopDefault(_assocIndexOfJs);
+/** Used for built-in method references. */ var arrayProto = Array.prototype;
+/** Built-in value references. */ var splice = arrayProto.splice;
+/**
+ * Removes `key` and its value from the list cache.
+ *
+ * @private
+ * @name delete
+ * @memberOf ListCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */ function listCacheDelete(key) {
+    var data = this.__data__, index = (0, _assocIndexOfJsDefault.default)(data, key);
+    if (index < 0) return false;
+    var lastIndex = data.length - 1;
+    if (index == lastIndex) data.pop();
+    else splice.call(data, index, 1);
+    --this.size;
+    return true;
+}
+exports.default = listCacheDelete;
+
+},{"./_assocIndexOf.js":"124Ga","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"124Ga":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _eqJs = require("./eq.js");
+var _eqJsDefault = parcelHelpers.interopDefault(_eqJs);
+/**
+ * Gets the index at which the `key` is found in `array` of key-value pairs.
+ *
+ * @private
+ * @param {Array} array The array to inspect.
+ * @param {*} key The key to search for.
+ * @returns {number} Returns the index of the matched value, else `-1`.
+ */ function assocIndexOf(array, key) {
+    var length = array.length;
+    while(length--){
+        if ((0, _eqJsDefault.default)(array[length][0], key)) return length;
+    }
+    return -1;
+}
+exports.default = assocIndexOf;
+
+},{"./eq.js":"7el3s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7el3s":[function(require,module,exports) {
+/**
+ * Performs a
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * comparison between two values to determine if they are equivalent.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ * var other = { 'a': 1 };
+ *
+ * _.eq(object, object);
+ * // => true
+ *
+ * _.eq(object, other);
+ * // => false
+ *
+ * _.eq('a', 'a');
+ * // => true
+ *
+ * _.eq('a', Object('a'));
+ * // => false
+ *
+ * _.eq(NaN, NaN);
+ * // => true
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function eq(value, other) {
+    return value === other || value !== value && other !== other;
+}
+exports.default = eq;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9nv7v":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _assocIndexOfJs = require("./_assocIndexOf.js");
+var _assocIndexOfJsDefault = parcelHelpers.interopDefault(_assocIndexOfJs);
+/**
+ * Gets the list cache value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf ListCache
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */ function listCacheGet(key) {
+    var data = this.__data__, index = (0, _assocIndexOfJsDefault.default)(data, key);
+    return index < 0 ? undefined : data[index][1];
+}
+exports.default = listCacheGet;
+
+},{"./_assocIndexOf.js":"124Ga","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4N5RL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _assocIndexOfJs = require("./_assocIndexOf.js");
+var _assocIndexOfJsDefault = parcelHelpers.interopDefault(_assocIndexOfJs);
+/**
+ * Checks if a list cache value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf ListCache
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */ function listCacheHas(key) {
+    return (0, _assocIndexOfJsDefault.default)(this.__data__, key) > -1;
+}
+exports.default = listCacheHas;
+
+},{"./_assocIndexOf.js":"124Ga","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bA8oX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _assocIndexOfJs = require("./_assocIndexOf.js");
+var _assocIndexOfJsDefault = parcelHelpers.interopDefault(_assocIndexOfJs);
+/**
+ * Sets the list cache `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf ListCache
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the list cache instance.
+ */ function listCacheSet(key, value) {
+    var data = this.__data__, index = (0, _assocIndexOfJsDefault.default)(data, key);
+    if (index < 0) {
+        ++this.size;
+        data.push([
+            key,
+            value
+        ]);
+    } else data[index][1] = value;
+    return this;
+}
+exports.default = listCacheSet;
+
+},{"./_assocIndexOf.js":"124Ga","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4BuA3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _listCacheJs = require("./_ListCache.js");
+var _listCacheJsDefault = parcelHelpers.interopDefault(_listCacheJs);
+/**
+ * Removes all key-value entries from the stack.
+ *
+ * @private
+ * @name clear
+ * @memberOf Stack
+ */ function stackClear() {
+    this.__data__ = new (0, _listCacheJsDefault.default);
+    this.size = 0;
+}
+exports.default = stackClear;
+
+},{"./_ListCache.js":"cqhDQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2mGxC":[function(require,module,exports) {
+/**
+ * Removes `key` and its value from the stack.
+ *
+ * @private
+ * @name delete
+ * @memberOf Stack
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function stackDelete(key) {
+    var data = this.__data__, result = data["delete"](key);
+    this.size = data.size;
+    return result;
+}
+exports.default = stackDelete;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c3cE4":[function(require,module,exports) {
+/**
+ * Gets the stack value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Stack
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function stackGet(key) {
+    return this.__data__.get(key);
+}
+exports.default = stackGet;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"23Sz6":[function(require,module,exports) {
+/**
+ * Checks if a stack value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Stack
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function stackHas(key) {
+    return this.__data__.has(key);
+}
+exports.default = stackHas;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jnSxK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _listCacheJs = require("./_ListCache.js");
+var _listCacheJsDefault = parcelHelpers.interopDefault(_listCacheJs);
+var _mapJs = require("./_Map.js");
+var _mapJsDefault = parcelHelpers.interopDefault(_mapJs);
+var _mapCacheJs = require("./_MapCache.js");
+var _mapCacheJsDefault = parcelHelpers.interopDefault(_mapCacheJs);
+/** Used as the size to enable large array optimizations. */ var LARGE_ARRAY_SIZE = 200;
+/**
+ * Sets the stack `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Stack
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the stack cache instance.
+ */ function stackSet(key, value) {
+    var data = this.__data__;
+    if (data instanceof (0, _listCacheJsDefault.default)) {
+        var pairs = data.__data__;
+        if (!(0, _mapJsDefault.default) || pairs.length < LARGE_ARRAY_SIZE - 1) {
+            pairs.push([
+                key,
+                value
+            ]);
+            this.size = ++data.size;
+            return this;
+        }
+        data = this.__data__ = new (0, _mapCacheJsDefault.default)(pairs);
+    }
+    data.set(key, value);
+    this.size = data.size;
+    return this;
+}
+exports.default = stackSet;
+
+},{"./_ListCache.js":"cqhDQ","./_Map.js":"8spnB","./_MapCache.js":"kdqbj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8spnB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getNativeJs = require("./_getNative.js");
+var _getNativeJsDefault = parcelHelpers.interopDefault(_getNativeJs);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/* Built-in method references that are verified to be native. */ var Map = (0, _getNativeJsDefault.default)((0, _rootJsDefault.default), "Map");
+exports.default = Map;
+
+},{"./_getNative.js":"bQrQL","./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bQrQL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseIsNativeJs = require("./_baseIsNative.js");
+var _baseIsNativeJsDefault = parcelHelpers.interopDefault(_baseIsNativeJs);
+var _getValueJs = require("./_getValue.js");
+var _getValueJsDefault = parcelHelpers.interopDefault(_getValueJs);
+/**
+ * Gets the native function at `key` of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {string} key The key of the method to get.
+ * @returns {*} Returns the function if it's native, else `undefined`.
+ */ function getNative(object, key) {
+    var value = (0, _getValueJsDefault.default)(object, key);
+    return (0, _baseIsNativeJsDefault.default)(value) ? value : undefined;
+}
+exports.default = getNative;
+
+},{"./_baseIsNative.js":"eZuBv","./_getValue.js":"dHb8j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eZuBv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _isFunctionJs = require("./isFunction.js");
+var _isFunctionJsDefault = parcelHelpers.interopDefault(_isFunctionJs);
+var _isMaskedJs = require("./_isMasked.js");
+var _isMaskedJsDefault = parcelHelpers.interopDefault(_isMaskedJs);
+var _isObjectJs = require("./isObject.js");
+var _isObjectJsDefault = parcelHelpers.interopDefault(_isObjectJs);
+var _toSourceJs = require("./_toSource.js");
+var _toSourceJsDefault = parcelHelpers.interopDefault(_toSourceJs);
+/**
+ * Used to match `RegExp`
+ * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+ */ var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+/** Used to detect host constructors (Safari). */ var reIsHostCtor = /^\[object .+?Constructor\]$/;
+/** Used for built-in method references. */ var funcProto = Function.prototype, objectProto = Object.prototype;
+/** Used to resolve the decompiled source of functions. */ var funcToString = funcProto.toString;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/** Used to detect if a method is native. */ var reIsNative = RegExp("^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+/**
+ * The base implementation of `_.isNative` without bad shim checks.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a native function,
+ *  else `false`.
+ */ function baseIsNative(value) {
+    if (!(0, _isObjectJsDefault.default)(value) || (0, _isMaskedJsDefault.default)(value)) return false;
+    var pattern = (0, _isFunctionJsDefault.default)(value) ? reIsNative : reIsHostCtor;
+    return pattern.test((0, _toSourceJsDefault.default)(value));
+}
+exports.default = baseIsNative;
+
+},{"./isFunction.js":"e5kis","./_isMasked.js":"8rXmg","./isObject.js":"dHhyW","./_toSource.js":"4wd66","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e5kis":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseGetTagJs = require("./_baseGetTag.js");
+var _baseGetTagJsDefault = parcelHelpers.interopDefault(_baseGetTagJs);
+var _isObjectJs = require("./isObject.js");
+var _isObjectJsDefault = parcelHelpers.interopDefault(_isObjectJs);
+/** `Object#toString` result references. */ var asyncTag = "[object AsyncFunction]", funcTag = "[object Function]", genTag = "[object GeneratorFunction]", proxyTag = "[object Proxy]";
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */ function isFunction(value) {
+    if (!(0, _isObjectJsDefault.default)(value)) return false;
+    // The use of `Object#toString` avoids issues with the `typeof` operator
+    // in Safari 9 which returns 'object' for typed arrays and other constructors.
+    var tag = (0, _baseGetTagJsDefault.default)(value);
+    return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+}
+exports.default = isFunction;
+
+},{"./_baseGetTag.js":"gVDfP","./isObject.js":"dHhyW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dHhyW":[function(require,module,exports) {
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function isObject(value) {
+    var type = typeof value;
+    return value != null && (type == "object" || type == "function");
+}
+exports.default = isObject;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8rXmg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _coreJsDataJs = require("./_coreJsData.js");
+var _coreJsDataJsDefault = parcelHelpers.interopDefault(_coreJsDataJs);
+/** Used to detect methods masquerading as native. */ var maskSrcKey = function() {
+    var uid = /[^.]+$/.exec((0, _coreJsDataJsDefault.default) && (0, _coreJsDataJsDefault.default).keys && (0, _coreJsDataJsDefault.default).keys.IE_PROTO || "");
+    return uid ? "Symbol(src)_1." + uid : "";
+}();
+/**
+ * Checks if `func` has its source masked.
+ *
+ * @private
+ * @param {Function} func The function to check.
+ * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+ */ function isMasked(func) {
+    return !!maskSrcKey && maskSrcKey in func;
+}
+exports.default = isMasked;
+
+},{"./_coreJsData.js":"jb15d","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jb15d":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/** Used to detect overreaching core-js shims. */ var coreJsData = (0, _rootJsDefault.default)["__core-js_shared__"];
+exports.default = coreJsData;
+
+},{"./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4wd66":[function(require,module,exports) {
+/** Used for built-in method references. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var funcProto = Function.prototype;
+/** Used to resolve the decompiled source of functions. */ var funcToString = funcProto.toString;
+/**
+ * Converts `func` to its source code.
+ *
+ * @private
+ * @param {Function} func The function to convert.
+ * @returns {string} Returns the source code.
+ */ function toSource(func) {
+    if (func != null) {
+        try {
+            return funcToString.call(func);
+        } catch (e) {}
+        try {
+            return func + "";
+        } catch (e) {}
+    }
+    return "";
+}
+exports.default = toSource;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dHb8j":[function(require,module,exports) {
+/**
+ * Gets the value at `key` of `object`.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {string} key The key of the property to get.
+ * @returns {*} Returns the property value.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function getValue(object, key) {
+    return object == null ? undefined : object[key];
+}
+exports.default = getValue;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kdqbj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _mapCacheClearJs = require("./_mapCacheClear.js");
+var _mapCacheClearJsDefault = parcelHelpers.interopDefault(_mapCacheClearJs);
+var _mapCacheDeleteJs = require("./_mapCacheDelete.js");
+var _mapCacheDeleteJsDefault = parcelHelpers.interopDefault(_mapCacheDeleteJs);
+var _mapCacheGetJs = require("./_mapCacheGet.js");
+var _mapCacheGetJsDefault = parcelHelpers.interopDefault(_mapCacheGetJs);
+var _mapCacheHasJs = require("./_mapCacheHas.js");
+var _mapCacheHasJsDefault = parcelHelpers.interopDefault(_mapCacheHasJs);
+var _mapCacheSetJs = require("./_mapCacheSet.js");
+var _mapCacheSetJsDefault = parcelHelpers.interopDefault(_mapCacheSetJs);
+/**
+ * Creates a map cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */ function MapCache(entries) {
+    var index = -1, length = entries == null ? 0 : entries.length;
+    this.clear();
+    while(++index < length){
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+    }
+}
+// Add methods to `MapCache`.
+MapCache.prototype.clear = (0, _mapCacheClearJsDefault.default);
+MapCache.prototype["delete"] = (0, _mapCacheDeleteJsDefault.default);
+MapCache.prototype.get = (0, _mapCacheGetJsDefault.default);
+MapCache.prototype.has = (0, _mapCacheHasJsDefault.default);
+MapCache.prototype.set = (0, _mapCacheSetJsDefault.default);
+exports.default = MapCache;
+
+},{"./_mapCacheClear.js":"6PhQB","./_mapCacheDelete.js":"eoP1L","./_mapCacheGet.js":"lbrg6","./_mapCacheHas.js":"lPQeP","./_mapCacheSet.js":"4UIYE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6PhQB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _hashJs = require("./_Hash.js");
+var _hashJsDefault = parcelHelpers.interopDefault(_hashJs);
+var _listCacheJs = require("./_ListCache.js");
+var _listCacheJsDefault = parcelHelpers.interopDefault(_listCacheJs);
+var _mapJs = require("./_Map.js");
+var _mapJsDefault = parcelHelpers.interopDefault(_mapJs);
+/**
+ * Removes all key-value entries from the map.
+ *
+ * @private
+ * @name clear
+ * @memberOf MapCache
+ */ function mapCacheClear() {
+    this.size = 0;
+    this.__data__ = {
+        "hash": new (0, _hashJsDefault.default),
+        "map": new ((0, _mapJsDefault.default) || (0, _listCacheJsDefault.default)),
+        "string": new (0, _hashJsDefault.default)
+    };
+}
+exports.default = mapCacheClear;
+
+},{"./_Hash.js":"1HkPM","./_ListCache.js":"cqhDQ","./_Map.js":"8spnB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1HkPM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _hashClearJs = require("./_hashClear.js");
+var _hashClearJsDefault = parcelHelpers.interopDefault(_hashClearJs);
+var _hashDeleteJs = require("./_hashDelete.js");
+var _hashDeleteJsDefault = parcelHelpers.interopDefault(_hashDeleteJs);
+var _hashGetJs = require("./_hashGet.js");
+var _hashGetJsDefault = parcelHelpers.interopDefault(_hashGetJs);
+var _hashHasJs = require("./_hashHas.js");
+var _hashHasJsDefault = parcelHelpers.interopDefault(_hashHasJs);
+var _hashSetJs = require("./_hashSet.js");
+var _hashSetJsDefault = parcelHelpers.interopDefault(_hashSetJs);
+/**
+ * Creates a hash object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */ function Hash(entries) {
+    var index = -1, length = entries == null ? 0 : entries.length;
+    this.clear();
+    while(++index < length){
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+    }
+}
+// Add methods to `Hash`.
+Hash.prototype.clear = (0, _hashClearJsDefault.default);
+Hash.prototype["delete"] = (0, _hashDeleteJsDefault.default);
+Hash.prototype.get = (0, _hashGetJsDefault.default);
+Hash.prototype.has = (0, _hashHasJsDefault.default);
+Hash.prototype.set = (0, _hashSetJsDefault.default);
+exports.default = Hash;
+
+},{"./_hashClear.js":"5oLNs","./_hashDelete.js":"3Xo6B","./_hashGet.js":"j4Vuu","./_hashHas.js":"d5QIn","./_hashSet.js":"lQL69","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5oLNs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _nativeCreateJs = require("./_nativeCreate.js");
+var _nativeCreateJsDefault = parcelHelpers.interopDefault(_nativeCreateJs);
+/**
+ * Removes all key-value entries from the hash.
+ *
+ * @private
+ * @name clear
+ * @memberOf Hash
+ */ function hashClear() {
+    this.__data__ = (0, _nativeCreateJsDefault.default) ? (0, _nativeCreateJsDefault.default)(null) : {};
+    this.size = 0;
+}
+exports.default = hashClear;
+
+},{"./_nativeCreate.js":"2XXd9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2XXd9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getNativeJs = require("./_getNative.js");
+var _getNativeJsDefault = parcelHelpers.interopDefault(_getNativeJs);
+/* Built-in method references that are verified to be native. */ var nativeCreate = (0, _getNativeJsDefault.default)(Object, "create");
+exports.default = nativeCreate;
+
+},{"./_getNative.js":"bQrQL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3Xo6B":[function(require,module,exports) {
+/**
+ * Removes `key` and its value from the hash.
+ *
+ * @private
+ * @name delete
+ * @memberOf Hash
+ * @param {Object} hash The hash to modify.
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function hashDelete(key) {
+    var result = this.has(key) && delete this.__data__[key];
+    this.size -= result ? 1 : 0;
+    return result;
+}
+exports.default = hashDelete;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"j4Vuu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _nativeCreateJs = require("./_nativeCreate.js");
+var _nativeCreateJsDefault = parcelHelpers.interopDefault(_nativeCreateJs);
+/** Used to stand-in for `undefined` hash values. */ var HASH_UNDEFINED = "__lodash_hash_undefined__";
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * Gets the hash value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Hash
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */ function hashGet(key) {
+    var data = this.__data__;
+    if (0, _nativeCreateJsDefault.default) {
+        var result = data[key];
+        return result === HASH_UNDEFINED ? undefined : result;
+    }
+    return hasOwnProperty.call(data, key) ? data[key] : undefined;
+}
+exports.default = hashGet;
+
+},{"./_nativeCreate.js":"2XXd9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d5QIn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _nativeCreateJs = require("./_nativeCreate.js");
+var _nativeCreateJsDefault = parcelHelpers.interopDefault(_nativeCreateJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * Checks if a hash value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Hash
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */ function hashHas(key) {
+    var data = this.__data__;
+    return (0, _nativeCreateJsDefault.default) ? data[key] !== undefined : hasOwnProperty.call(data, key);
+}
+exports.default = hashHas;
+
+},{"./_nativeCreate.js":"2XXd9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lQL69":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _nativeCreateJs = require("./_nativeCreate.js");
+var _nativeCreateJsDefault = parcelHelpers.interopDefault(_nativeCreateJs);
+/** Used to stand-in for `undefined` hash values. */ var HASH_UNDEFINED = "__lodash_hash_undefined__";
+/**
+ * Sets the hash `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Hash
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the hash instance.
+ */ function hashSet(key, value) {
+    var data = this.__data__;
+    this.size += this.has(key) ? 0 : 1;
+    data[key] = (0, _nativeCreateJsDefault.default) && value === undefined ? HASH_UNDEFINED : value;
+    return this;
+}
+exports.default = hashSet;
+
+},{"./_nativeCreate.js":"2XXd9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eoP1L":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getMapDataJs = require("./_getMapData.js");
+var _getMapDataJsDefault = parcelHelpers.interopDefault(_getMapDataJs);
+/**
+ * Removes `key` and its value from the map.
+ *
+ * @private
+ * @name delete
+ * @memberOf MapCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */ function mapCacheDelete(key) {
+    var result = (0, _getMapDataJsDefault.default)(this, key)["delete"](key);
+    this.size -= result ? 1 : 0;
+    return result;
+}
+exports.default = mapCacheDelete;
+
+},{"./_getMapData.js":"3xzxe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3xzxe":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _isKeyableJs = require("./_isKeyable.js");
+var _isKeyableJsDefault = parcelHelpers.interopDefault(_isKeyableJs);
+/**
+ * Gets the data for `map`.
+ *
+ * @private
+ * @param {Object} map The map to query.
+ * @param {string} key The reference key.
+ * @returns {*} Returns the map data.
+ */ function getMapData(map, key) {
+    var data = map.__data__;
+    return (0, _isKeyableJsDefault.default)(key) ? data[typeof key == "string" ? "string" : "hash"] : data.map;
+}
+exports.default = getMapData;
+
+},{"./_isKeyable.js":"9O1jG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9O1jG":[function(require,module,exports) {
+/**
+ * Checks if `value` is suitable for use as unique object key.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function isKeyable(value) {
+    var type = typeof value;
+    return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
+}
+exports.default = isKeyable;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lbrg6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getMapDataJs = require("./_getMapData.js");
+var _getMapDataJsDefault = parcelHelpers.interopDefault(_getMapDataJs);
+/**
+ * Gets the map value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf MapCache
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */ function mapCacheGet(key) {
+    return (0, _getMapDataJsDefault.default)(this, key).get(key);
+}
+exports.default = mapCacheGet;
+
+},{"./_getMapData.js":"3xzxe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lPQeP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getMapDataJs = require("./_getMapData.js");
+var _getMapDataJsDefault = parcelHelpers.interopDefault(_getMapDataJs);
+/**
+ * Checks if a map value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf MapCache
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */ function mapCacheHas(key) {
+    return (0, _getMapDataJsDefault.default)(this, key).has(key);
+}
+exports.default = mapCacheHas;
+
+},{"./_getMapData.js":"3xzxe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4UIYE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getMapDataJs = require("./_getMapData.js");
+var _getMapDataJsDefault = parcelHelpers.interopDefault(_getMapDataJs);
+/**
+ * Sets the map `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf MapCache
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the map cache instance.
+ */ function mapCacheSet(key, value) {
+    var data = (0, _getMapDataJsDefault.default)(this, key), size = data.size;
+    data.set(key, value);
+    this.size += data.size == size ? 0 : 1;
+    return this;
+}
+exports.default = mapCacheSet;
+
+},{"./_getMapData.js":"3xzxe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d26yI":[function(require,module,exports) {
+/**
+ * A specialized version of `_.forEach` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns `array`.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function arrayEach(array, iteratee) {
+    var index = -1, length = array == null ? 0 : array.length;
+    while(++index < length){
+        if (iteratee(array[index], index, array) === false) break;
+    }
+    return array;
+}
+exports.default = arrayEach;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lDCb2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseAssignValueJs = require("./_baseAssignValue.js");
+var _baseAssignValueJsDefault = parcelHelpers.interopDefault(_baseAssignValueJs);
+var _eqJs = require("./eq.js");
+var _eqJsDefault = parcelHelpers.interopDefault(_eqJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * Assigns `value` to `key` of `object` if the existing value is not equivalent
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */ function assignValue(object, key, value) {
+    var objValue = object[key];
+    if (!(hasOwnProperty.call(object, key) && (0, _eqJsDefault.default)(objValue, value)) || value === undefined && !(key in object)) (0, _baseAssignValueJsDefault.default)(object, key, value);
+}
+exports.default = assignValue;
+
+},{"./_baseAssignValue.js":"7kEZ2","./eq.js":"7el3s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7kEZ2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _definePropertyJs = require("./_defineProperty.js");
+var _definePropertyJsDefault = parcelHelpers.interopDefault(_definePropertyJs);
+/**
+ * The base implementation of `assignValue` and `assignMergeValue` without
+ * value checks.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */ function baseAssignValue(object, key, value) {
+    if (key == "__proto__" && (0, _definePropertyJsDefault.default)) (0, _definePropertyJsDefault.default)(object, key, {
+        "configurable": true,
+        "enumerable": true,
+        "value": value,
+        "writable": true
+    });
+    else object[key] = value;
+}
+exports.default = baseAssignValue;
+
+},{"./_defineProperty.js":"8u8dH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8u8dH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getNativeJs = require("./_getNative.js");
+var _getNativeJsDefault = parcelHelpers.interopDefault(_getNativeJs);
+var defineProperty = function() {
+    try {
+        var func = (0, _getNativeJsDefault.default)(Object, "defineProperty");
+        func({}, "", {});
+        return func;
+    } catch (e) {}
+}();
+exports.default = defineProperty;
+
+},{"./_getNative.js":"bQrQL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jYSyD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _copyObjectJs = require("./_copyObject.js");
+var _copyObjectJsDefault = parcelHelpers.interopDefault(_copyObjectJs);
+var _keysJs = require("./keys.js");
+var _keysJsDefault = parcelHelpers.interopDefault(_keysJs);
+/**
+ * The base implementation of `_.assign` without support for multiple sources
+ * or `customizer` functions.
+ *
+ * @private
+ * @param {Object} object The destination object.
+ * @param {Object} source The source object.
+ * @returns {Object} Returns `object`.
+ */ function baseAssign(object, source) {
+    return object && (0, _copyObjectJsDefault.default)(source, (0, _keysJsDefault.default)(source), object);
+}
+exports.default = baseAssign;
+
+},{"./_copyObject.js":"hBRv5","./keys.js":"lbEZV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hBRv5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _assignValueJs = require("./_assignValue.js");
+var _assignValueJsDefault = parcelHelpers.interopDefault(_assignValueJs);
+var _baseAssignValueJs = require("./_baseAssignValue.js");
+var _baseAssignValueJsDefault = parcelHelpers.interopDefault(_baseAssignValueJs);
+/**
+ * Copies properties of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy properties from.
+ * @param {Array} props The property identifiers to copy.
+ * @param {Object} [object={}] The object to copy properties to.
+ * @param {Function} [customizer] The function to customize copied values.
+ * @returns {Object} Returns `object`.
+ */ function copyObject(source, props, object, customizer) {
+    var isNew = !object;
+    object || (object = {});
+    var index = -1, length = props.length;
+    while(++index < length){
+        var key = props[index];
+        var newValue = customizer ? customizer(object[key], source[key], key, object, source) : undefined;
+        if (newValue === undefined) newValue = source[key];
+        if (isNew) (0, _baseAssignValueJsDefault.default)(object, key, newValue);
+        else (0, _assignValueJsDefault.default)(object, key, newValue);
+    }
+    return object;
+}
+exports.default = copyObject;
+
+},{"./_assignValue.js":"lDCb2","./_baseAssignValue.js":"7kEZ2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lbEZV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _arrayLikeKeysJs = require("./_arrayLikeKeys.js");
+var _arrayLikeKeysJsDefault = parcelHelpers.interopDefault(_arrayLikeKeysJs);
+var _baseKeysJs = require("./_baseKeys.js");
+var _baseKeysJsDefault = parcelHelpers.interopDefault(_baseKeysJs);
+var _isArrayLikeJs = require("./isArrayLike.js");
+var _isArrayLikeJsDefault = parcelHelpers.interopDefault(_isArrayLikeJs);
+/**
+ * Creates an array of the own enumerable property names of `object`.
+ *
+ * **Note:** Non-object values are coerced to objects. See the
+ * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * for more details.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Object
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ *   this.b = 2;
+ * }
+ *
+ * Foo.prototype.c = 3;
+ *
+ * _.keys(new Foo);
+ * // => ['a', 'b'] (iteration order is not guaranteed)
+ *
+ * _.keys('hi');
+ * // => ['0', '1']
+ */ function keys(object) {
+    return (0, _isArrayLikeJsDefault.default)(object) ? (0, _arrayLikeKeysJsDefault.default)(object) : (0, _baseKeysJsDefault.default)(object);
+}
+exports.default = keys;
+
+},{"./_arrayLikeKeys.js":"b4sHy","./_baseKeys.js":"7rx4g","./isArrayLike.js":"8SdiO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b4sHy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseTimesJs = require("./_baseTimes.js");
+var _baseTimesJsDefault = parcelHelpers.interopDefault(_baseTimesJs);
+var _isArgumentsJs = require("./isArguments.js");
+var _isArgumentsJsDefault = parcelHelpers.interopDefault(_isArgumentsJs);
+var _isArrayJs = require("./isArray.js");
+var _isArrayJsDefault = parcelHelpers.interopDefault(_isArrayJs);
+var _isBufferJs = require("./isBuffer.js");
+var _isBufferJsDefault = parcelHelpers.interopDefault(_isBufferJs);
+var _isIndexJs = require("./_isIndex.js");
+var _isIndexJsDefault = parcelHelpers.interopDefault(_isIndexJs);
+var _isTypedArrayJs = require("./isTypedArray.js");
+var _isTypedArrayJsDefault = parcelHelpers.interopDefault(_isTypedArrayJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * Creates an array of the enumerable property names of the array-like `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @param {boolean} inherited Specify returning inherited property names.
+ * @returns {Array} Returns the array of property names.
+ */ function arrayLikeKeys(value, inherited) {
+    var isArr = (0, _isArrayJsDefault.default)(value), isArg = !isArr && (0, _isArgumentsJsDefault.default)(value), isBuff = !isArr && !isArg && (0, _isBufferJsDefault.default)(value), isType = !isArr && !isArg && !isBuff && (0, _isTypedArrayJsDefault.default)(value), skipIndexes = isArr || isArg || isBuff || isType, result = skipIndexes ? (0, _baseTimesJsDefault.default)(value.length, String) : [], length = result.length;
+    for(var key in value)if ((inherited || hasOwnProperty.call(value, key)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
+    (key == "length" || // Node.js 0.10 has enumerable non-index properties on buffers.
+    isBuff && (key == "offset" || key == "parent") || // PhantomJS 2 has enumerable non-index properties on typed arrays.
+    isType && (key == "buffer" || key == "byteLength" || key == "byteOffset") || // Skip index properties.
+    (0, _isIndexJsDefault.default)(key, length)))) result.push(key);
+    return result;
+}
+exports.default = arrayLikeKeys;
+
+},{"./_baseTimes.js":"6yWeR","./isArguments.js":"9k91Y","./isArray.js":"ETPQ1","./isBuffer.js":"llpEE","./_isIndex.js":"5DS1K","./isTypedArray.js":"2LIMs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6yWeR":[function(require,module,exports) {
+/**
+ * The base implementation of `_.times` without support for iteratee shorthands
+ * or max array length checks.
+ *
+ * @private
+ * @param {number} n The number of times to invoke `iteratee`.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the array of results.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function baseTimes(n, iteratee) {
+    var index = -1, result = Array(n);
+    while(++index < n)result[index] = iteratee(index);
+    return result;
+}
+exports.default = baseTimes;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9k91Y":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseIsArgumentsJs = require("./_baseIsArguments.js");
+var _baseIsArgumentsJsDefault = parcelHelpers.interopDefault(_baseIsArgumentsJs);
+var _isObjectLikeJs = require("./isObjectLike.js");
+var _isObjectLikeJsDefault = parcelHelpers.interopDefault(_isObjectLikeJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/** Built-in value references. */ var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */ var isArguments = (0, _baseIsArgumentsJsDefault.default)(function() {
+    return arguments;
+}()) ? (0, _baseIsArgumentsJsDefault.default) : function(value) {
+    return (0, _isObjectLikeJsDefault.default)(value) && hasOwnProperty.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
+};
+exports.default = isArguments;
+
+},{"./_baseIsArguments.js":"bnUuB","./isObjectLike.js":"iad76","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bnUuB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseGetTagJs = require("./_baseGetTag.js");
+var _baseGetTagJsDefault = parcelHelpers.interopDefault(_baseGetTagJs);
+var _isObjectLikeJs = require("./isObjectLike.js");
+var _isObjectLikeJsDefault = parcelHelpers.interopDefault(_isObjectLikeJs);
+/** `Object#toString` result references. */ var argsTag = "[object Arguments]";
+/**
+ * The base implementation of `_.isArguments`.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ */ function baseIsArguments(value) {
+    return (0, _isObjectLikeJsDefault.default)(value) && (0, _baseGetTagJsDefault.default)(value) == argsTag;
+}
+exports.default = baseIsArguments;
+
+},{"./_baseGetTag.js":"gVDfP","./isObjectLike.js":"iad76","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ETPQ1":[function(require,module,exports) {
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var isArray = Array.isArray;
+exports.default = isArray;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"llpEE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+var _stubFalseJs = require("./stubFalse.js");
+var _stubFalseJsDefault = parcelHelpers.interopDefault(_stubFalseJs);
+/** Detect free variable `exports`. */ var freeExports = exports && !exports.nodeType && exports;
+/** Detect free variable `module`. */ var freeModule = freeExports && true && module && !module.nodeType && module;
+/** Detect the popular CommonJS extension `module.exports`. */ var moduleExports = freeModule && freeModule.exports === freeExports;
+/** Built-in value references. */ var Buffer = moduleExports ? (0, _rootJsDefault.default).Buffer : undefined;
+/* Built-in method references for those with the same name as other `lodash` methods. */ var nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined;
+/**
+ * Checks if `value` is a buffer.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.3.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.
+ * @example
+ *
+ * _.isBuffer(new Buffer(2));
+ * // => true
+ *
+ * _.isBuffer(new Uint8Array(2));
+ * // => false
+ */ var isBuffer = nativeIsBuffer || (0, _stubFalseJsDefault.default);
+exports.default = isBuffer;
+
+},{"./_root.js":"8yvCA","./stubFalse.js":"fF5mf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fF5mf":[function(require,module,exports) {
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function stubFalse() {
+    return false;
+}
+exports.default = stubFalse;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5DS1K":[function(require,module,exports) {
+/** Used as references for various `Number` constants. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var MAX_SAFE_INTEGER = 9007199254740991;
+/** Used to detect unsigned integer values. */ var reIsUint = /^(?:0|[1-9]\d*)$/;
+/**
+ * Checks if `value` is a valid array-like index.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+ * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+ */ function isIndex(value, length) {
+    var type = typeof value;
+    length = length == null ? MAX_SAFE_INTEGER : length;
+    return !!length && (type == "number" || type != "symbol" && reIsUint.test(value)) && value > -1 && value % 1 == 0 && value < length;
+}
+exports.default = isIndex;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2LIMs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseIsTypedArrayJs = require("./_baseIsTypedArray.js");
+var _baseIsTypedArrayJsDefault = parcelHelpers.interopDefault(_baseIsTypedArrayJs);
+var _baseUnaryJs = require("./_baseUnary.js");
+var _baseUnaryJsDefault = parcelHelpers.interopDefault(_baseUnaryJs);
+var _nodeUtilJs = require("./_nodeUtil.js");
+var _nodeUtilJsDefault = parcelHelpers.interopDefault(_nodeUtilJs);
+/* Node.js helper references. */ var nodeIsTypedArray = (0, _nodeUtilJsDefault.default) && (0, _nodeUtilJsDefault.default).isTypedArray;
+/**
+ * Checks if `value` is classified as a typed array.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ * @example
+ *
+ * _.isTypedArray(new Uint8Array);
+ * // => true
+ *
+ * _.isTypedArray([]);
+ * // => false
+ */ var isTypedArray = nodeIsTypedArray ? (0, _baseUnaryJsDefault.default)(nodeIsTypedArray) : (0, _baseIsTypedArrayJsDefault.default);
+exports.default = isTypedArray;
+
+},{"./_baseIsTypedArray.js":"jcEk3","./_baseUnary.js":"jBUGV","./_nodeUtil.js":"cxU0K","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jcEk3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseGetTagJs = require("./_baseGetTag.js");
+var _baseGetTagJsDefault = parcelHelpers.interopDefault(_baseGetTagJs);
+var _isLengthJs = require("./isLength.js");
+var _isLengthJsDefault = parcelHelpers.interopDefault(_isLengthJs);
+var _isObjectLikeJs = require("./isObjectLike.js");
+var _isObjectLikeJsDefault = parcelHelpers.interopDefault(_isObjectLikeJs);
+/** `Object#toString` result references. */ var argsTag = "[object Arguments]", arrayTag = "[object Array]", boolTag = "[object Boolean]", dateTag = "[object Date]", errorTag = "[object Error]", funcTag = "[object Function]", mapTag = "[object Map]", numberTag = "[object Number]", objectTag = "[object Object]", regexpTag = "[object RegExp]", setTag = "[object Set]", stringTag = "[object String]", weakMapTag = "[object WeakMap]";
+var arrayBufferTag = "[object ArrayBuffer]", dataViewTag = "[object DataView]", float32Tag = "[object Float32Array]", float64Tag = "[object Float64Array]", int8Tag = "[object Int8Array]", int16Tag = "[object Int16Array]", int32Tag = "[object Int32Array]", uint8Tag = "[object Uint8Array]", uint8ClampedTag = "[object Uint8ClampedArray]", uint16Tag = "[object Uint16Array]", uint32Tag = "[object Uint32Array]";
+/** Used to identify `toStringTag` values of typed arrays. */ var typedArrayTags = {};
+typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] = typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] = typedArrayTags[uint32Tag] = true;
+typedArrayTags[argsTag] = typedArrayTags[arrayTag] = typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] = typedArrayTags[dataViewTag] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[funcTag] = typedArrayTags[mapTag] = typedArrayTags[numberTag] = typedArrayTags[objectTag] = typedArrayTags[regexpTag] = typedArrayTags[setTag] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
+/**
+ * The base implementation of `_.isTypedArray` without Node.js optimizations.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ */ function baseIsTypedArray(value) {
+    return (0, _isObjectLikeJsDefault.default)(value) && (0, _isLengthJsDefault.default)(value.length) && !!typedArrayTags[(0, _baseGetTagJsDefault.default)(value)];
+}
+exports.default = baseIsTypedArray;
+
+},{"./_baseGetTag.js":"gVDfP","./isLength.js":"bItM0","./isObjectLike.js":"iad76","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bItM0":[function(require,module,exports) {
+/** Used as references for various `Number` constants. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var MAX_SAFE_INTEGER = 9007199254740991;
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */ function isLength(value) {
+    return typeof value == "number" && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+exports.default = isLength;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jBUGV":[function(require,module,exports) {
+/**
+ * The base implementation of `_.unary` without support for storing metadata.
+ *
+ * @private
+ * @param {Function} func The function to cap arguments for.
+ * @returns {Function} Returns the new capped function.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function baseUnary(func) {
+    return function(value) {
+        return func(value);
+    };
+}
+exports.default = baseUnary;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cxU0K":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _freeGlobalJs = require("./_freeGlobal.js");
+var _freeGlobalJsDefault = parcelHelpers.interopDefault(_freeGlobalJs);
+/** Detect free variable `exports`. */ var freeExports = exports && !exports.nodeType && exports;
+/** Detect free variable `module`. */ var freeModule = freeExports && true && module && !module.nodeType && module;
+/** Detect the popular CommonJS extension `module.exports`. */ var moduleExports = freeModule && freeModule.exports === freeExports;
+/** Detect free variable `process` from Node.js. */ var freeProcess = moduleExports && (0, _freeGlobalJsDefault.default).process;
+/** Used to access faster Node.js helpers. */ var nodeUtil = function() {
+    try {
+        // Use `util.types` for Node.js 10+.
+        var types = freeModule && freeModule.require && freeModule.require("util").types;
+        if (types) return types;
+        // Legacy `process.binding('util')` for Node.js < 10.
+        return freeProcess && freeProcess.binding && freeProcess.binding("util");
+    } catch (e) {}
+}();
+exports.default = nodeUtil;
+
+},{"./_freeGlobal.js":"98hMd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7rx4g":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _isPrototypeJs = require("./_isPrototype.js");
+var _isPrototypeJsDefault = parcelHelpers.interopDefault(_isPrototypeJs);
+var _nativeKeysJs = require("./_nativeKeys.js");
+var _nativeKeysJsDefault = parcelHelpers.interopDefault(_nativeKeysJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * The base implementation of `_.keys` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */ function baseKeys(object) {
+    if (!(0, _isPrototypeJsDefault.default)(object)) return (0, _nativeKeysJsDefault.default)(object);
+    var result = [];
+    for(var key in Object(object))if (hasOwnProperty.call(object, key) && key != "constructor") result.push(key);
+    return result;
+}
+exports.default = baseKeys;
+
+},{"./_isPrototype.js":"jOAyW","./_nativeKeys.js":"4fIwW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jOAyW":[function(require,module,exports) {
+/** Used for built-in method references. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var objectProto = Object.prototype;
+/**
+ * Checks if `value` is likely a prototype object.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+ */ function isPrototype(value) {
+    var Ctor = value && value.constructor, proto = typeof Ctor == "function" && Ctor.prototype || objectProto;
+    return value === proto;
+}
+exports.default = isPrototype;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4fIwW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _overArgJs = require("./_overArg.js");
+var _overArgJsDefault = parcelHelpers.interopDefault(_overArgJs);
+/* Built-in method references for those with the same name as other `lodash` methods. */ var nativeKeys = (0, _overArgJsDefault.default)(Object.keys, Object);
+exports.default = nativeKeys;
+
+},{"./_overArg.js":"lqvyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8SdiO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _isFunctionJs = require("./isFunction.js");
+var _isFunctionJsDefault = parcelHelpers.interopDefault(_isFunctionJs);
+var _isLengthJs = require("./isLength.js");
+var _isLengthJsDefault = parcelHelpers.interopDefault(_isLengthJs);
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */ function isArrayLike(value) {
+    return value != null && (0, _isLengthJsDefault.default)(value.length) && !(0, _isFunctionJsDefault.default)(value);
+}
+exports.default = isArrayLike;
+
+},{"./isFunction.js":"e5kis","./isLength.js":"bItM0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6AB2c":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _copyObjectJs = require("./_copyObject.js");
+var _copyObjectJsDefault = parcelHelpers.interopDefault(_copyObjectJs);
+var _keysInJs = require("./keysIn.js");
+var _keysInJsDefault = parcelHelpers.interopDefault(_keysInJs);
+/**
+ * The base implementation of `_.assignIn` without support for multiple sources
+ * or `customizer` functions.
+ *
+ * @private
+ * @param {Object} object The destination object.
+ * @param {Object} source The source object.
+ * @returns {Object} Returns `object`.
+ */ function baseAssignIn(object, source) {
+    return object && (0, _copyObjectJsDefault.default)(source, (0, _keysInJsDefault.default)(source), object);
+}
+exports.default = baseAssignIn;
+
+},{"./_copyObject.js":"hBRv5","./keysIn.js":"jms5f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jms5f":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _arrayLikeKeysJs = require("./_arrayLikeKeys.js");
+var _arrayLikeKeysJsDefault = parcelHelpers.interopDefault(_arrayLikeKeysJs);
+var _baseKeysInJs = require("./_baseKeysIn.js");
+var _baseKeysInJsDefault = parcelHelpers.interopDefault(_baseKeysInJs);
+var _isArrayLikeJs = require("./isArrayLike.js");
+var _isArrayLikeJsDefault = parcelHelpers.interopDefault(_isArrayLikeJs);
+/**
+ * Creates an array of the own and inherited enumerable property names of `object`.
+ *
+ * **Note:** Non-object values are coerced to objects.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Object
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ *   this.b = 2;
+ * }
+ *
+ * Foo.prototype.c = 3;
+ *
+ * _.keysIn(new Foo);
+ * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+ */ function keysIn(object) {
+    return (0, _isArrayLikeJsDefault.default)(object) ? (0, _arrayLikeKeysJsDefault.default)(object, true) : (0, _baseKeysInJsDefault.default)(object);
+}
+exports.default = keysIn;
+
+},{"./_arrayLikeKeys.js":"b4sHy","./_baseKeysIn.js":"cvYFp","./isArrayLike.js":"8SdiO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cvYFp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _isObjectJs = require("./isObject.js");
+var _isObjectJsDefault = parcelHelpers.interopDefault(_isObjectJs);
+var _isPrototypeJs = require("./_isPrototype.js");
+var _isPrototypeJsDefault = parcelHelpers.interopDefault(_isPrototypeJs);
+var _nativeKeysInJs = require("./_nativeKeysIn.js");
+var _nativeKeysInJsDefault = parcelHelpers.interopDefault(_nativeKeysInJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */ function baseKeysIn(object) {
+    if (!(0, _isObjectJsDefault.default)(object)) return (0, _nativeKeysInJsDefault.default)(object);
+    var isProto = (0, _isPrototypeJsDefault.default)(object), result = [];
+    for(var key in object)if (!(key == "constructor" && (isProto || !hasOwnProperty.call(object, key)))) result.push(key);
+    return result;
+}
+exports.default = baseKeysIn;
+
+},{"./isObject.js":"dHhyW","./_isPrototype.js":"jOAyW","./_nativeKeysIn.js":"ciZAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ciZAw":[function(require,module,exports) {
+/**
+ * This function is like
+ * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * except that it includes inherited enumerable properties.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function nativeKeysIn(object) {
+    var result = [];
+    if (object != null) for(var key in Object(object))result.push(key);
+    return result;
+}
+exports.default = nativeKeysIn;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kMJjN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/** Detect free variable `exports`. */ var freeExports = exports && !exports.nodeType && exports;
+/** Detect free variable `module`. */ var freeModule = freeExports && true && module && !module.nodeType && module;
+/** Detect the popular CommonJS extension `module.exports`. */ var moduleExports = freeModule && freeModule.exports === freeExports;
+/** Built-in value references. */ var Buffer = moduleExports ? (0, _rootJsDefault.default).Buffer : undefined, allocUnsafe = Buffer ? Buffer.allocUnsafe : undefined;
+/**
+ * Creates a clone of  `buffer`.
+ *
+ * @private
+ * @param {Buffer} buffer The buffer to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Buffer} Returns the cloned buffer.
+ */ function cloneBuffer(buffer, isDeep) {
+    if (isDeep) return buffer.slice();
+    var length = buffer.length, result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
+    buffer.copy(result);
+    return result;
+}
+exports.default = cloneBuffer;
+
+},{"./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9islt":[function(require,module,exports) {
+/**
+ * Copies the values of `source` to `array`.
+ *
+ * @private
+ * @param {Array} source The array to copy values from.
+ * @param {Array} [array=[]] The array to copy values to.
+ * @returns {Array} Returns `array`.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function copyArray(source, array) {
+    var index = -1, length = source.length;
+    array || (array = Array(length));
+    while(++index < length)array[index] = source[index];
+    return array;
+}
+exports.default = copyArray;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4VEV3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _copyObjectJs = require("./_copyObject.js");
+var _copyObjectJsDefault = parcelHelpers.interopDefault(_copyObjectJs);
+var _getSymbolsJs = require("./_getSymbols.js");
+var _getSymbolsJsDefault = parcelHelpers.interopDefault(_getSymbolsJs);
+/**
+ * Copies own symbols of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy symbols from.
+ * @param {Object} [object={}] The object to copy symbols to.
+ * @returns {Object} Returns `object`.
+ */ function copySymbols(source, object) {
+    return (0, _copyObjectJsDefault.default)(source, (0, _getSymbolsJsDefault.default)(source), object);
+}
+exports.default = copySymbols;
+
+},{"./_copyObject.js":"hBRv5","./_getSymbols.js":"egqKq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"egqKq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _arrayFilterJs = require("./_arrayFilter.js");
+var _arrayFilterJsDefault = parcelHelpers.interopDefault(_arrayFilterJs);
+var _stubArrayJs = require("./stubArray.js");
+var _stubArrayJsDefault = parcelHelpers.interopDefault(_stubArrayJs);
+/** Used for built-in method references. */ var objectProto = Object.prototype;
+/** Built-in value references. */ var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+/* Built-in method references for those with the same name as other `lodash` methods. */ var nativeGetSymbols = Object.getOwnPropertySymbols;
+/**
+ * Creates an array of the own enumerable symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of symbols.
+ */ var getSymbols = !nativeGetSymbols ? (0, _stubArrayJsDefault.default) : function(object) {
+    if (object == null) return [];
+    object = Object(object);
+    return (0, _arrayFilterJsDefault.default)(nativeGetSymbols(object), function(symbol) {
+        return propertyIsEnumerable.call(object, symbol);
+    });
+};
+exports.default = getSymbols;
+
+},{"./_arrayFilter.js":"iZqHX","./stubArray.js":"iwLLL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iZqHX":[function(require,module,exports) {
+/**
+ * A specialized version of `_.filter` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function arrayFilter(array, predicate) {
+    var index = -1, length = array == null ? 0 : array.length, resIndex = 0, result = [];
+    while(++index < length){
+        var value = array[index];
+        if (predicate(value, index, array)) result[resIndex++] = value;
+    }
+    return result;
+}
+exports.default = arrayFilter;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iwLLL":[function(require,module,exports) {
+/**
+ * This method returns a new empty array.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {Array} Returns the new empty array.
+ * @example
+ *
+ * var arrays = _.times(2, _.stubArray);
+ *
+ * console.log(arrays);
+ * // => [[], []]
+ *
+ * console.log(arrays[0] === arrays[1]);
+ * // => false
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function stubArray() {
+    return [];
+}
+exports.default = stubArray;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cfnUc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _copyObjectJs = require("./_copyObject.js");
+var _copyObjectJsDefault = parcelHelpers.interopDefault(_copyObjectJs);
+var _getSymbolsInJs = require("./_getSymbolsIn.js");
+var _getSymbolsInJsDefault = parcelHelpers.interopDefault(_getSymbolsInJs);
+/**
+ * Copies own and inherited symbols of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy symbols from.
+ * @param {Object} [object={}] The object to copy symbols to.
+ * @returns {Object} Returns `object`.
+ */ function copySymbolsIn(source, object) {
+    return (0, _copyObjectJsDefault.default)(source, (0, _getSymbolsInJsDefault.default)(source), object);
+}
+exports.default = copySymbolsIn;
+
+},{"./_copyObject.js":"hBRv5","./_getSymbolsIn.js":"5Iqq9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5Iqq9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _arrayPushJs = require("./_arrayPush.js");
+var _arrayPushJsDefault = parcelHelpers.interopDefault(_arrayPushJs);
+var _getPrototypeJs = require("./_getPrototype.js");
+var _getPrototypeJsDefault = parcelHelpers.interopDefault(_getPrototypeJs);
+var _getSymbolsJs = require("./_getSymbols.js");
+var _getSymbolsJsDefault = parcelHelpers.interopDefault(_getSymbolsJs);
+var _stubArrayJs = require("./stubArray.js");
+var _stubArrayJsDefault = parcelHelpers.interopDefault(_stubArrayJs);
+/* Built-in method references for those with the same name as other `lodash` methods. */ var nativeGetSymbols = Object.getOwnPropertySymbols;
+/**
+ * Creates an array of the own and inherited enumerable symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of symbols.
+ */ var getSymbolsIn = !nativeGetSymbols ? (0, _stubArrayJsDefault.default) : function(object) {
+    var result = [];
+    while(object){
+        (0, _arrayPushJsDefault.default)(result, (0, _getSymbolsJsDefault.default)(object));
+        object = (0, _getPrototypeJsDefault.default)(object);
+    }
+    return result;
+};
+exports.default = getSymbolsIn;
+
+},{"./_arrayPush.js":"4BTrx","./_getPrototype.js":"b49GB","./_getSymbols.js":"egqKq","./stubArray.js":"iwLLL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4BTrx":[function(require,module,exports) {
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function arrayPush(array, values) {
+    var index = -1, length = values.length, offset = array.length;
+    while(++index < length)array[offset + index] = values[index];
+    return array;
+}
+exports.default = arrayPush;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"68ZDs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseGetAllKeysJs = require("./_baseGetAllKeys.js");
+var _baseGetAllKeysJsDefault = parcelHelpers.interopDefault(_baseGetAllKeysJs);
+var _getSymbolsJs = require("./_getSymbols.js");
+var _getSymbolsJsDefault = parcelHelpers.interopDefault(_getSymbolsJs);
+var _keysJs = require("./keys.js");
+var _keysJsDefault = parcelHelpers.interopDefault(_keysJs);
+/**
+ * Creates an array of own enumerable property names and symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names and symbols.
+ */ function getAllKeys(object) {
+    return (0, _baseGetAllKeysJsDefault.default)(object, (0, _keysJsDefault.default), (0, _getSymbolsJsDefault.default));
+}
+exports.default = getAllKeys;
+
+},{"./_baseGetAllKeys.js":"jHmw2","./_getSymbols.js":"egqKq","./keys.js":"lbEZV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jHmw2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _arrayPushJs = require("./_arrayPush.js");
+var _arrayPushJsDefault = parcelHelpers.interopDefault(_arrayPushJs);
+var _isArrayJs = require("./isArray.js");
+var _isArrayJsDefault = parcelHelpers.interopDefault(_isArrayJs);
+/**
+ * The base implementation of `getAllKeys` and `getAllKeysIn` which uses
+ * `keysFunc` and `symbolsFunc` to get the enumerable property names and
+ * symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {Function} keysFunc The function to get the keys of `object`.
+ * @param {Function} symbolsFunc The function to get the symbols of `object`.
+ * @returns {Array} Returns the array of property names and symbols.
+ */ function baseGetAllKeys(object, keysFunc, symbolsFunc) {
+    var result = keysFunc(object);
+    return (0, _isArrayJsDefault.default)(object) ? result : (0, _arrayPushJsDefault.default)(result, symbolsFunc(object));
+}
+exports.default = baseGetAllKeys;
+
+},{"./_arrayPush.js":"4BTrx","./isArray.js":"ETPQ1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6b5DG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseGetAllKeysJs = require("./_baseGetAllKeys.js");
+var _baseGetAllKeysJsDefault = parcelHelpers.interopDefault(_baseGetAllKeysJs);
+var _getSymbolsInJs = require("./_getSymbolsIn.js");
+var _getSymbolsInJsDefault = parcelHelpers.interopDefault(_getSymbolsInJs);
+var _keysInJs = require("./keysIn.js");
+var _keysInJsDefault = parcelHelpers.interopDefault(_keysInJs);
+/**
+ * Creates an array of own and inherited enumerable property names and
+ * symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names and symbols.
+ */ function getAllKeysIn(object) {
+    return (0, _baseGetAllKeysJsDefault.default)(object, (0, _keysInJsDefault.default), (0, _getSymbolsInJsDefault.default));
+}
+exports.default = getAllKeysIn;
+
+},{"./_baseGetAllKeys.js":"jHmw2","./_getSymbolsIn.js":"5Iqq9","./keysIn.js":"jms5f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1kCom":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _dataViewJs = require("./_DataView.js");
+var _dataViewJsDefault = parcelHelpers.interopDefault(_dataViewJs);
+var _mapJs = require("./_Map.js");
+var _mapJsDefault = parcelHelpers.interopDefault(_mapJs);
+var _promiseJs = require("./_Promise.js");
+var _promiseJsDefault = parcelHelpers.interopDefault(_promiseJs);
+var _setJs = require("./_Set.js");
+var _setJsDefault = parcelHelpers.interopDefault(_setJs);
+var _weakMapJs = require("./_WeakMap.js");
+var _weakMapJsDefault = parcelHelpers.interopDefault(_weakMapJs);
+var _baseGetTagJs = require("./_baseGetTag.js");
+var _baseGetTagJsDefault = parcelHelpers.interopDefault(_baseGetTagJs);
+var _toSourceJs = require("./_toSource.js");
+var _toSourceJsDefault = parcelHelpers.interopDefault(_toSourceJs);
+/** `Object#toString` result references. */ var mapTag = "[object Map]", objectTag = "[object Object]", promiseTag = "[object Promise]", setTag = "[object Set]", weakMapTag = "[object WeakMap]";
+var dataViewTag = "[object DataView]";
+/** Used to detect maps, sets, and weakmaps. */ var dataViewCtorString = (0, _toSourceJsDefault.default)((0, _dataViewJsDefault.default)), mapCtorString = (0, _toSourceJsDefault.default)((0, _mapJsDefault.default)), promiseCtorString = (0, _toSourceJsDefault.default)((0, _promiseJsDefault.default)), setCtorString = (0, _toSourceJsDefault.default)((0, _setJsDefault.default)), weakMapCtorString = (0, _toSourceJsDefault.default)((0, _weakMapJsDefault.default));
+/**
+ * Gets the `toStringTag` of `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */ var getTag = (0, _baseGetTagJsDefault.default);
+// Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
+if ((0, _dataViewJsDefault.default) && getTag(new (0, _dataViewJsDefault.default)(new ArrayBuffer(1))) != dataViewTag || (0, _mapJsDefault.default) && getTag(new (0, _mapJsDefault.default)) != mapTag || (0, _promiseJsDefault.default) && getTag((0, _promiseJsDefault.default).resolve()) != promiseTag || (0, _setJsDefault.default) && getTag(new (0, _setJsDefault.default)) != setTag || (0, _weakMapJsDefault.default) && getTag(new (0, _weakMapJsDefault.default)) != weakMapTag) getTag = function(value) {
+    var result = (0, _baseGetTagJsDefault.default)(value), Ctor = result == objectTag ? value.constructor : undefined, ctorString = Ctor ? (0, _toSourceJsDefault.default)(Ctor) : "";
+    if (ctorString) switch(ctorString){
+        case dataViewCtorString:
+            return dataViewTag;
+        case mapCtorString:
+            return mapTag;
+        case promiseCtorString:
+            return promiseTag;
+        case setCtorString:
+            return setTag;
+        case weakMapCtorString:
+            return weakMapTag;
+    }
+    return result;
+};
+exports.default = getTag;
+
+},{"./_DataView.js":"4SeGN","./_Map.js":"8spnB","./_Promise.js":"lbYHf","./_Set.js":"jf3T7","./_WeakMap.js":"52eE0","./_baseGetTag.js":"gVDfP","./_toSource.js":"4wd66","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4SeGN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getNativeJs = require("./_getNative.js");
+var _getNativeJsDefault = parcelHelpers.interopDefault(_getNativeJs);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/* Built-in method references that are verified to be native. */ var DataView = (0, _getNativeJsDefault.default)((0, _rootJsDefault.default), "DataView");
+exports.default = DataView;
+
+},{"./_getNative.js":"bQrQL","./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lbYHf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getNativeJs = require("./_getNative.js");
+var _getNativeJsDefault = parcelHelpers.interopDefault(_getNativeJs);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/* Built-in method references that are verified to be native. */ var Promise = (0, _getNativeJsDefault.default)((0, _rootJsDefault.default), "Promise");
+exports.default = Promise;
+
+},{"./_getNative.js":"bQrQL","./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jf3T7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getNativeJs = require("./_getNative.js");
+var _getNativeJsDefault = parcelHelpers.interopDefault(_getNativeJs);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/* Built-in method references that are verified to be native. */ var Set = (0, _getNativeJsDefault.default)((0, _rootJsDefault.default), "Set");
+exports.default = Set;
+
+},{"./_getNative.js":"bQrQL","./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"52eE0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getNativeJs = require("./_getNative.js");
+var _getNativeJsDefault = parcelHelpers.interopDefault(_getNativeJs);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/* Built-in method references that are verified to be native. */ var WeakMap = (0, _getNativeJsDefault.default)((0, _rootJsDefault.default), "WeakMap");
+exports.default = WeakMap;
+
+},{"./_getNative.js":"bQrQL","./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eVGYA":[function(require,module,exports) {
+/** Used for built-in method references. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var objectProto = Object.prototype;
+/** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * Initializes an array clone.
+ *
+ * @private
+ * @param {Array} array The array to clone.
+ * @returns {Array} Returns the initialized clone.
+ */ function initCloneArray(array) {
+    var length = array.length, result = new array.constructor(length);
+    // Add properties assigned by `RegExp#exec`.
+    if (length && typeof array[0] == "string" && hasOwnProperty.call(array, "index")) {
+        result.index = array.index;
+        result.input = array.input;
+    }
+    return result;
+}
+exports.default = initCloneArray;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d9muW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _cloneArrayBufferJs = require("./_cloneArrayBuffer.js");
+var _cloneArrayBufferJsDefault = parcelHelpers.interopDefault(_cloneArrayBufferJs);
+var _cloneDataViewJs = require("./_cloneDataView.js");
+var _cloneDataViewJsDefault = parcelHelpers.interopDefault(_cloneDataViewJs);
+var _cloneRegExpJs = require("./_cloneRegExp.js");
+var _cloneRegExpJsDefault = parcelHelpers.interopDefault(_cloneRegExpJs);
+var _cloneSymbolJs = require("./_cloneSymbol.js");
+var _cloneSymbolJsDefault = parcelHelpers.interopDefault(_cloneSymbolJs);
+var _cloneTypedArrayJs = require("./_cloneTypedArray.js");
+var _cloneTypedArrayJsDefault = parcelHelpers.interopDefault(_cloneTypedArrayJs);
+/** `Object#toString` result references. */ var boolTag = "[object Boolean]", dateTag = "[object Date]", mapTag = "[object Map]", numberTag = "[object Number]", regexpTag = "[object RegExp]", setTag = "[object Set]", stringTag = "[object String]", symbolTag = "[object Symbol]";
+var arrayBufferTag = "[object ArrayBuffer]", dataViewTag = "[object DataView]", float32Tag = "[object Float32Array]", float64Tag = "[object Float64Array]", int8Tag = "[object Int8Array]", int16Tag = "[object Int16Array]", int32Tag = "[object Int32Array]", uint8Tag = "[object Uint8Array]", uint8ClampedTag = "[object Uint8ClampedArray]", uint16Tag = "[object Uint16Array]", uint32Tag = "[object Uint32Array]";
+/**
+ * Initializes an object clone based on its `toStringTag`.
+ *
+ * **Note:** This function only supports cloning values with tags of
+ * `Boolean`, `Date`, `Error`, `Map`, `Number`, `RegExp`, `Set`, or `String`.
+ *
+ * @private
+ * @param {Object} object The object to clone.
+ * @param {string} tag The `toStringTag` of the object to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Object} Returns the initialized clone.
+ */ function initCloneByTag(object, tag, isDeep) {
+    var Ctor = object.constructor;
+    switch(tag){
+        case arrayBufferTag:
+            return (0, _cloneArrayBufferJsDefault.default)(object);
+        case boolTag:
+        case dateTag:
+            return new Ctor(+object);
+        case dataViewTag:
+            return (0, _cloneDataViewJsDefault.default)(object, isDeep);
+        case float32Tag:
+        case float64Tag:
+        case int8Tag:
+        case int16Tag:
+        case int32Tag:
+        case uint8Tag:
+        case uint8ClampedTag:
+        case uint16Tag:
+        case uint32Tag:
+            return (0, _cloneTypedArrayJsDefault.default)(object, isDeep);
+        case mapTag:
+            return new Ctor;
+        case numberTag:
+        case stringTag:
+            return new Ctor(object);
+        case regexpTag:
+            return (0, _cloneRegExpJsDefault.default)(object);
+        case setTag:
+            return new Ctor;
+        case symbolTag:
+            return (0, _cloneSymbolJsDefault.default)(object);
+    }
+}
+exports.default = initCloneByTag;
+
+},{"./_cloneArrayBuffer.js":"4fVB7","./_cloneDataView.js":"7a96h","./_cloneRegExp.js":"961SB","./_cloneSymbol.js":"hKZ37","./_cloneTypedArray.js":"f1GTJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4fVB7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _uint8ArrayJs = require("./_Uint8Array.js");
+var _uint8ArrayJsDefault = parcelHelpers.interopDefault(_uint8ArrayJs);
+/**
+ * Creates a clone of `arrayBuffer`.
+ *
+ * @private
+ * @param {ArrayBuffer} arrayBuffer The array buffer to clone.
+ * @returns {ArrayBuffer} Returns the cloned array buffer.
+ */ function cloneArrayBuffer(arrayBuffer) {
+    var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
+    new (0, _uint8ArrayJsDefault.default)(result).set(new (0, _uint8ArrayJsDefault.default)(arrayBuffer));
+    return result;
+}
+exports.default = cloneArrayBuffer;
+
+},{"./_Uint8Array.js":"5zVAV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5zVAV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rootJs = require("./_root.js");
+var _rootJsDefault = parcelHelpers.interopDefault(_rootJs);
+/** Built-in value references. */ var Uint8Array = (0, _rootJsDefault.default).Uint8Array;
+exports.default = Uint8Array;
+
+},{"./_root.js":"8yvCA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7a96h":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _cloneArrayBufferJs = require("./_cloneArrayBuffer.js");
+var _cloneArrayBufferJsDefault = parcelHelpers.interopDefault(_cloneArrayBufferJs);
+/**
+ * Creates a clone of `dataView`.
+ *
+ * @private
+ * @param {Object} dataView The data view to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Object} Returns the cloned data view.
+ */ function cloneDataView(dataView, isDeep) {
+    var buffer = isDeep ? (0, _cloneArrayBufferJsDefault.default)(dataView.buffer) : dataView.buffer;
+    return new dataView.constructor(buffer, dataView.byteOffset, dataView.byteLength);
+}
+exports.default = cloneDataView;
+
+},{"./_cloneArrayBuffer.js":"4fVB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"961SB":[function(require,module,exports) {
+/** Used to match `RegExp` flags from their coerced string values. */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var reFlags = /\w*$/;
+/**
+ * Creates a clone of `regexp`.
+ *
+ * @private
+ * @param {Object} regexp The regexp to clone.
+ * @returns {Object} Returns the cloned regexp.
+ */ function cloneRegExp(regexp) {
+    var result = new regexp.constructor(regexp.source, reFlags.exec(regexp));
+    result.lastIndex = regexp.lastIndex;
+    return result;
+}
+exports.default = cloneRegExp;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hKZ37":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _symbolJs = require("./_Symbol.js");
+var _symbolJsDefault = parcelHelpers.interopDefault(_symbolJs);
+/** Used to convert symbols to primitives and strings. */ var symbolProto = (0, _symbolJsDefault.default) ? (0, _symbolJsDefault.default).prototype : undefined, symbolValueOf = symbolProto ? symbolProto.valueOf : undefined;
+/**
+ * Creates a clone of the `symbol` object.
+ *
+ * @private
+ * @param {Object} symbol The symbol object to clone.
+ * @returns {Object} Returns the cloned symbol object.
+ */ function cloneSymbol(symbol) {
+    return symbolValueOf ? Object(symbolValueOf.call(symbol)) : {};
+}
+exports.default = cloneSymbol;
+
+},{"./_Symbol.js":"jx216","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f1GTJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _cloneArrayBufferJs = require("./_cloneArrayBuffer.js");
+var _cloneArrayBufferJsDefault = parcelHelpers.interopDefault(_cloneArrayBufferJs);
+/**
+ * Creates a clone of `typedArray`.
+ *
+ * @private
+ * @param {Object} typedArray The typed array to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Object} Returns the cloned typed array.
+ */ function cloneTypedArray(typedArray, isDeep) {
+    var buffer = isDeep ? (0, _cloneArrayBufferJsDefault.default)(typedArray.buffer) : typedArray.buffer;
+    return new typedArray.constructor(buffer, typedArray.byteOffset, typedArray.length);
+}
+exports.default = cloneTypedArray;
+
+},{"./_cloneArrayBuffer.js":"4fVB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aoDIY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseCreateJs = require("./_baseCreate.js");
+var _baseCreateJsDefault = parcelHelpers.interopDefault(_baseCreateJs);
+var _getPrototypeJs = require("./_getPrototype.js");
+var _getPrototypeJsDefault = parcelHelpers.interopDefault(_getPrototypeJs);
+var _isPrototypeJs = require("./_isPrototype.js");
+var _isPrototypeJsDefault = parcelHelpers.interopDefault(_isPrototypeJs);
+/**
+ * Initializes an object clone.
+ *
+ * @private
+ * @param {Object} object The object to clone.
+ * @returns {Object} Returns the initialized clone.
+ */ function initCloneObject(object) {
+    return typeof object.constructor == "function" && !(0, _isPrototypeJsDefault.default)(object) ? (0, _baseCreateJsDefault.default)((0, _getPrototypeJsDefault.default)(object)) : {};
+}
+exports.default = initCloneObject;
+
+},{"./_baseCreate.js":"aq4aU","./_getPrototype.js":"b49GB","./_isPrototype.js":"jOAyW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aq4aU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _isObjectJs = require("./isObject.js");
+var _isObjectJsDefault = parcelHelpers.interopDefault(_isObjectJs);
+/** Built-in value references. */ var objectCreate = Object.create;
+/**
+ * The base implementation of `_.create` without support for assigning
+ * properties to the created object.
+ *
+ * @private
+ * @param {Object} proto The object to inherit from.
+ * @returns {Object} Returns the new object.
+ */ var baseCreate = function() {
+    function object() {}
+    return function(proto) {
+        if (!(0, _isObjectJsDefault.default)(proto)) return {};
+        if (objectCreate) return objectCreate(proto);
+        object.prototype = proto;
+        var result = new object;
+        object.prototype = undefined;
+        return result;
+    };
+}();
+exports.default = baseCreate;
+
+},{"./isObject.js":"dHhyW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"66UiG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseIsMapJs = require("./_baseIsMap.js");
+var _baseIsMapJsDefault = parcelHelpers.interopDefault(_baseIsMapJs);
+var _baseUnaryJs = require("./_baseUnary.js");
+var _baseUnaryJsDefault = parcelHelpers.interopDefault(_baseUnaryJs);
+var _nodeUtilJs = require("./_nodeUtil.js");
+var _nodeUtilJsDefault = parcelHelpers.interopDefault(_nodeUtilJs);
+/* Node.js helper references. */ var nodeIsMap = (0, _nodeUtilJsDefault.default) && (0, _nodeUtilJsDefault.default).isMap;
+/**
+ * Checks if `value` is classified as a `Map` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.3.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a map, else `false`.
+ * @example
+ *
+ * _.isMap(new Map);
+ * // => true
+ *
+ * _.isMap(new WeakMap);
+ * // => false
+ */ var isMap = nodeIsMap ? (0, _baseUnaryJsDefault.default)(nodeIsMap) : (0, _baseIsMapJsDefault.default);
+exports.default = isMap;
+
+},{"./_baseIsMap.js":"aSESr","./_baseUnary.js":"jBUGV","./_nodeUtil.js":"cxU0K","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aSESr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getTagJs = require("./_getTag.js");
+var _getTagJsDefault = parcelHelpers.interopDefault(_getTagJs);
+var _isObjectLikeJs = require("./isObjectLike.js");
+var _isObjectLikeJsDefault = parcelHelpers.interopDefault(_isObjectLikeJs);
+/** `Object#toString` result references. */ var mapTag = "[object Map]";
+/**
+ * The base implementation of `_.isMap` without Node.js optimizations.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a map, else `false`.
+ */ function baseIsMap(value) {
+    return (0, _isObjectLikeJsDefault.default)(value) && (0, _getTagJsDefault.default)(value) == mapTag;
+}
+exports.default = baseIsMap;
+
+},{"./_getTag.js":"1kCom","./isObjectLike.js":"iad76","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"74uQe":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseIsSetJs = require("./_baseIsSet.js");
+var _baseIsSetJsDefault = parcelHelpers.interopDefault(_baseIsSetJs);
+var _baseUnaryJs = require("./_baseUnary.js");
+var _baseUnaryJsDefault = parcelHelpers.interopDefault(_baseUnaryJs);
+var _nodeUtilJs = require("./_nodeUtil.js");
+var _nodeUtilJsDefault = parcelHelpers.interopDefault(_nodeUtilJs);
+/* Node.js helper references. */ var nodeIsSet = (0, _nodeUtilJsDefault.default) && (0, _nodeUtilJsDefault.default).isSet;
+/**
+ * Checks if `value` is classified as a `Set` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.3.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a set, else `false`.
+ * @example
+ *
+ * _.isSet(new Set);
+ * // => true
+ *
+ * _.isSet(new WeakSet);
+ * // => false
+ */ var isSet = nodeIsSet ? (0, _baseUnaryJsDefault.default)(nodeIsSet) : (0, _baseIsSetJsDefault.default);
+exports.default = isSet;
+
+},{"./_baseIsSet.js":"2nBk7","./_baseUnary.js":"jBUGV","./_nodeUtil.js":"cxU0K","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2nBk7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _getTagJs = require("./_getTag.js");
+var _getTagJsDefault = parcelHelpers.interopDefault(_getTagJs);
+var _isObjectLikeJs = require("./isObjectLike.js");
+var _isObjectLikeJsDefault = parcelHelpers.interopDefault(_isObjectLikeJs);
+/** `Object#toString` result references. */ var setTag = "[object Set]";
+/**
+ * The base implementation of `_.isSet` without Node.js optimizations.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a set, else `false`.
+ */ function baseIsSet(value) {
+    return (0, _isObjectLikeJsDefault.default)(value) && (0, _getTagJsDefault.default)(value) == setTag;
+}
+exports.default = baseIsSet;
+
+},{"./_getTag.js":"1kCom","./isObjectLike.js":"iad76","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7KT6e":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _arrayMapJs = require("./_arrayMap.js");
+var _arrayMapJsDefault = parcelHelpers.interopDefault(_arrayMapJs);
+var _copyArrayJs = require("./_copyArray.js");
+var _copyArrayJsDefault = parcelHelpers.interopDefault(_copyArrayJs);
+var _isArrayJs = require("./isArray.js");
+var _isArrayJsDefault = parcelHelpers.interopDefault(_isArrayJs);
+var _isSymbolJs = require("./isSymbol.js");
+var _isSymbolJsDefault = parcelHelpers.interopDefault(_isSymbolJs);
+var _stringToPathJs = require("./_stringToPath.js");
+var _stringToPathJsDefault = parcelHelpers.interopDefault(_stringToPathJs);
+var _toKeyJs = require("./_toKey.js");
+var _toKeyJsDefault = parcelHelpers.interopDefault(_toKeyJs);
+var _toStringJs = require("./toString.js");
+var _toStringJsDefault = parcelHelpers.interopDefault(_toStringJs);
+/**
+ * Converts `value` to a property path array.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Util
+ * @param {*} value The value to convert.
+ * @returns {Array} Returns the new property path array.
+ * @example
+ *
+ * _.toPath('a.b.c');
+ * // => ['a', 'b', 'c']
+ *
+ * _.toPath('a[0].b.c');
+ * // => ['a', '0', 'b', 'c']
+ */ function toPath(value) {
+    if ((0, _isArrayJsDefault.default)(value)) return (0, _arrayMapJsDefault.default)(value, (0, _toKeyJsDefault.default));
+    return (0, _isSymbolJsDefault.default)(value) ? [
+        value
+    ] : (0, _copyArrayJsDefault.default)((0, _stringToPathJsDefault.default)((0, _toStringJsDefault.default)(value)));
+}
+exports.default = toPath;
+
+},{"./_arrayMap.js":"gDCVM","./_copyArray.js":"9islt","./isArray.js":"ETPQ1","./isSymbol.js":"gCyRJ","./_stringToPath.js":"cgxmj","./_toKey.js":"Zo68s","./toString.js":"hF0LJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gDCVM":[function(require,module,exports) {
+/**
+ * A specialized version of `_.map` for arrays without support for iteratee
+ * shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the new mapped array.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function arrayMap(array, iteratee) {
+    var index = -1, length = array == null ? 0 : array.length, result = Array(length);
+    while(++index < length)result[index] = iteratee(array[index], index, array);
+    return result;
+}
+exports.default = arrayMap;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gCyRJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseGetTagJs = require("./_baseGetTag.js");
+var _baseGetTagJsDefault = parcelHelpers.interopDefault(_baseGetTagJs);
+var _isObjectLikeJs = require("./isObjectLike.js");
+var _isObjectLikeJsDefault = parcelHelpers.interopDefault(_isObjectLikeJs);
+/** `Object#toString` result references. */ var symbolTag = "[object Symbol]";
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */ function isSymbol(value) {
+    return typeof value == "symbol" || (0, _isObjectLikeJsDefault.default)(value) && (0, _baseGetTagJsDefault.default)(value) == symbolTag;
+}
+exports.default = isSymbol;
+
+},{"./_baseGetTag.js":"gVDfP","./isObjectLike.js":"iad76","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cgxmj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _memoizeCappedJs = require("./_memoizeCapped.js");
+var _memoizeCappedJsDefault = parcelHelpers.interopDefault(_memoizeCappedJs);
+/** Used to match property names within property paths. */ var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+/** Used to match backslashes in property paths. */ var reEscapeChar = /\\(\\)?/g;
+/**
+ * Converts `string` to a property path array.
+ *
+ * @private
+ * @param {string} string The string to convert.
+ * @returns {Array} Returns the property path array.
+ */ var stringToPath = (0, _memoizeCappedJsDefault.default)(function(string) {
+    var result = [];
+    if (string.charCodeAt(0) === 46 /* . */ ) result.push("");
+    string.replace(rePropName, function(match, number, quote, subString) {
+        result.push(quote ? subString.replace(reEscapeChar, "$1") : number || match);
+    });
+    return result;
+});
+exports.default = stringToPath;
+
+},{"./_memoizeCapped.js":"2kD71","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2kD71":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _memoizeJs = require("./memoize.js");
+var _memoizeJsDefault = parcelHelpers.interopDefault(_memoizeJs);
+/** Used as the maximum memoize cache size. */ var MAX_MEMOIZE_SIZE = 500;
+/**
+ * A specialized version of `_.memoize` which clears the memoized function's
+ * cache when it exceeds `MAX_MEMOIZE_SIZE`.
+ *
+ * @private
+ * @param {Function} func The function to have its output memoized.
+ * @returns {Function} Returns the new memoized function.
+ */ function memoizeCapped(func) {
+    var result = (0, _memoizeJsDefault.default)(func, function(key) {
+        if (cache.size === MAX_MEMOIZE_SIZE) cache.clear();
+        return key;
+    });
+    var cache = result.cache;
+    return result;
+}
+exports.default = memoizeCapped;
+
+},{"./memoize.js":"5zdei","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5zdei":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _mapCacheJs = require("./_MapCache.js");
+var _mapCacheJsDefault = parcelHelpers.interopDefault(_mapCacheJs);
+/** Error message constants. */ var FUNC_ERROR_TEXT = "Expected a function";
+/**
+ * Creates a function that memoizes the result of `func`. If `resolver` is
+ * provided, it determines the cache key for storing the result based on the
+ * arguments provided to the memoized function. By default, the first argument
+ * provided to the memoized function is used as the map cache key. The `func`
+ * is invoked with the `this` binding of the memoized function.
+ *
+ * **Note:** The cache is exposed as the `cache` property on the memoized
+ * function. Its creation may be customized by replacing the `_.memoize.Cache`
+ * constructor with one whose instances implement the
+ * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+ * method interface of `clear`, `delete`, `get`, `has`, and `set`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Function
+ * @param {Function} func The function to have its output memoized.
+ * @param {Function} [resolver] The function to resolve the cache key.
+ * @returns {Function} Returns the new memoized function.
+ * @example
+ *
+ * var object = { 'a': 1, 'b': 2 };
+ * var other = { 'c': 3, 'd': 4 };
+ *
+ * var values = _.memoize(_.values);
+ * values(object);
+ * // => [1, 2]
+ *
+ * values(other);
+ * // => [3, 4]
+ *
+ * object.a = 2;
+ * values(object);
+ * // => [1, 2]
+ *
+ * // Modify the result cache.
+ * values.cache.set(object, ['a', 'b']);
+ * values(object);
+ * // => ['a', 'b']
+ *
+ * // Replace `_.memoize.Cache`.
+ * _.memoize.Cache = WeakMap;
+ */ function memoize(func, resolver) {
+    if (typeof func != "function" || resolver != null && typeof resolver != "function") throw new TypeError(FUNC_ERROR_TEXT);
+    var memoized = function() {
+        var args = arguments, key = resolver ? resolver.apply(this, args) : args[0], cache = memoized.cache;
+        if (cache.has(key)) return cache.get(key);
+        var result = func.apply(this, args);
+        memoized.cache = cache.set(key, result) || cache;
+        return result;
+    };
+    memoized.cache = new (memoize.Cache || (0, _mapCacheJsDefault.default));
+    return memoized;
+}
+// Expose `MapCache`.
+memoize.Cache = (0, _mapCacheJsDefault.default);
+exports.default = memoize;
+
+},{"./_MapCache.js":"kdqbj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"Zo68s":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _isSymbolJs = require("./isSymbol.js");
+var _isSymbolJsDefault = parcelHelpers.interopDefault(_isSymbolJs);
+/** Used as references for various `Number` constants. */ var INFINITY = 1 / 0;
+/**
+ * Converts `value` to a string key if it's not a string or symbol.
+ *
+ * @private
+ * @param {*} value The value to inspect.
+ * @returns {string|symbol} Returns the key.
+ */ function toKey(value) {
+    if (typeof value == "string" || (0, _isSymbolJsDefault.default)(value)) return value;
+    var result = value + "";
+    return result == "0" && 1 / value == -INFINITY ? "-0" : result;
+}
+exports.default = toKey;
+
+},{"./isSymbol.js":"gCyRJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hF0LJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseToStringJs = require("./_baseToString.js");
+var _baseToStringJsDefault = parcelHelpers.interopDefault(_baseToStringJs);
+/**
+ * Converts `value` to a string. An empty string is returned for `null`
+ * and `undefined` values. The sign of `-0` is preserved.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ * @example
+ *
+ * _.toString(null);
+ * // => ''
+ *
+ * _.toString(-0);
+ * // => '-0'
+ *
+ * _.toString([1, 2, 3]);
+ * // => '1,2,3'
+ */ function toString(value) {
+    return value == null ? "" : (0, _baseToStringJsDefault.default)(value);
+}
+exports.default = toString;
+
+},{"./_baseToString.js":"fQ5ds","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fQ5ds":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _symbolJs = require("./_Symbol.js");
+var _symbolJsDefault = parcelHelpers.interopDefault(_symbolJs);
+var _arrayMapJs = require("./_arrayMap.js");
+var _arrayMapJsDefault = parcelHelpers.interopDefault(_arrayMapJs);
+var _isArrayJs = require("./isArray.js");
+var _isArrayJsDefault = parcelHelpers.interopDefault(_isArrayJs);
+var _isSymbolJs = require("./isSymbol.js");
+var _isSymbolJsDefault = parcelHelpers.interopDefault(_isSymbolJs);
+/** Used as references for various `Number` constants. */ var INFINITY = 1 / 0;
+/** Used to convert symbols to primitives and strings. */ var symbolProto = (0, _symbolJsDefault.default) ? (0, _symbolJsDefault.default).prototype : undefined, symbolToString = symbolProto ? symbolProto.toString : undefined;
+/**
+ * The base implementation of `_.toString` which doesn't convert nullish
+ * values to empty strings.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */ function baseToString(value) {
+    // Exit early for strings to avoid a performance hit in some environments.
+    if (typeof value == "string") return value;
+    if ((0, _isArrayJsDefault.default)(value)) // Recursively convert values (susceptible to call stack limits).
+    return (0, _arrayMapJsDefault.default)(value, baseToString) + "";
+    if ((0, _isSymbolJsDefault.default)(value)) return symbolToString ? symbolToString.call(value) : "";
+    var result = value + "";
+    return result == "0" && 1 / value == -INFINITY ? "-0" : result;
+}
+exports.default = baseToString;
+
+},{"./_Symbol.js":"jx216","./_arrayMap.js":"gDCVM","./isArray.js":"ETPQ1","./isSymbol.js":"gCyRJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1GfsB":[function(require,module,exports) {
+"use strict";
+var reactIs = require("c03b486d83967636");
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */ var REACT_STATICS = {
+    childContextTypes: true,
+    contextType: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    getDerivedStateFromError: true,
+    getDerivedStateFromProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    callee: true,
+    arguments: true,
+    arity: true
+};
+var FORWARD_REF_STATICS = {
+    "$$typeof": true,
+    render: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true
+};
+var MEMO_STATICS = {
+    "$$typeof": true,
+    compare: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true,
+    type: true
+};
+var TYPE_STATICS = {};
+TYPE_STATICS[reactIs.ForwardRef] = FORWARD_REF_STATICS;
+TYPE_STATICS[reactIs.Memo] = MEMO_STATICS;
+function getStatics(component) {
+    // React v16.11 and below
+    if (reactIs.isMemo(component)) return MEMO_STATICS;
+     // React v16.12 and above
+    return TYPE_STATICS[component["$$typeof"]] || REACT_STATICS;
+}
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = Object.prototype;
+function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+    if (typeof sourceComponent !== "string") {
+        // don't hoist over string (html) components
+        if (objectPrototype) {
+            var inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+        }
+        var keys = getOwnPropertyNames(sourceComponent);
+        if (getOwnPropertySymbols) keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        var targetStatics = getStatics(targetComponent);
+        var sourceStatics = getStatics(sourceComponent);
+        for(var i = 0; i < keys.length; ++i){
+            var key = keys[i];
+            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
+                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try {
+                    // Avoid failures from read-only properties
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+    }
+    return targetComponent;
+}
+module.exports = hoistNonReactStatics;
+
+},{"c03b486d83967636":"7EuwB"}],"7EuwB":[function(require,module,exports) {
+"use strict";
+module.exports = require("2255125a8e8b1051");
+
+},{"2255125a8e8b1051":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var hasSymbol = typeof Symbol === "function" && Symbol.for;
+    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 0xeac7;
+    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 0xeaca;
+    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 0xeacb;
+    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 0xeacc;
+    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 0xead2;
+    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 0xeacd;
+    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+    // (unstable) APIs that have been removed. Can we remove the symbols?
+    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 0xeacf;
+    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 0xeacf;
+    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 0xead0;
+    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 0xead8;
+    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 0xead3;
+    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 0xead4;
+    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 0xead9;
+    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 0xead5;
+    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 0xead6;
+    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 0xead7;
+    function isValidElementType(type) {
+        return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+        type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+    }
+    function typeOf(object) {
+        if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch($$typeof){
+                case REACT_ELEMENT_TYPE:
+                    var type = object.type;
+                    switch(type){
+                        case REACT_ASYNC_MODE_TYPE:
+                        case REACT_CONCURRENT_MODE_TYPE:
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                            return type;
+                        default:
+                            var $$typeofType = type && type.$$typeof;
+                            switch($$typeofType){
+                                case REACT_CONTEXT_TYPE:
+                                case REACT_FORWARD_REF_TYPE:
+                                case REACT_LAZY_TYPE:
+                                case REACT_MEMO_TYPE:
+                                case REACT_PROVIDER_TYPE:
+                                    return $$typeofType;
+                                default:
+                                    return $$typeof;
+                            }
+                    }
+                case REACT_PORTAL_TYPE:
+                    return $$typeof;
+            }
+        }
+        return undefined;
+    } // AsyncMode is deprecated along with isAsyncMode
+    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+    function isAsyncMode(object) {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
+        }
+        return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+    }
+    function isConcurrentMode(object) {
+        return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+    }
+    function isContextConsumer(object) {
+        return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+        return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+        return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+        return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+        return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+        return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+        return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+        return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+        return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+        return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    exports.AsyncMode = AsyncMode;
+    exports.ConcurrentMode = ConcurrentMode;
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+})();
+
+},{}],"dd5At":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _baseCloneJs = require("./_baseClone.js");
+var _baseCloneJsDefault = parcelHelpers.interopDefault(_baseCloneJs);
+/** Used to compose bitmasks for cloning. */ var CLONE_DEEP_FLAG = 1, CLONE_SYMBOLS_FLAG = 4;
+/**
+ * This method is like `_.clone` except that it recursively clones `value`.
+ *
+ * @static
+ * @memberOf _
+ * @since 1.0.0
+ * @category Lang
+ * @param {*} value The value to recursively clone.
+ * @returns {*} Returns the deep cloned value.
+ * @see _.clone
+ * @example
+ *
+ * var objects = [{ 'a': 1 }, { 'b': 2 }];
+ *
+ * var deep = _.cloneDeep(objects);
+ * console.log(deep[0] === objects[0]);
+ * // => false
+ */ function cloneDeep(value) {
+    return (0, _baseCloneJsDefault.default)(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG);
+}
+exports.default = cloneDeep;
+
+},{"./_baseClone.js":"dBps5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fya3t":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ef8a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ef8a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _formik = require("formik");
+var _constants = require("../constants");
+var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const Login = ()=>{
+    _s();
+    let loggedIn = false;
+    const [username, setUsername] = (0, _react.useState)("");
+    const [password, setPassword] = (0, _react.useState)("");
+    const validate = (values)=>{
+        const errors = {};
+        if (!values.username) errors.username = "Username can't be empty";
+        if (!values.password) errors.password = "password toh daaal beyy";
+        return errors;
+    };
+    const formik = (0, _formik.useFormik)({
+        initialValues: {
+            username: "",
+            password: ""
+        },
+        validate,
+        onSubmit: (values)=>{
+            checkCredentials();
+        }
+    });
+    (0, _react.useEffect)(()=>{
+        setUsername(formik.values.username);
+        setPassword(formik.values.password);
+    }, [
+        formik
+    ]);
+    function checkCredentials() {
+        if (username == (0, _constants.DefaultUsername) && password.toString() == (0, _constants.DefaultPassword)) {
+            console.log("logged in");
+            loggedIn = true;
+        } else {
+            console.log("invalid username or password");
+            loggedIn = false;
+        }
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "h-[100vh] w-[100%] bg-pink-300 px-[10rem] py-[10rem] flex",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-6xl w-[50%] bg-red-400 h-full",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            children: "Welcome Back....."
+                        }, void 0, false, {
+                            fileName: "src/components/Forms/Login.js",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            children: "We missed you"
+                        }, void 0, false, {
+                            fileName: "src/components/Forms/Login.js",
+                            lineNumber: 51,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Forms/Login.js",
+                    lineNumber: 49,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    className: "w-[50%] h-full bg-blue-300 flex flex-col gap-4",
+                    onSubmit: formik.handleSubmit,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "username",
+                                    children: "Username "
+                                }, void 0, false, {
+                                    fileName: "src/components/Forms/Login.js",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    id: "username",
+                                    name: "username",
+                                    type: "text",
+                                    onChange: formik.handleChange,
+                                    value: formik.values.username,
+                                    onBlur: formik.handleBlur
+                                }, void 0, false, {
+                                    fileName: "src/components/Forms/Login.js",
+                                    lineNumber: 59,
+                                    columnNumber: 13
+                                }, undefined),
+                                formik.errors.username && formik.touched.username ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: formik.errors.username
+                                }, void 0, false, {
+                                    fileName: "src/components/Forms/Login.js",
+                                    lineNumber: 68,
+                                    columnNumber: 15
+                                }, undefined) : null
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Forms/Login.js",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "password",
+                                    children: "Password "
+                                }, void 0, false, {
+                                    fileName: "src/components/Forms/Login.js",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "password",
+                                    name: "password",
+                                    id: "password",
+                                    onChange: formik.handleChange,
+                                    value: formik.values.password,
+                                    onBlur: formik.handleBlur
+                                }, void 0, false, {
+                                    fileName: "src/components/Forms/Login.js",
+                                    lineNumber: 73,
+                                    columnNumber: 13
+                                }, undefined),
+                                formik.errors.password && formik.touched.password ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: formik.errors.password
+                                }, void 0, false, {
+                                    fileName: "src/components/Forms/Login.js",
+                                    lineNumber: 82,
+                                    columnNumber: 15
+                                }, undefined) : null
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Forms/Login.js",
+                            lineNumber: 71,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            type: "submit",
+                            className: "bg-blue-700 text-white w-fit px-7 ",
+                            children: "LogIn"
+                        }, void 0, false, {
+                            fileName: "src/components/Forms/Login.js",
+                            lineNumber: 85,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Forms/Login.js",
+                    lineNumber: 53,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Forms/Login.js",
+            lineNumber: 48,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_s(Login, "RJVH1GijyY8RgjXT/8zcu5b6PYY=", false, function() {
+    return [
+        (0, _formik.useFormik)
+    ];
+});
+_c = Login;
+exports.default = Login;
+var _c;
+$RefreshReg$(_c, "Login");
+
+  $parcel$ReactRefreshHelpers$ef8a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","formik":"aefoQ","../constants":"5erIG","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Vdsp":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$6cf6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35981,143 +40271,174 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 var _shimmer = require("../body/Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _constants = require("../constants");
+var _useRestraunt = require("../../utils/useRestraunt");
+var _useRestrauntDefault = parcelHelpers.interopDefault(_useRestraunt);
 var _s = $RefreshSig$();
 const RestrauntMenu = ()=>{
     _s();
     const params = (0, _reactRouterDom.useParams)();
-    const [restrauntInfo, setRestrautInfo] = (0, _react.useState)(null);
-    const [restrauntMenu, setRestrauntMenu] = (0, _react.useState)(null);
-    const [restrauntOffers, setRestrauntOffers] = (0, _react.useState)(null);
-    (0, _react.useEffect)(()=>{
-        getRestrauntMenu();
-    }, []);
-    async function getRestrauntMenu() {
-        const menu = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.390357109608406&lng=76.75831396132708&restaurantId=${params.resId}`);
-        const json = await menu.json();
-        console.log(json);
-        setRestrautInfo(json.data?.cards[0]?.card?.card?.info);
-        setRestrauntMenu(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards);
-        setRestrauntOffers(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers);
-    }
-    console.log(restrauntOffers);
-    console.log(restrauntMenu);
+    const { restrauntInfo, restrauntItems, restrauntOffers } = (0, _useRestrauntDefault.default)(params.resId);
+    console.log(restrauntInfo);
+    console.log((0, _constants.IMG_CDN_LINK) + "rng/md/carousel/production/pkcgpsd4df6i5ud3eyuk");
     return !restrauntInfo ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/restraunt menu/RestrauntMenu.js",
-        lineNumber: 33,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: " px-[5rem]  bg-blue-900 flex flex-row  py-[5rem]  text-white justify-between",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "w-[50%]",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "w-[10rem]",
-                            src: (0, _constants.IMG_CDN_LINK) + restrauntInfo?.cloudinaryImageId
-                        }, void 0, false, {
-                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                            lineNumber: 38,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: restrauntInfo?.name
-                        }, void 0, false, {
-                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                            lineNumber: 42,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: restrauntInfo?.city
-                        }, void 0, false, {
-                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: restrauntInfo?.avgRatingString
-                        }, void 0, false, {
-                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                            lineNumber: 44,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: restrauntInfo?.cuisines.join(" , ")
-                        }, void 0, false, {
-                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                            lineNumber: 45,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                    lineNumber: 37,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "w-[50%] ",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "text-3xl my-3",
-                            children: "Offers "
-                        }, void 0, false, {
-                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                            lineNumber: 48,
-                            columnNumber: 11
-                        }, undefined),
-                        restrauntOffers.map((e)=>{
-                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: e.info.header + `using code : ` + e.info.couponCode
+            className: "container w-[100%] bg-pink-500 flex items-center justify-center py-[2rem]",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-[50%] bg-red-300 ",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bg-blue-400 flex h-[13rem] gap-5  ",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overflow-hidden h-full w-[40%]",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: " h-full w-full object-center rounded-xl",
+                                    src: (0, _constants.IMG_CDN_LINK) + restrauntInfo?.cloudinaryImageId
+                                }, void 0, false, {
+                                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                    lineNumber: 21,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                lineNumber: 20,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "py-[1rem]",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        className: "text-4xl font-[700] text-nowrap",
+                                        children: restrauntInfo?.name
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.availability?.opened ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                            children: "Opened"
+                                        }, void 0, false, {
+                                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                            lineNumber: 30,
+                                            columnNumber: 19
+                                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                            children: "Closed"
+                                        }, void 0, false, {
+                                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                            lineNumber: 32,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 28,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.locality + ", " + restrauntInfo?.city
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 35,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.avgRatingString + " Stars from " + restrauntInfo?.totalRatings
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.cuisines.join(" , ")
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 41,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                        lineNumber: 19,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-3xl my-3",
+                                children: "Offers "
+                            }, void 0, false, {
+                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                lineNumber: 45,
+                                columnNumber: 13
+                            }, undefined),
+                            restrauntOffers.map((e)=>{
+                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    children: e.info.header + `using code : ` + e.info.couponCode
+                                }, void 0, false, {
+                                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                    lineNumber: 48,
+                                    columnNumber: 17
+                                }, undefined);
+                            }),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-3xl my-3",
+                                children: "Top Ordered Items : "
                             }, void 0, false, {
                                 fileName: "src/components/restraunt menu/RestrauntMenu.js",
                                 lineNumber: 51,
-                                columnNumber: 15
-                            }, undefined);
-                        }),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "text-3xl my-3",
-                            children: "Top Ordered Items :  "
-                        }, void 0, false, {
-                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                            lineNumber: 54,
-                            columnNumber: 11
-                        }, undefined),
-                        restrauntMenu.map((e)=>{
-                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                    children: [
-                                        " ",
-                                        e.card.info.name
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                    lineNumber: 58,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false);
-                        })
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
+                                columnNumber: 13
+                            }, undefined),
+                            restrauntItems.map((e)=>{
+                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: [
+                                            " ",
+                                            e.card.info.name
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 55,
+                                        columnNumber: 19
+                                    }, undefined)
+                                }, void 0, false);
+                            })
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                        lineNumber: 44,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                lineNumber: 18,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/components/restraunt menu/RestrauntMenu.js",
-            lineNumber: 36,
+            lineNumber: 17,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
-_s(RestrauntMenu, "eo1WUFRnzha1DQvOvKGa+Q7KBB4=", false, function() {
+_s(RestrauntMenu, "itNR8Eo7BtmoejplG5RiubXINzc=", false, function() {
     return [
-        (0, _reactRouterDom.useParams)
+        (0, _reactRouterDom.useParams),
+        (0, _useRestrauntDefault.default)
     ];
 });
 _c = RestrauntMenu;
@@ -36130,6 +40451,150 @@ $RefreshReg$(_c, "RestrauntMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../body/Shimmer":"kCpUp","../constants":"5erIG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["iWvxK","1xC6H","bNKaB"], "bNKaB", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../body/Shimmer":"kCpUp","../constants":"5erIG","../../utils/useRestraunt":"3RL7g","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3RL7g":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cb40 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$cb40.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useRestraunt = (id)=>{
+    _s();
+    const [restrauntInfo, setRestrautInfo] = (0, _react.useState)(null);
+    const [restrauntItems, setRestrauntItems] = (0, _react.useState)(null);
+    const [restrauntOffers, setRestrauntOffers] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        getRestrauntMenu();
+    }, []);
+    async function getRestrauntMenu() {
+        const menu = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.390357109608406&lng=76.75831396132708&restaurantId=${id}`);
+        const json = await menu.json();
+        console.log(json);
+        setRestrautInfo(json.data?.cards[0]?.card?.card?.info);
+        setRestrauntItems(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards);
+        setRestrauntOffers(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers);
+    }
+    return {
+        restrauntItems,
+        restrauntInfo,
+        restrauntOffers
+    };
+};
+_s(useRestraunt, "Qcg6rqdynWMCl4+PU3y1EGqlHVk=");
+exports.default = useRestraunt;
+
+  $parcel$ReactRefreshHelpers$cb40.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1tGdI":[function(require,module,exports) {
+module.exports = require("4289d3399d4c6b21")(require("daa39cc4a6d7a229").getBundleURL("lPpKD") + "ClothesVilla.c4e3a6f3.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("dWVCG"));
+
+},{"4289d3399d4c6b21":"61B45","daa39cc4a6d7a229":"lgJ39"}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
+
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case "preload":
+            return cachedPreloads;
+        case "prefetch":
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
+}
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}]},["iWvxK","1xC6H","bNKaB"], "bNKaB", "parcelRequire164e")
 
 //# sourceMappingURL=index.0641b553.js.map
