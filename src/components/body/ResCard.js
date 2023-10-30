@@ -34,18 +34,15 @@ const RestrauntCard = ({
           <span className="font-[700]">{avgRating}</span> star rating
         </h2>
         <h2>
-          {location} , {areaName}
+          {location} <br /> {areaName}
         </h2>
         <h2>{cuisines}</h2>
-
-        <h2>
-          {avaliable ? (
-            <h2>Opened , {slaString}</h2>
-          ) : (
-            <h2>Closed, {slaString}</h2>
-          )}{" "}
-          {}
-        </h2>
+        {avaliable ? (
+          <h2>Opened , {slaString} min delivery</h2>
+        ) : (
+          <h2>Closed</h2>
+        )}{" "}
+        {}
       </div>
     </div>
   );
@@ -56,8 +53,8 @@ export const WithPromotedLabel = (RestrauntCard) => {
     return (
       <>
         <div className="relative">
-          <label className="absolute bg-gray-400 text-white z-[100]  px-5 rounded-md">
-            Even
+          <label className="absolute text-white bg-primaryDark  z-[100]  px-5 rounded-md">
+            Promoted
           </label>
           <RestrauntCard {...props} />
         </div>

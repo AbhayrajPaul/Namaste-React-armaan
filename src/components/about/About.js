@@ -24,7 +24,7 @@ class About extends React.Component {
     // console.log("Parent : Render");
     return (
       <>
-        <div className=" px-[5rem]  bg-[#f7e1d7]  py-[2rem] flex flex-row h-[80vh] justify-between items-center">
+        <div className=" px-[5rem]  bg-body  py-[2rem] flex flex-row h-[80vh] justify-between items-center">
           <div className="flex  flex-col">
             <h1 className="text-4xl">About Us Page</h1>
             <p className="text-2xl">Kya Karoge hamare baare jaankar ?</p>

@@ -5,7 +5,7 @@ class ProfileClass extends React.Component {
     this.state = {
       userInfo: {},
     };
-    console.log(`${this.props.name} : constructor`);
+    // console.log(`${this.props.name} : constructor`);
   }
 
   async componentDidMount() {
@@ -14,15 +14,15 @@ class ProfileClass extends React.Component {
     this.setState({
       userInfo: json,
     });
-    console.log(json);
-    console.log(`${this.props.name} : componentDidMount`);
+    // console.log(json);
+    // console.log(`${this.props.name} : componentDidMount`);
   }
   componentDidUpdate() {
-    console.log("componentDidUpdate");
+    // console.log("componentDidUpdate");
   }
   render() {
     let { count } = this.state;
-    console.log(`${this.props.name} : render`);
+    //  `   console.log(`${this.props.name} : render`);`
     return (
       <div className="flex  flex-col">
         <h2 className="text-3xl font-bold">GitHub </h2>

@@ -16,7 +16,7 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
   return (
     <>
-      <div className="navbar  w-[100%] flex justify-between px-[5rem] py-[1rem] bg-[#4a5759]">
+      <div className="navbar  w-[100%] flex justify-between px-[5rem] py-[1rem] bg-[#4a5759] text-white">
         <div className="logo text-white">
           <h1 className="text-3xl font-[700] "> Foodvilla</h1>
           {/* <img className="logo" src={Logo} /> */}

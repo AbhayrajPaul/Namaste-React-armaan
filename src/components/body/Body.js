@@ -9,19 +9,20 @@ const Body = () => {
   const [searchInput, setSearchInput] = useState("");
   const [filteredRestraunts, setFilteredRestraunts] = useState([]); //default value is --> (all the restraunts)
   const [allRestraunts, setAllRestraunts] = useState([]);
-console.log( "all : " +allRestraunts);
-console.log( "fil : " +filteredRestraunts);
   const WithPromotedLabell = WithPromotedLabel(RestrauntCard);
   useEffect(() => {
     getRestraunt();
   }, []);
+  // console.log("all : " + allRestraunts);
+  // console.log(filteredRestraunts);
 
   async function getRestraunt() {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6304203&lng=77.21772159999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const dataJSON = await data.json();
     // console.log(dataJSON);
+
     setAllRestraunts(
       dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
@@ -31,8 +32,7 @@ console.log( "fil : " +filteredRestraunts);
         ?.restaurants
     );
     console.log(
-      dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
+      dataJSON.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
     );
   }
 
@@ -50,7 +50,7 @@ console.log( "fil : " +filteredRestraunts);
     <Shimmer />
   ) : (
     <>
-      <div className="body flex  flex-col w-[full] pt-[1rem] bg-[#dedbd2] ">
+      <div className="body flex  flex-col w-[full] pt-[1rem] bg-body ">
         <div className="search px-[5rem] text-white">
           <input
             className="search-inp px-[1rem] py-[.5rem] text-[1.5rem] w-[90%] text-black outline-none rounded-xl"

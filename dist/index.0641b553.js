@@ -3085,7 +3085,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/header/Header":"3oj0W","./components/footer/Footer":"b54nx","./components/body/Body":"6PolU","./components/about/About":"jbBPJ","./components/error/error":"fRDDA","./components/contact/Contact":"a2AFh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Forms/Login":"fya3t","./components/restraunt menu/RestrauntMenu":"7Vdsp","3e1b5c88b546a54b":"1tGdI"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/header/Header":"3oj0W","./components/footer/Footer":"b54nx","./components/body/Body":"6PolU","./components/about/About":"jbBPJ","./components/error/error":"fRDDA","./components/contact/Contact":"a2AFh","./components/restraunt menu/RestrauntMenu":"7Vdsp","./components/Forms/Login":"fya3t","3e1b5c88b546a54b":"1tGdI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -33516,7 +33516,7 @@ const Header = ()=>{
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "navbar  w-[100%] flex justify-between px-[5rem] py-[1rem] bg-[#4a5759]",
+            className: "navbar  w-[100%] flex justify-between px-[5rem] py-[1rem] bg-[#4a5759] text-white",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "logo text-white",
@@ -33680,7 +33680,35 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../utils/useOnlineStatus":"181Ji"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/useOnlineStatus":"181Ji","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"181Ji":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a38f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a38f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useOnlineStatus = ()=>{
+    _s();
+    const [onlineStatus, setOnlineStatus] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        window.addEventListener("offline", ()=>setOnlineStatus(false));
+        window.addEventListener("online", ()=>setOnlineStatus(true));
+    }, []);
+    return onlineStatus;
+};
+_s(useOnlineStatus, "qDLN4CKTUyO1Uktrrx41NP8Q2H4=");
+exports.default = useOnlineStatus;
+
+  $parcel$ReactRefreshHelpers$a38f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -33818,35 +33846,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"181Ji":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a38f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a38f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _s = $RefreshSig$();
-const useOnlineStatus = ()=>{
-    _s();
-    const [onlineStatus, setOnlineStatus] = (0, _react.useState)(true);
-    (0, _react.useEffect)(()=>{
-        window.addEventListener("offline", ()=>setOnlineStatus(false));
-        window.addEventListener("online", ()=>setOnlineStatus(true));
-    }, []);
-    return onlineStatus;
-};
-_s(useOnlineStatus, "qDLN4CKTUyO1Uktrrx41NP8Q2H4=");
-exports.default = useOnlineStatus;
-
-  $parcel$ReactRefreshHelpers$a38f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b54nx":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"b54nx":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$81c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34055,19 +34055,19 @@ const Body = ()=>{
     const [searchInput, setSearchInput] = (0, _react.useState)("");
     const [filteredRestraunts, setFilteredRestraunts] = (0, _react.useState)([]); //default value is --> (all the restraunts)
     const [allRestraunts, setAllRestraunts] = (0, _react.useState)([]);
-    console.log("all : " + allRestraunts);
-    console.log("fil : " + filteredRestraunts);
     const WithPromotedLabell = (0, _resCard.WithPromotedLabel)((0, _resCardDefault.default));
     (0, _react.useEffect)(()=>{
         getRestraunt();
     }, []);
+    // console.log("all : " + allRestraunts);
+    // console.log(filteredRestraunts);
     async function getRestraunt() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6304203&lng=77.21772159999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const dataJSON = await data.json();
         // console.log(dataJSON);
         setAllRestraunts(dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestraunts(dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        console.log(dataJSON?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(dataJSON.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
     }
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
     if (onlineStatus == false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -34085,7 +34085,7 @@ const Body = ()=>{
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "body flex  flex-col w-[full] pt-[1rem] bg-[#dedbd2] ",
+            className: "body flex  flex-col w-[full] pt-[1rem] bg-body ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "search px-[5rem] text-white",
@@ -34268,7 +34268,13 @@ const RestrauntCard = ({ cloudinaryImageId, id, name, avgRating, slaString, cuis
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                         children: [
                             location,
-                            " , ",
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/body/ResCard.js",
+                                lineNumber: 37,
+                                columnNumber: 22
+                            }, undefined),
+                            " ",
                             areaName
                         ]
                     }, void 0, true, {
@@ -34283,34 +34289,24 @@ const RestrauntCard = ({ cloudinaryImageId, id, name, avgRating, slaString, cuis
                         lineNumber: 39,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    avaliable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                         children: [
-                            avaliable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: [
-                                    "Opened , ",
-                                    slaString
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/body/ResCard.js",
-                                lineNumber: 43,
-                                columnNumber: 13
-                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: [
-                                    "Closed, ",
-                                    slaString
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/body/ResCard.js",
-                                lineNumber: 45,
-                                columnNumber: 13
-                            }, undefined),
-                            " "
+                            "Opened , ",
+                            slaString,
+                            " min delivery"
                         ]
                     }, void 0, true, {
                         fileName: "src/components/body/ResCard.js",
                         lineNumber: 41,
-                        columnNumber: 9
-                    }, undefined)
+                        columnNumber: 11
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Closed"
+                    }, void 0, false, {
+                        fileName: "src/components/body/ResCard.js",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, undefined),
+                    " "
                 ]
             }, void 0, true, {
                 fileName: "src/components/body/ResCard.js",
@@ -34332,24 +34328,24 @@ const WithPromotedLabel = (RestrauntCard)=>{
                 className: "relative",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        className: "absolute bg-gray-400 text-white z-[100]  px-5 rounded-md",
-                        children: "Even"
+                        className: "absolute text-white bg-primaryDark  z-[100]  px-5 rounded-md",
+                        children: "Promoted"
                     }, void 0, false, {
                         fileName: "src/components/body/ResCard.js",
-                        lineNumber: 59,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
                         ...props
                     }, void 0, false, {
                         fileName: "src/components/body/ResCard.js",
-                        lineNumber: 62,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body/ResCard.js",
-                lineNumber: 58,
+                lineNumber: 55,
                 columnNumber: 9
             }, undefined)
         }, void 0, false);
@@ -34558,7 +34554,7 @@ class About extends (0, _reactDefault.default).Component {
         // console.log("Parent : Render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: " px-[5rem]  bg-[#f7e1d7]  py-[2rem] flex flex-row h-[80vh] justify-between items-center",
+                className: " px-[5rem]  bg-body  py-[2rem] flex flex-row h-[80vh] justify-between items-center",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex  flex-col",
@@ -34622,7 +34618,7 @@ exports.default = About; /**
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","../about/Profile":"2elAM","../about/ProfileClass":"5wnJb","react":"21dqq"}],"2elAM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../about/Profile":"2elAM","../about/ProfileClass":"5wnJb","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2elAM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$20ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34701,7 +34697,7 @@ class ProfileClass extends (0, _reactDefault.default).Component {
         this.state = {
             userInfo: {}
         };
-        console.log(`${this.props.name} : constructor`);
+    // console.log(`${this.props.name} : constructor`);
     }
     async componentDidMount() {
         const data = await fetch(`https://api.github.com/users/armaan-yadav`);
@@ -34709,15 +34705,15 @@ class ProfileClass extends (0, _reactDefault.default).Component {
         this.setState({
             userInfo: json
         });
-        console.log(json);
-        console.log(`${this.props.name} : componentDidMount`);
+    // console.log(json);
+    // console.log(`${this.props.name} : componentDidMount`);
     }
     componentDidUpdate() {
-        console.log("componentDidUpdate");
+    // console.log("componentDidUpdate");
     }
     render() {
         let { count } = this.state;
-        console.log(`${this.props.name} : render`);
+        //  `   console.log(`${this.props.name} : render`);`
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "flex  flex-col",
             children: [
@@ -34849,7 +34845,7 @@ var _contactUsFormDefault = parcelHelpers.interopDefault(_contactUsForm);
 const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "px-[5rem]  bg-[#f7e1d7] h-[90vh]  flex  items-center overflow-hidden  ",
+            className: "px-[5rem]  bg-body h-[90vh]  flex  items-center overflow-hidden  ",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsFormDefault.default), {}, void 0, false, {
                 fileName: "src/components/contact/Contact.js",
                 lineNumber: 6,
@@ -34872,7 +34868,7 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Forms/ContactUsForm":"lNJJV"}],"lNJJV":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Forms/ContactUsForm":"lNJJV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lNJJV":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c818 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34908,19 +34904,19 @@ const ContactUsForm = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "mx-auto max-w-7xl px-4 ",
+                className: "mx-auto max-w-7xl px-4 ",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    class: "mx-auto max-w-7xl  md:py-24",
+                    className: "mx-auto max-w-7xl  md:py-24",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2",
+                        className: "grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                class: "flex items-center justify-center",
+                                className: "flex items-center justify-center",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    class: "px-2 md:px-12",
+                                    className: "px-2 md:px-12",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            class: "text-2xl font-bold text-gray-900 md:text-4xl",
+                                            className: "text-2xl font-bold text-gray-900 md:text-4xl",
                                             children: "Get in touch"
                                         }, void 0, false, {
                                             fileName: "src/components/Forms/ContactUsForm.js",
@@ -34928,7 +34924,7 @@ const ContactUsForm = ()=>{
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            class: "mt-4 text-lg text-gray-600",
+                                            className: "mt-4 text-lg text-gray-600",
                                             children: "Our friendly team would love to hear from you."
                                         }, void 0, false, {
                                             fileName: "src/components/Forms/ContactUsForm.js",
@@ -34937,17 +34933,17 @@ const ContactUsForm = ()=>{
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                                             action: "",
-                                            class: "mt-8 space-y-4",
+                                            className: "mt-8 space-y-4",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    class: "grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2",
+                                                    className: "grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            class: "grid w-full  items-center gap-1.5",
+                                                            className: "grid w-full  items-center gap-1.5",
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                                    class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
-                                                                    for: "first_name",
+                                                                    className: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                                    htmlFor: "first_name",
                                                                     children: "First Name"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/Forms/ContactUsForm.js",
@@ -34955,7 +34951,7 @@ const ContactUsForm = ()=>{
                                                                     columnNumber: 25
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                                    class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                                    className: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
                                                                     type: "text",
                                                                     id: "first_name",
                                                                     placeholder: "First Name"
@@ -34971,11 +34967,11 @@ const ContactUsForm = ()=>{
                                                             columnNumber: 23
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            class: "grid w-full  items-center gap-1.5",
+                                                            className: "grid w-full  items-center gap-1.5",
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                                    class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
-                                                                    for: "last_name",
+                                                                    className: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                                    htmlFor: "last_name",
                                                                     children: "Last Name"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/Forms/ContactUsForm.js",
@@ -34983,7 +34979,7 @@ const ContactUsForm = ()=>{
                                                                     columnNumber: 25
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                                    class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                                    className: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
                                                                     type: "text",
                                                                     id: "last_name",
                                                                     placeholder: "Last Name"
@@ -35005,11 +35001,11 @@ const ContactUsForm = ()=>{
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    class: "grid w-full  items-center gap-1.5",
+                                                    className: "grid w-full  items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                            class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
-                                                            for: "email",
+                                                            className: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                            htmlFor: "email",
                                                             children: "Email"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Forms/ContactUsForm.js",
@@ -35017,7 +35013,7 @@ const ContactUsForm = ()=>{
                                                             columnNumber: 23
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                            class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                            className: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
                                                             type: "text",
                                                             id: "email",
                                                             placeholder: "Email"
@@ -35033,11 +35029,11 @@ const ContactUsForm = ()=>{
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    class: "grid w-full  items-center gap-1.5",
+                                                    className: "grid w-full  items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                            class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
-                                                            for: "phone_number",
+                                                            className: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                            htmlFor: "phone_number",
                                                             children: "Phone number"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Forms/ContactUsForm.js",
@@ -35045,7 +35041,7 @@ const ContactUsForm = ()=>{
                                                             columnNumber: 23
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                            class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                            className: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
                                                             type: "tel",
                                                             id: "phone_number",
                                                             placeholder: "Phone number"
@@ -35061,11 +35057,11 @@ const ContactUsForm = ()=>{
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    class: "grid w-full  items-center gap-1.5",
+                                                    className: "grid w-full  items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                            class: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
-                                                            for: "message",
+                                                            className: "text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                                                            htmlFor: "message",
                                                             children: "Message"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Forms/ContactUsForm.js",
@@ -35073,7 +35069,7 @@ const ContactUsForm = ()=>{
                                                             columnNumber: 23
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                                            class: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
+                                                            className: "flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-black dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900",
                                                             id: "message",
                                                             placeholder: "Leave us a message",
                                                             cols: "3"
@@ -35090,7 +35086,7 @@ const ContactUsForm = ()=>{
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                                     type: "button",
-                                                    class: "w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black",
+                                                    className: "w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black",
                                                     children: "Send Message"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Forms/ContactUsForm.js",
@@ -35116,7 +35112,7 @@ const ContactUsForm = ()=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                 alt: "Contact us",
-                                class: "hidden  rounded-lg object-cover lg:block",
+                                className: "hidden  rounded-lg object-cover lg:block",
                                 src: "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhhcHB5JTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
                             }, void 0, false, {
                                 fileName: "src/components/Forms/ContactUsForm.js",
@@ -40071,7 +40067,406 @@ var _baseCloneJsDefault = parcelHelpers.interopDefault(_baseCloneJs);
 }
 exports.default = cloneDeep;
 
-},{"./_baseClone.js":"dBps5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fya3t":[function(require,module,exports) {
+},{"./_baseClone.js":"dBps5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7Vdsp":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6cf6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6cf6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _shimmer = require("../body/Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _constants = require("../constants");
+var _useRestraunt = require("../../utils/useRestraunt");
+var _useRestrauntDefault = parcelHelpers.interopDefault(_useRestraunt);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _restrauntItems = require("./RestrauntItems");
+var _restrauntItemsDefault = parcelHelpers.interopDefault(_restrauntItems);
+var _s = $RefreshSig$();
+// import { Swiper, SwiperSlide } from "swiper/react";
+// register();
+const RestrauntMenu = ()=>{
+    _s();
+    const params = (0, _reactRouterDom.useParams)();
+    const { restrauntInfo, restrauntItems, restrauntOffers } = (0, _useRestrauntDefault.default)(params.resId);
+    // console.log(restrauntOffers);
+    // console.log(restrauntItems);
+    // console.log(restrauntItems);
+    // console.log(IMG_CDN_LINK + "rng/md/carousel/production/pkcgpsd4df6i5ud3eyuk");
+    return !restrauntInfo ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+        lineNumber: 22,
+        columnNumber: 5
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container w-[100%] flex items-center justify-center py-[2rem] bg-[#DDDBD2]",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-[50%]  ",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "  flex h-[13rem] gap-5  ",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overflow-hidden h-full w-[40%]",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: " h-full w-full object-center rounded-xl",
+                                    src: (0, _constants.IMG_CDN_LINK) + restrauntInfo?.cloudinaryImageId
+                                }, void 0, false, {
+                                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                    lineNumber: 29,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                lineNumber: 28,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "py-[1rem]",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        className: "text-4xl font-[700] text-nowrap",
+                                        children: restrauntInfo?.name
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 35,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.availability?.opened ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                            children: "Opened"
+                                        }, void 0, false, {
+                                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                            lineNumber: 40,
+                                            columnNumber: 19
+                                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                            children: "Closed"
+                                        }, void 0, false, {
+                                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                            lineNumber: 42,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 38,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.locality + ", " + restrauntInfo?.city
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.avgRatingString + " Stars from " + restrauntInfo?.totalRatings / 1000 + "k+ ratings"
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 46,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: restrauntInfo?.cuisines.join(" , ")
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                        lineNumber: 52,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                        lineNumber: 27,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-[100%] bg-[#4B5759] h-[2px] my-[1rem]"
+                    }, void 0, false, {
+                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                        lineNumber: 55,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                        lineNumber: 56,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: restrauntItems.map((res, index)=>{
+                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrauntItemsDefault.default), {
+                                    res: res
+                                }, index, false, {
+                                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                                    lineNumber: 61,
+                                    columnNumber: 19
+                                }, undefined)
+                            }, void 0, false);
+                        })
+                    }, void 0, false, {
+                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                        lineNumber: 57,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/restraunt menu/RestrauntMenu.js",
+                lineNumber: 26,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/restraunt menu/RestrauntMenu.js",
+            lineNumber: 25,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_s(RestrauntMenu, "itNR8Eo7BtmoejplG5RiubXINzc=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams),
+        (0, _useRestrauntDefault.default)
+    ];
+});
+_c = RestrauntMenu;
+exports.default = RestrauntMenu;
+var _c;
+$RefreshReg$(_c, "RestrauntMenu");
+
+  $parcel$ReactRefreshHelpers$6cf6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../body/Shimmer":"kCpUp","../constants":"5erIG","../../utils/useRestraunt":"3RL7g","react":"21dqq","./RestrauntItems":"6SJj6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3RL7g":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cb40 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$cb40.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useRestraunt = (id)=>{
+    _s();
+    const [restrauntInfo, setRestrautInfo] = (0, _react.useState)(null);
+    const [restrauntItems, setRestrauntItems] = (0, _react.useState)(null);
+    const [restrauntOffers, setRestrauntOffers] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        getRestrauntMenu();
+    }, []);
+    async function getRestrauntMenu() {
+        const menu = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.390357109608406&lng=76.75831396132708&restaurantId=${id}`);
+        const json = await menu.json();
+        // console.log(json);
+        setRestrautInfo(json.data?.cards[0]?.card?.card?.info);
+        setRestrauntItems(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards.filter((c)=>c.card.card?.["@type"] == "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"));
+        // console.log(
+        //   json?.data.cards[1].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
+        //     .itemCards
+        // );
+        setRestrauntOffers(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers);
+    }
+    return {
+        restrauntInfo,
+        restrauntItems,
+        restrauntOffers
+    };
+};
+_s(useRestraunt, "Qcg6rqdynWMCl4+PU3y1EGqlHVk=");
+exports.default = useRestraunt;
+
+  $parcel$ReactRefreshHelpers$cb40.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6SJj6":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$24a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$24a6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _constants = require("../constants");
+var _s = $RefreshSig$();
+const RestrauntItems = ({ res })=>{
+    _s();
+    const [showCategoryItems, setShowCategoryItems] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        if (res.card.card.title == "Recommended") setShowCategoryItems(true);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex align-center justify-between w-full mb-3 border-b-2 border-primaryLight",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-3xl text-black font-[500]",
+                            children: res.card.card.title + " (" + res.card.card.itemCards.length + ")"
+                        }, void 0, false, {
+                            fileName: "src/components/restraunt menu/RestrauntItems.js",
+                            lineNumber: 17,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: ()=>setShowCategoryItems(!showCategoryItems),
+                            children: "More"
+                        }, void 0, false, {
+                            fileName: "src/components/restraunt menu/RestrauntItems.js",
+                            lineNumber: 23,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/restraunt menu/RestrauntItems.js",
+                    lineNumber: 16,
+                    columnNumber: 11
+                }, undefined),
+                " ",
+                showCategoryItems && res.card.card.itemCards.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex w-full px-[1rem]  justify-between mb-3 border-b-[1px] py-2 border-[#4B5759] rounded-sm",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "w-[70%]",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center gap-3",
+                                                children: [
+                                                    item?.card?.info?.name,
+                                                    item.card.info.isVeg == 1 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "h-[15px] w-[15px] flex justify-center items-center bg-white",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "h-[7px] w-[7px]  bg-[#228B22] rounded-[50%]"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                                lineNumber: 40,
+                                                                columnNumber: 35
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                            lineNumber: 39,
+                                                            columnNumber: 33
+                                                        }, undefined)
+                                                    }, void 0, false) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                        children: [
+                                                            " ",
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "h-[15px] w-[15px] flex justify-center items-center bg-white",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "h-[7px] w-[7px] bg-[rgb(255,0,0)] rounded-[50%]"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                                    lineNumber: 47,
+                                                                    columnNumber: 35
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                                lineNumber: 46,
+                                                                columnNumber: 33
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                lineNumber: 35,
+                                                columnNumber: 27
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-sm text-[rgb(116,132,122)]",
+                                                children: item?.card?.info?.description
+                                            }, void 0, false, {
+                                                fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                lineNumber: 53,
+                                                columnNumber: 27
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-sm my-2",
+                                                children: item.card.info.ratings.aggregatedRating.rating + " stars, " + item.card.info.ratings.aggregatedRating.ratingCount
+                                            }, void 0, false, {
+                                                fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                lineNumber: 56,
+                                                columnNumber: 27
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "my-1",
+                                                children: [
+                                                    "\u20B9",
+                                                    Math.round(item?.card?.info?.price / 100),
+                                                    "/-"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                                lineNumber: 62,
+                                                columnNumber: 27
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                        lineNumber: 34,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "h-[100px] w-[100px] rounded-lg overflow-hidden bg-yellow-400",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _constants.IMG_CDN_LINK) + item?.card?.info?.imageId,
+                                            className: "h-[100%] w-[100%] object-fill"
+                                        }, void 0, false, {
+                                            fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                            lineNumber: 68,
+                                            columnNumber: 27
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                        lineNumber: 67,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/restraunt menu/RestrauntItems.js",
+                                lineNumber: 33,
+                                columnNumber: 23
+                            }, undefined)
+                        }, void 0, false)
+                    }, void 0, false);
+                })
+            ]
+        }, void 0, true)
+    }, void 0, false);
+};
+_s(RestrauntItems, "3MPxuswEZaR9pqoCdMyHja8VbxM=");
+_c = RestrauntItems;
+exports.default = RestrauntItems;
+var _c;
+$RefreshReg$(_c, "RestrauntItems");
+
+  $parcel$ReactRefreshHelpers$24a6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../constants":"5erIG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fya3t":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ef8a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40124,118 +40519,29 @@ const Login = ()=>{
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "h-[100vh] w-[100%] bg-pink-300 px-[10rem] py-[10rem] flex",
+            className: "h-[100vh] w-[100%] bg-primaryLight px-[10rem] py-[10rem] flex justify-center gap-5 items-center flex-col",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-6xl w-[50%] bg-red-400 h-full",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: "Welcome Back....."
-                        }, void 0, false, {
-                            fileName: "src/components/Forms/Login.js",
-                            lineNumber: 50,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: "We missed you"
-                        }, void 0, false, {
-                            fileName: "src/components/Forms/Login.js",
-                            lineNumber: 51,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "text-5xl",
+                    children: " kya karoge login karke ?"
+                }, void 0, false, {
                     fileName: "src/components/Forms/Login.js",
                     lineNumber: 49,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                    className: "w-[50%] h-full bg-blue-300 flex flex-col gap-4",
-                    onSubmit: formik.handleSubmit,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                    htmlFor: "username",
-                                    children: "Username "
-                                }, void 0, false, {
-                                    fileName: "src/components/Forms/Login.js",
-                                    lineNumber: 58,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                    id: "username",
-                                    name: "username",
-                                    type: "text",
-                                    onChange: formik.handleChange,
-                                    value: formik.values.username,
-                                    onBlur: formik.handleBlur
-                                }, void 0, false, {
-                                    fileName: "src/components/Forms/Login.js",
-                                    lineNumber: 59,
-                                    columnNumber: 13
-                                }, undefined),
-                                formik.errors.username && formik.touched.username ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: formik.errors.username
-                                }, void 0, false, {
-                                    fileName: "src/components/Forms/Login.js",
-                                    lineNumber: 68,
-                                    columnNumber: 15
-                                }, undefined) : null
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Forms/Login.js",
-                            lineNumber: 57,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                    htmlFor: "password",
-                                    children: "Password "
-                                }, void 0, false, {
-                                    fileName: "src/components/Forms/Login.js",
-                                    lineNumber: 72,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                    type: "password",
-                                    name: "password",
-                                    id: "password",
-                                    onChange: formik.handleChange,
-                                    value: formik.values.password,
-                                    onBlur: formik.handleBlur
-                                }, void 0, false, {
-                                    fileName: "src/components/Forms/Login.js",
-                                    lineNumber: 73,
-                                    columnNumber: 13
-                                }, undefined),
-                                formik.errors.password && formik.touched.password ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: formik.errors.password
-                                }, void 0, false, {
-                                    fileName: "src/components/Forms/Login.js",
-                                    lineNumber: 82,
-                                    columnNumber: 15
-                                }, undefined) : null
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Forms/Login.js",
-                            lineNumber: 71,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            type: "submit",
-                            className: "bg-blue-700 text-white w-fit px-7 ",
-                            children: "LogIn"
-                        }, void 0, false, {
-                            fileName: "src/components/Forms/Login.js",
-                            lineNumber: 85,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "bg-pinkish text-[#f1f1f1] text-3xl rounded-xl px-[1rem] py-[.5rem]",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        children: " idhar click karo"
+                    }, void 0, false, {
+                        fileName: "src/components/Forms/Login.js",
+                        lineNumber: 52,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/components/Forms/Login.js",
-                    lineNumber: 53,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -40261,238 +40567,7 @@ $RefreshReg$(_c, "Login");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","formik":"aefoQ","../constants":"5erIG","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Vdsp":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6cf6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6cf6.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _shimmer = require("../body/Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _constants = require("../constants");
-var _useRestraunt = require("../../utils/useRestraunt");
-var _useRestrauntDefault = parcelHelpers.interopDefault(_useRestraunt);
-var _s = $RefreshSig$();
-const RestrauntMenu = ()=>{
-    _s();
-    const params = (0, _reactRouterDom.useParams)();
-    const { restrauntInfo, restrauntItems, restrauntOffers } = (0, _useRestrauntDefault.default)(params.resId);
-    console.log(restrauntInfo);
-    console.log((0, _constants.IMG_CDN_LINK) + "rng/md/carousel/production/pkcgpsd4df6i5ud3eyuk");
-    return !restrauntInfo ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-        lineNumber: 14,
-        columnNumber: 5
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container w-[100%] bg-pink-500 flex items-center justify-center py-[2rem]",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-[50%] bg-red-300 ",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bg-blue-400 flex h-[13rem] gap-5  ",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overflow-hidden h-full w-[40%]",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: " h-full w-full object-center rounded-xl",
-                                    src: (0, _constants.IMG_CDN_LINK) + restrauntInfo?.cloudinaryImageId
-                                }, void 0, false, {
-                                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                    lineNumber: 21,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                lineNumber: 20,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "py-[1rem]",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        className: "text-4xl font-[700] text-nowrap",
-                                        children: restrauntInfo?.name
-                                    }, void 0, false, {
-                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                        lineNumber: 27,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: restrauntInfo?.availability?.opened ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                            children: "Opened"
-                                        }, void 0, false, {
-                                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                            lineNumber: 30,
-                                            columnNumber: 19
-                                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                            children: "Closed"
-                                        }, void 0, false, {
-                                            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                            lineNumber: 32,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                        lineNumber: 28,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: restrauntInfo?.locality + ", " + restrauntInfo?.city
-                                    }, void 0, false, {
-                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                        lineNumber: 35,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: restrauntInfo?.avgRatingString + " Stars from " + restrauntInfo?.totalRatings
-                                    }, void 0, false, {
-                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                        lineNumber: 36,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: restrauntInfo?.cuisines.join(" , ")
-                                    }, void 0, false, {
-                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                        lineNumber: 41,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                lineNumber: 26,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                        lineNumber: 19,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-3xl my-3",
-                                children: "Offers "
-                            }, void 0, false, {
-                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                lineNumber: 45,
-                                columnNumber: 13
-                            }, undefined),
-                            restrauntOffers.map((e)=>{
-                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                    children: e.info.header + `using code : ` + e.info.couponCode
-                                }, void 0, false, {
-                                    fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                    lineNumber: 48,
-                                    columnNumber: 17
-                                }, undefined);
-                            }),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-3xl my-3",
-                                children: "Top Ordered Items : "
-                            }, void 0, false, {
-                                fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                lineNumber: 51,
-                                columnNumber: 13
-                            }, undefined),
-                            restrauntItems.map((e)=>{
-                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: [
-                                            " ",
-                                            e.card.info.name
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                                        lineNumber: 55,
-                                        columnNumber: 19
-                                    }, undefined)
-                                }, void 0, false);
-                            })
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                        lineNumber: 44,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/restraunt menu/RestrauntMenu.js",
-                lineNumber: 18,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/restraunt menu/RestrauntMenu.js",
-            lineNumber: 17,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
-};
-_s(RestrauntMenu, "itNR8Eo7BtmoejplG5RiubXINzc=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams),
-        (0, _useRestrauntDefault.default)
-    ];
-});
-_c = RestrauntMenu;
-exports.default = RestrauntMenu;
-var _c;
-$RefreshReg$(_c, "RestrauntMenu");
-
-  $parcel$ReactRefreshHelpers$6cf6.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../body/Shimmer":"kCpUp","../constants":"5erIG","../../utils/useRestraunt":"3RL7g","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3RL7g":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$cb40 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$cb40.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _s = $RefreshSig$();
-const useRestraunt = (id)=>{
-    _s();
-    const [restrauntInfo, setRestrautInfo] = (0, _react.useState)(null);
-    const [restrauntItems, setRestrauntItems] = (0, _react.useState)(null);
-    const [restrauntOffers, setRestrauntOffers] = (0, _react.useState)(null);
-    (0, _react.useEffect)(()=>{
-        getRestrauntMenu();
-    }, []);
-    async function getRestrauntMenu() {
-        const menu = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.390357109608406&lng=76.75831396132708&restaurantId=${id}`);
-        const json = await menu.json();
-        console.log(json);
-        setRestrautInfo(json.data?.cards[0]?.card?.card?.info);
-        setRestrauntItems(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards);
-        setRestrauntOffers(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers);
-    }
-    return {
-        restrauntItems,
-        restrauntInfo,
-        restrauntOffers
-    };
-};
-_s(useRestraunt, "Qcg6rqdynWMCl4+PU3y1EGqlHVk=");
-exports.default = useRestraunt;
-
-  $parcel$ReactRefreshHelpers$cb40.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1tGdI":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","formik":"aefoQ","../constants":"5erIG","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1tGdI":[function(require,module,exports) {
 module.exports = require("4289d3399d4c6b21")(require("daa39cc4a6d7a229").getBundleURL("lPpKD") + "ClothesVilla.c4e3a6f3.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;

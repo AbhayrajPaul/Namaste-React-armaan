@@ -45,47 +45,12 @@ const Login = () => {
   }
   return (
     <>
-      <div className="h-[100vh] w-[100%] bg-pink-300 px-[10rem] py-[10rem] flex">
-        <div className="text-6xl w-[50%] bg-red-400 h-full">
-          <h1>Welcome Back.....</h1>
-          <h1>We missed you</h1>
-        </div>
-        <form
-          className="w-[50%] h-full bg-blue-300 flex flex-col gap-4"
-          onSubmit={formik.handleSubmit}
-        >
-          <div>
-            <label htmlFor="username">Username </label>
-            <input
-              id="username"
-              name="username"
-              type="text"
-              onChange={formik.handleChange}
-              value={formik.values.username}
-              onBlur={formik.handleBlur}
-            />
-            {formik.errors.username && formik.touched.username ? (
-              <div>{formik.errors.username}</div>
-            ) : null}
-          </div>
-          <div>
-            <label htmlFor="password">Password </label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              onChange={formik.handleChange}
-              value={formik.values.password}
-              onBlur={formik.handleBlur}
-            ></input>
-            {formik.errors.password && formik.touched.password ? (
-              <div>{formik.errors.password}</div>
-            ) : null}
-          </div>
-          <button type="submit" className="bg-blue-700 text-white w-fit px-7 ">
-            LogIn
-          </button>
-        </form>
+      <div className="h-[100vh] w-[100%] bg-primaryLight px-[10rem] py-[10rem] flex justify-center gap-5 items-center flex-col">
+        <span className="text-5xl"> kya karoge login karke ?</span>
+
+        <button className="bg-pinkish text-[#f1f1f1] text-3xl rounded-xl px-[1rem] py-[.5rem]">
+          <Link to={"/"}> idhar click karo</Link>
+        </button>
       </div>
     </>
   );
